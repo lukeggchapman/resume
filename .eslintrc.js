@@ -94,4 +94,12 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['*.js'], // gatsby framework node files
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off', // gatsby still use node default var require
+      },
+    },
+  ],
 }
