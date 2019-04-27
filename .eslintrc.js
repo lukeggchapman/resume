@@ -101,5 +101,18 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'off', // gatsby still use node default var require
       },
     },
+    {
+      files: ['*.test.ts', '*.test.tsx'], // jest test files
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+            optionalDependencies: false,
+            peerDependencies: false,
+          },
+        ],
+      },
+    },
   ],
 }
