@@ -4,28 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { PDFViewer } from '@react-pdf/renderer'
 
 import ResumeDocument from './ResumeDocument'
-
-export interface ExperienceData {
-  group: {
-    edges: {
-      node: {
-        id: string
-        html: string
-        frontmatter: {
-          title: string
-          company: string
-          startDate: string
-          endDate: string
-          endDateFormatted: string
-        }
-      }
-    }[]
-  }[]
-}
-
-export interface ResumeData {
-  experience: ExperienceData
-}
+import ResumeData from './ResumeData'
 
 const ResumePDF = () => (
   <StaticQuery
@@ -39,7 +18,7 @@ const ResumePDF = () => (
             edges {
               node {
                 id
-                html
+                htmlAst
                 frontmatter {
                   title
                   company

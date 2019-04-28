@@ -10,7 +10,7 @@ import {
 } from '@react-pdf/renderer'
 import PDFIcon from './PDFIcon'
 
-import { ResumeData } from './resumePDF'
+import ResumeData from './ResumeData'
 import Experience from './Experience'
 
 interface ResumePDFProps {
@@ -65,8 +65,6 @@ const stylesObj = {
 const styles = StyleSheet.create(stylesObj)
 
 const ResumeDocument = ({ data }: ResumePDFProps) => {
-  console.log('data', data)
-
   return (
     <Document>
       <Page size="A4" style={styles.page}>

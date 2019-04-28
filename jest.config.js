@@ -1,7 +1,6 @@
 module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
-    '^.+\\.jsx?$': `<rootDir>/jest/preprocess.ts`,
   },
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.([tj]sx?)$',
   moduleNameMapper: {
@@ -14,7 +13,7 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: ``,
   },
-  setupFiles: [`<rootDir>/jest/loaderShim.js`, '<rootDir>/jest/setupEnzyme.ts'],
-  setupTestFrameworkScriptFile: '<rootDir>/jest/setupJest.ts',
+  setupFiles: [`<rootDir>/jest/loaderShim.ts`],
+  setupFilesAfterEnv: ['<rootDir>/jest/setupEnzyme.ts'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
 }

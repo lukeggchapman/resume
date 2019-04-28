@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  style={
+    Object {
+      "background": "rebeccapurple",
+    }
+  }
+>
+  <div
+    css={
+      Object {
+        "map": undefined,
+        "name": "1cba5ra",
+        "next": undefined,
+        "styles": "
+        margin: 0 auto;
+        max-width: 960px;
+        padding: 2.25rem;
+      ",
+      }
+    }
+  >
+    <mockConstructor
+      css={
+        Object {
+          "map": undefined,
+          "name": "14xgt7a",
+          "next": undefined,
+          "styles": "
+          text-shadow: none;
+        ",
+        }
+      }
+      to="/"
+    >
+      <h1
+        css={
+          Object {
+            "map": undefined,
+            "name": "1fwd0ik",
+            "next": undefined,
+            "styles": "
+            margin: 0;
+            color: white;
+          ",
+          }
+        }
+      >
+        Test Title
+      </h1>
+    </mockConstructor>
+  </div>
+</header>
+`;

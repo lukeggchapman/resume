@@ -10,6 +10,8 @@ import {
   Node as UnistNode,
 } from '@types/unist' // eslint-disable-line
 
+export { UnistNode as Node }
+
 /**
  * Node in hast containing other nodes.
  */
@@ -17,7 +19,7 @@ export interface Parent extends UnistParent {
   /**
    * List representing the children of a node.
    */
-  children: Element | Doctype | Comment | Text
+  children: (Element | DocType | Comment | Text)[]
 }
 
 /**
@@ -66,7 +68,7 @@ export interface Element extends Parent {
   /**
    * List representing the children of a node.
    */
-  children: Element | Comment | Text
+  children: (Element | Comment | Text)[]
 }
 
 /**

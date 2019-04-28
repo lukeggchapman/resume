@@ -1,13 +1,19 @@
 import React from 'react'
 import { View, Text, StyleSheet } from '@react-pdf/renderer'
 
-import { ExperienceData } from './ResumePDF'
+import { ExperienceData } from './ResumeData'
+import htmlToPDF from '../../utils/htmlToPDF'
 
 interface ExperienceProps {
   data: ExperienceData
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  content: {
+    fontFamily: 'PT Sans',
+    fontSize: 10,
+  },
+})
 
 const sortGroupsByEndDate = (group: ExperienceData['group']) => {
   return group.sort((a, b) =>
@@ -37,9 +43,9 @@ const Experience = ({ data }: ExperienceProps) => {
               } = experience.frontmatter
 
               return (
-                <View key={`${company}_${endDate}`}>
-                  <Text>{startDate}</Text>
-                  <Text>{endDateFormatted}</Text>
+                <View style={styles.content} key={`${company}_${endDate}`}>
+                  <Text>{`${startDate} - ${endDateFormatted}`}</Text>
+                  <View>{htmlToPDF(experience.htmlAst)}</View>
                 </View>
               )
             })}
