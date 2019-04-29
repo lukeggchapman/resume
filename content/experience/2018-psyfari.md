@@ -1,8 +1,8 @@
 ---
-title: 'Software Engineer'
+role: 'Software Engineer'
 company: 'Psyfari Festival'
 startDate: '2010-01-01'
-endDate: '2018-12-30'
+endDate: '2018-12-31'
 ---
 
 I was a software engineer working with a small team working to create a music festival that happened many times over a 9 year period growing to a size of around 6,000 attendees.

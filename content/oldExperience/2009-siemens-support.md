@@ -1,6 +1,6 @@
 ---
 title: 'Intern Software Engineer'
-company: 'Siemans Building Technology'
+company: 'Siemens Building Technology'
 startDate: '2008-01-01'
 endDate: '2009-12-30'
 ---

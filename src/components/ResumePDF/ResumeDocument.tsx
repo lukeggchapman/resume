@@ -12,6 +12,8 @@ import PDFIcon from './PDFIcon'
 
 import ResumeData from './ResumeData'
 import Experience from './Experience'
+import Education from './Education'
+import Section from './Section'
 
 interface ResumePDFProps {
   data: ResumeData
@@ -33,19 +35,18 @@ const stylesObj = {
     backgroundColor: 'white',
     fontFamily: 'PT Sans',
     fontSize: 12,
+    color: '#333',
   },
   header: {
     flexDirection: 'row' as 'row',
     padding: '2% 3%',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderBottom: '1pt solid #333',
   },
   heading: {
     fontFamily: 'Oswald',
     fontWeight: 700,
     fontSize: 24,
-    color: '#333',
   },
   info: {
     alignItems: 'right',
@@ -53,12 +54,13 @@ const stylesObj = {
   body: {
     flexDirection: 'row',
     flexGrow: 1,
+    padding: 10,
   },
   sidePanel: {
     flex: 1,
   },
   content: {
-    flex: 2,
+    flex: 3,
   },
   footer: {},
 }
@@ -90,7 +92,12 @@ const ResumeDocument = ({ data }: ResumePDFProps) => {
             <Text>Side Panel</Text>
           </View>
           <View style={styles.content}>
-            <Experience data={data.experience} />
+            <Section title="Education">
+              <Education />
+            </Section>
+            <Section title="Experience">
+              <Experience data={data.experience} />
+            </Section>
           </View>
         </View>
         <View style={styles.footer}>

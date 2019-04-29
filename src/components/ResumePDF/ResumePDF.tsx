@@ -13,18 +13,21 @@ const ResumePDF = () => (
         experience: allMarkdownRemark(
           filter: { fields: { sourceInstanceName: { eq: "experience" } } }
           sort: { fields: [frontmatter___endDate], order: DESC }
+          limit: 2
         ) {
-          group(field: frontmatter___company) {
-            edges {
-              node {
-                id
-                htmlAst
-                frontmatter {
-                  title
-                  company
-                  endDate
-                  startDate(formatString: "MMM, YYYY")
-                  endDateFormatted: endDate(formatString: "MMM, YYYY")
+          edges {
+            node {
+              id
+              htmlAst
+              frontmatter {
+                role
+                company
+                startDate
+                endDate
+                startDateFormatted: startDate(formatString: "MMM, YYYY")
+                endDateFormatted: endDate(formatString: "MMM, YYYY")
+                logo {
+                  publicURL
                 }
               }
             }
