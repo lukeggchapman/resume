@@ -13,6 +13,8 @@ const styles = StyleSheet.create({
   leftColumn: {
     flex: 1,
     alignItems: 'center',
+    justifyItems: 'center',
+    paddingRight: 5,
   },
   rightColumn: {
     flex: 7,

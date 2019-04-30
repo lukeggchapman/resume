@@ -1,6 +1,7 @@
 ---
 role: 'Software Engineer'
 company: 'Psyfari Festival'
+logo: './psyfari.png'
 startDate: '2010-01-01'
 endDate: '2018-12-31'
 ---
