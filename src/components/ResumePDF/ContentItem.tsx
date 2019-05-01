@@ -19,9 +19,6 @@ const styles = StyleSheet.create({
   rightColumn: {
     flex: 7,
   },
-  titleContainer: {
-    flexDirection: 'column',
-  },
   title: {
     fontFamily: 'Oswald',
     fontSize: 14,
@@ -30,14 +27,12 @@ const styles = StyleSheet.create({
     fontFamily: 'PT Sans',
     fontSize: 10,
     color: '#555',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   contentContainer: {
     flexDirection: 'column',
     width: '100%',
-    overflow: 'hidden',
-    flex: 1,
-    flewShrink: 1,
-    flewGrow: 1,
   },
   content: {
     marginTop: 5,
@@ -45,15 +40,13 @@ const styles = StyleSheet.create({
   logo: {
     height: 35,
   },
-  itemHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'bottom',
-  },
   hr: {
     width: 400,
     alignSelf: 'center',
     margin: '10 0',
+  },
+  dates: {
+    flexDirection: 'row',
   },
 })
 
@@ -98,12 +91,10 @@ const ContentItem = ({
         { alignSelf: children ? 'normal' : 'center' },
       ]}
     >
-      <View style={styles.itemHeader}>
-        <View style={styles.titleContainer}>
-          <Text style={styles.title}>{title}</Text>
-          <Text style={styles.subTitle}>{subTitle}</Text>
-        </View>
-        <View style={{ flexDirection: 'row' }}>
+      <Text style={styles.title}>{title}</Text>
+      <View style={styles.subTitle}>
+        <Text>{subTitle}</Text>
+        <View>
           <Text>
             {`${format(startDate, 'MMM, YYYY')} \u2013 ${format(
               endDate,

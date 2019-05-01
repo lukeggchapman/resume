@@ -1,23 +1,15 @@
 import React from 'react'
-import { Font, Text, StyleSheet } from '@react-pdf/renderer'
-import fa from '../../utils/fontawesome'
+import { Text, StyleSheet } from '@react-pdf/renderer'
 
-Font.register({
-  family: 'Font Awesome 5 Free',
-  fontWeight: 400,
-  src:
-    'https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-regular-400.ttf',
-})
-
-Font.register({
-  family: 'Font Awesome 5 Free',
-  fontWeight: 900,
-  src: 'https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.ttf',
-})
+import './pdfFonts/fontawesome'
+import fa from 'utils/fontawesome'
 
 const styles = StyleSheet.create({
   icon: {
     fontFamily: 'Font Awesome 5 Free',
+  },
+  fab: {
+    fontWeight: 400,
   },
   far: {
     fontWeight: 400,
@@ -29,18 +21,31 @@ const styles = StyleSheet.create({
 
 type IconStyleProps =
   | {
-      fas: true
+      fab: true
       far?: false
+      fas?: false
     }
   | {
-      fas?: false
+      fab?: false
       far: true
+      fas?: false
+    }
+  | {
+      fab?: false
+      far?: false
+      fas: true
     }
 
 interface PDFIconProps {
   icon: keyof typeof fa
 }
 
-export default ({ icon, far }: PDFIconProps & IconStyleProps) => (
-  <Text style={[styles.icon, far ? styles.far : styles.fas]}>{fa[icon]}</Text>
-)
+export default ({ icon, fab, far, fas }: PDFIconProps & IconStyleProps) => {
+  const faStyle =
+    (fab && styles.fab) ||
+    (far && styles.far) ||
+    (fas && styles.fas) ||
+    styles.far
+
+  return <Text style={[styles.icon, faStyle]}>{fa[icon]}</Text>
+}

@@ -13,7 +13,6 @@ const ResumePDF = () => (
         experience: allMarkdownRemark(
           filter: { fields: { sourceInstanceName: { eq: "experience" } } }
           sort: { fields: [frontmatter___endDate], order: DESC }
-          limit: 2
         ) {
           edges {
             node {

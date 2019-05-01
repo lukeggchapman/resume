@@ -3,9 +3,11 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer'
 
 const styles = StyleSheet.create({
   container: {},
-  sectionHeader: {
+  title: {
     fontFamily: 'Oswald',
     fontSize: 16,
+    fontWeight: 900,
+    marginBottom: 5,
   },
 })
 
@@ -16,9 +18,7 @@ interface SectionProps {
 
 const Section = ({ title, children }: SectionProps) => (
   <View style={styles.container}>
-    <View style={styles.sectionHeader}>
-      <Text>{title}</Text>
-    </View>
+    <Text style={styles.title}>{title}</Text>
     {children}
   </View>
 )

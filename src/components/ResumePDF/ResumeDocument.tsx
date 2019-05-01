@@ -6,7 +6,6 @@ import {
   View,
   Document,
   StyleSheet,
-  Font,
 } from '@react-pdf/renderer'
 import PDFIcon from './PDFIcon'
 
@@ -15,25 +14,19 @@ import Experience from './Experience'
 import Education from './Education'
 import Section from './Section'
 
+import './pdfFonts/crimsontext'
+import './pdfFonts/oswald'
+import './pdfFonts/ptsans'
+
 interface ResumePDFProps {
   data: ResumeData
 }
-
-Font.register({
-  family: 'Oswald',
-  src: 'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf',
-})
-
-Font.register({
-  family: 'PT Sans',
-  src: 'http://fonts.gstatic.com/s/ptsans/v8/FUDHvzEKSJww3kCxuiAo2A.ttf',
-})
 
 const stylesObj = {
   page: {
     flexDirection: 'column' as 'column',
     backgroundColor: 'white',
-    fontFamily: 'PT Sans',
+    fontFamily: 'Crimson Text',
     fontSize: 12,
     color: '#333',
   },
@@ -50,6 +43,7 @@ const stylesObj = {
   },
   info: {
     alignItems: 'right',
+    fontFamily: 'PT Sans',
   },
   body: {
     flexDirection: 'row',
@@ -68,7 +62,7 @@ const styles = StyleSheet.create(stylesObj)
 
 const ResumeDocument = ({ data }: ResumePDFProps) => {
   return (
-    <Document>
+    <Document title="Luke Chapman Résumé">
       <Page size="A4" style={styles.page}>
         <View style={styles.header}>
           <Text style={styles.heading}>Luke Chapman</Text>
@@ -92,11 +86,11 @@ const ResumeDocument = ({ data }: ResumePDFProps) => {
             <Text>Side Panel</Text>
           </View>
           <View style={styles.content}>
-            <Section title="Education">
-              <Education />
-            </Section>
             <Section title="Experience">
               <Experience data={data.experience} />
+            </Section>
+            <Section title="Education">
+              <Education />
             </Section>
           </View>
         </View>
