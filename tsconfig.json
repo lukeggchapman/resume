@@ -16,7 +16,8 @@
     "removeComments": false,
     "preserveConstEnums": true,
     "noEmit": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./src"
   },
   "include": ["types/**/*", "src/**/*"]
 }
