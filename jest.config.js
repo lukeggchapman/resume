@@ -16,4 +16,5 @@ module.exports = {
   setupFiles: [`<rootDir>/jest/loaderShim.ts`],
   setupFilesAfterEnv: ['<rootDir>/jest/setupEnzyme.ts'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
+  modulePaths: [`<rootDir>/src`],
 }

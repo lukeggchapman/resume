@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PDF typography styles are unchanged 1`] = `
+Object {
+  "h1": Object {
+    "fontFamily": "Oswald",
+    "fontSize": 24,
+    "fontWeight": 700,
+  },
+  "h2": Object {
+    "borderBottom": "1 solid #333",
+    "fontFamily": "Oswald",
+    "fontSize": 16,
+    "fontWeight": 900,
+    "marginBottom": 5,
+  },
+  "h3": Object {
+    "fontFamily": "Oswald",
+    "fontSize": 14,
+  },
+  "h4": Object {
+    "color": "#555",
+    "fontFamily": "PT Sans",
+    "fontSize": 10,
+  },
+}
+`;

@@ -29,8 +29,16 @@ module.exports = {
         path: `${__dirname}/content/experience`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `skills`,
+        path: `${__dirname}/content/skills`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-eslint`,

@@ -1,0 +1,49 @@
+{
+  "advanced": [
+    "Babel",
+    "CSS",
+    "ESLint",
+    "Git",
+    "Grunt",
+    "HTML",
+    "JavaScript",
+    "Jest",
+    "MobX",
+    "React",
+    "Scrum",
+    "Selenium",
+    "Serverless",
+    "Testing",
+    "TypeScript",
+    "Webpack"
+  ],
+  "intermediate": [
+    "Analytics",
+    "Angular",
+    "AWS",
+    "Cordova",
+    "CI/CD",
+    "Design Systems",
+    "GraphQL",
+    "Jira",
+    "Lerna",
+    "Node",
+    "OAuth2",
+    "PHP",
+    "React Native",
+    "Redux",
+    "SQL"
+  ],
+  "beginner": [
+    "Django",
+    "Drupal",
+    "C++",
+    "C#",
+    "Express",
+    "Gatsby",
+    "Machine Learning",
+    "Python",
+    "Symfony",
+    "WordPress"
+  ]
+}

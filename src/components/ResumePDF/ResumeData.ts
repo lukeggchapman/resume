@@ -1,9 +1,8 @@
-import { Root } from '../../utils/htmlToPDF/hast.d'
+import { Root } from 'utils/hastToPDF/hast.d'
 
 export interface ExperienceData {
   edges: {
     node: {
-      id: string
       htmlAst: Root
       frontmatter: {
         role: string
@@ -12,7 +11,7 @@ export interface ExperienceData {
         endDate: string
         startDateFormatted: string
         endDateFormatted: string
-        logo?: {
+        logo: {
           publicURL: string
         }
       }
@@ -20,6 +19,17 @@ export interface ExperienceData {
   }[]
 }
 
+export interface SkillsData {
+  edges: {
+    node: {
+      advanced: string[]
+      intermediate: string[]
+      beginner: string[]
+    }
+  }[]
+}
+
 export default interface ResumeData {
   experience: ExperienceData
+  skills: SkillsData
 }

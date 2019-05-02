@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Education renders correctly 1`] = `
+<ContentItem
+  endDate="2007-12-31"
+  logo="test-file-stub"
+  startDate="2004-01-01"
+  subTitle="Bachelor of Information Technology"
+  title="Macquarie University"
+/>
+`;

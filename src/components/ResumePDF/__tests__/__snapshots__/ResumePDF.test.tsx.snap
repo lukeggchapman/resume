@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResumePDF renders StaticQuery correctly 1`] = `
+<StaticQuery
+  query={
+    Array [
+      "
+      query {
+        experience: allMarkdownRemark(
+          filter: { fields: { sourceInstanceName: { eq: \\"experience\\" } } }
+          sort: { fields: [frontmatter___endDate], order: DESC }
+        ) {
+          edges {
+            node {
+              htmlAst
+              frontmatter {
+                role
+                company
+                startDate
+                endDate
+                startDateFormatted: startDate(formatString: \\"MMM, YYYY\\")
+                endDateFormatted: endDate(formatString: \\"MMM, YYYY\\")
+                logo {
+                  publicURL
+                }
+              }
+            }
+          }
+        }
+        skills: allSkillsJson {
+          edges {
+            node {
+              advanced
+              intermediate
+              beginner
+            }
+          }
+        }
+      }
+    ",
+    ]
+  }
+  render={[Function]}
+/>
+`;
+
+exports[`ResumePDF renders correctly 1`] = `
+<PDFViewer
+  css={
+    Object {
+      "map": undefined,
+      "name": "qiq9pl",
+      "next": undefined,
+      "styles": "
+      width: 100%;
+      height: 1280px;
+      border: 1px solid #777;
+      background-color: white;
+      box-shadow: 5px 5px 5px #777;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    ",
+    }
+  }
+>
+  <Document
+    data="dataTest"
+  />
+</PDFViewer>
+`;

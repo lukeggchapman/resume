@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Document renders correctly 1`] = `
+<Document
+  title="Luke Chapman Résumé"
+>
+  <Page
+    size="A4"
+    style={
+      Object {
+        "backgroundColor": "white",
+        "color": "#333",
+        "flexDirection": "column",
+        "fontFamily": "Crimson Text",
+        "fontSize": 12,
+        "padding": "20 30",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "Oswald",
+            "fontSize": 24,
+            "fontWeight": 700,
+          }
+        }
+      >
+        Luke Chapman
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "right",
+            "fontFamily": "PT Sans",
+          }
+        }
+      >
+        <Text>
+          <Component
+            fas={true}
+            icon="envelope"
+          />
+           
+          <Link
+            src="mailto:lukeggchapman@gmail.com"
+          >
+            LukeGGChapman@gmail.com
+          </Link>
+        </Text>
+        <Text>
+          <Component
+            fas={true}
+            icon="phone"
+          />
+           
+          <Link
+            src="tel:+61401516361"
+          >
+            +61 401 516 361
+          </Link>
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexGrow": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 6,
+          }
+        }
+      >
+        <Section
+          title="Experience"
+        >
+          <Experience
+            data="experienceTest"
+          />
+        </Section>
+        <Section
+          title="Education"
+        >
+          <Education />
+        </Section>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginLeft": 10,
+          }
+        }
+      >
+        <Section
+          title="Skills"
+        >
+          <Skills
+            data="skillsTest"
+          />
+        </Section>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "color": "#555",
+            "fontFamily": "PT Sans",
+            "fontSize": 10,
+          },
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <Text>
+        <Component
+          fab={true}
+          icon="github"
+        />
+         
+        lukeggchapman
+      </Text>
+      <Text>
+        <Component
+          fab={true}
+          icon="linkedin"
+        />
+         
+        lukeggchapman
+      </Text>
+      <Text>
+        <Component
+          fab={true}
+          icon="react"
+        />
+         
+        Created with React
+         
+        <Link
+          src=""
+        />
+      </Text>
+    </View>
+  </Page>
+</Document>
+`;

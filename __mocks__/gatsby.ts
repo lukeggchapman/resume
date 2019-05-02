@@ -4,7 +4,7 @@ const gatsby = jest.requireActual('gatsby')
 
 module.exports = {
   ...gatsby,
-  graphql: jest.fn(),
+  graphql: jest.fn(graphql => graphql),
   Link: jest.fn().mockImplementation(
     // these props are invalid for an `a` tag
     ({
@@ -22,6 +22,6 @@ module.exports = {
         href: to,
       })
   ),
-  StaticQuery: jest.fn(),
+  StaticQuery: 'StaticQuery',
   useStaticQuery: jest.fn(),
 }
