@@ -12,14 +12,20 @@ const Experience = ({ data }: ExperienceProps) => {
   return (
     <>
       {data.edges.map(({ node }) => {
-        const { company, logo, startDate, endDate, role } = node.frontmatter
+        const {
+          company,
+          logo: { publicURL: logoURL },
+          startDate,
+          endDate,
+          role,
+        } = node.frontmatter
 
         return (
           <ContentItem
             key={company}
             title={company}
             subTitle={role}
-            logo={logo.publicURL}
+            logo={logoURL}
             startDate={startDate}
             endDate={endDate}
           >

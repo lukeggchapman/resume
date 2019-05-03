@@ -19,9 +19,14 @@ const getBulletList = (element: Element) => {
 
 const handlers = {
   root: (root: Root): React.ReactNode => {
-    const children = root && root.children
+    const { children } = root
 
-    return children.map(hastToPDF)
+    if (children.length) {
+      return children.map(hastToPDF)
+    }
+
+    // empty root has no react-PDF equiv
+    return undefined
   },
   text: (text: HastText): React.ReactNode => {
     return <Text key={uid(text)}>{text.value}</Text>

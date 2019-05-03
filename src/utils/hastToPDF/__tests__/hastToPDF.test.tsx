@@ -95,4 +95,16 @@ describe('hast2pdf', () => {
 
     expect(PDF.matchesElement(<View>{result}</View>)).toBeTruthy()
   })
+
+  it('returns nothing with empty hast', () => {
+    const emptyHast = {
+      type: 'root',
+      children: [],
+      data: {
+        quirksMode: false,
+      },
+    }
+
+    expect(hast2pdf(emptyHast)).toEqual(undefined)
+  })
 })

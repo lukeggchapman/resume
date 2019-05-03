@@ -30,6 +30,25 @@ const ResumePDF = () => (
   <StaticQuery
     query={graphql`
       query {
+        education: allMarkdownRemark(
+          filter: { fields: { sourceInstanceName: { eq: "education" } } }
+          sort: { fields: [frontmatter___endDate], order: DESC }
+        ) {
+          edges {
+            node {
+              htmlAst
+              frontmatter {
+                degree
+                school
+                startDate
+                endDate
+                logo {
+                  publicURL
+                }
+              }
+            }
+          }
+        }
         experience: allMarkdownRemark(
           filter: { fields: { sourceInstanceName: { eq: "experience" } } }
           sort: { fields: [frontmatter___endDate], order: DESC }
@@ -42,8 +61,6 @@ const ResumePDF = () => (
                 company
                 startDate
                 endDate
-                startDateFormatted: startDate(formatString: "MMM, YYYY")
-                endDateFormatted: endDate(formatString: "MMM, YYYY")
                 logo {
                   publicURL
                 }

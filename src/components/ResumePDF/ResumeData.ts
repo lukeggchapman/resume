@@ -1,5 +1,22 @@
 import { Root } from 'utils/hastToPDF/hast.d'
 
+export interface EducationData {
+  edges: {
+    node: {
+      htmlAst: Root
+      frontmatter: {
+        degree: string
+        school: string
+        startDate: string
+        endDate: string
+        logo: {
+          publicURL: string
+        }
+      }
+    }
+  }[]
+}
+
 export interface ExperienceData {
   edges: {
     node: {
@@ -9,8 +26,6 @@ export interface ExperienceData {
         company: string
         startDate: string
         endDate: string
-        startDateFormatted: string
-        endDateFormatted: string
         logo: {
           publicURL: string
         }
@@ -30,6 +45,7 @@ export interface SkillsData {
 }
 
 export default interface ResumeData {
+  education: EducationData
   experience: ExperienceData
   skills: SkillsData
 }

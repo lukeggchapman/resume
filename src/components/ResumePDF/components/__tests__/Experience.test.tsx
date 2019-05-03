@@ -15,13 +15,11 @@ const baseProps: ExperienceProps = {
           frontmatter: {
             company: 'companyTest1',
             endDate: 'endDateTest1',
-            endDateFormatted: 'endDateFormattedTest1',
             logo: {
               publicURL: 'logoPublcUrlTest1',
             },
             role: 'roleTest1',
             startDate: 'startDateTest1',
-            startDateFormatted: 'startDateFormattedTest1',
           },
         },
       },
@@ -31,13 +29,11 @@ const baseProps: ExperienceProps = {
           frontmatter: {
             company: 'companyTest2',
             endDate: 'endDateTest2',
-            endDateFormatted: 'endDateFormattedTest2',
             logo: {
               publicURL: 'logoPublcUrlTest2',
             },
             role: 'roleTest2',
             startDate: 'startDateTest2',
-            startDateFormatted: 'startDateFormattedTest2',
           },
         },
       },

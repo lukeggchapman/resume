@@ -83,7 +83,7 @@ const ResumeDocument = ({ data }: DocumentProps) => {
               <Experience data={data.experience} />
             </Section>
             <Section title="Education">
-              <Education />
+              <Education data={data.education} />
             </Section>
           </View>
           <View style={styles.sidePanel}>
