@@ -66,16 +66,16 @@ exports[`ResumePDF renders correctly 1`] = `
   css={
     Object {
       "map": undefined,
-      "name": "qiq9pl",
+      "name": "4s2w0f",
       "next": undefined,
       "styles": "
       width: 100%;
-      height: 1280px;
-      border: 1px solid #777;
+      height: 100%;
       background-color: white;
-      box-shadow: 5px 5px 5px #777;
       overflow-x: hidden;
       overflow-y: hidden;
+      margin-bottom: 0;
+      border: none;
     ",
     }
   }

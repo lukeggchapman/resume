@@ -14,12 +14,12 @@ export const PureResumePDF = ({ data }: PureResumePDFProps) => (
   <PDFViewer
     css={css`
       width: 100%;
-      height: 1280px;
-      border: 1px solid #777;
+      height: 100%;
       background-color: white;
-      box-shadow: 5px 5px 5px #777;
       overflow-x: hidden;
       overflow-y: hidden;
+      margin-bottom: 0;
+      border: none;
     `}
   >
     <Document data={data} />
