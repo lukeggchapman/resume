@@ -97,7 +97,9 @@ exports[`Document renders correctly 1`] = `
         <Section
           title="Education"
         >
-          <Education />
+          <Education
+            data="educationTest"
+          />
         </Section>
       </View>
       <View

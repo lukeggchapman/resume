@@ -9,6 +9,7 @@ jest.mock('../Skills', () => 'Skills')
 
 const baseProps: DocumentProps = {
   data: {
+    education: ('educationTest' as unknown) as DocumentProps['data']['education'],
     experience: ('experienceTest' as unknown) as DocumentProps['data']['experience'],
     skills: ('skillsTest' as unknown) as DocumentProps['data']['skills'],
   },

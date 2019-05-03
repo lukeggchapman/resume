@@ -19,6 +19,7 @@ const BlogPostTemplate = ({ data }: BlogPostTemplateProps) => {
     <Layout>
       <div>
         <h1>{post.frontmatter.title}</h1>
+        {/* eslint-disable-next-line react/no-danger */}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>

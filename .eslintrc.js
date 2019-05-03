@@ -99,12 +99,15 @@ module.exports = {
     {
       files: ['*.js'], // gatsby framework node files
       rules: {
-        '@typescript-eslint/no-var-requires': 'off', // gatsby still use node default var require
+        '@typescript-eslint/no-var-requires': 'off', // gatsby still use nodes default var require
       },
     },
     {
       files: ['*.test.ts', '*.test.tsx'], // jest test files
       rules: {
+        /**
+         * Allow tests to import from devDependencies without error
+         */
         'import/no-extraneous-dependencies': [
           'error',
           {
@@ -113,6 +116,10 @@ module.exports = {
             peerDependencies: false,
           },
         ],
+        /**
+         * Allow tests to use explicit any on mock values
+         */
+        '@typescript-eslint/no-explicit-any': 'off',
       },
     },
   ],
