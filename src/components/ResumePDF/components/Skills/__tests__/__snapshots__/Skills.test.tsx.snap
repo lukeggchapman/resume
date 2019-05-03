@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills renders correctly 1`] = `
+<Fragment>
+  <Skill
+    key="beginner"
+    skills={
+      Array [
+        "skillTest1",
+        "skillTest2",
+      ]
+    }
+    title="beginner"
+  />
+  <Skill
+    key="intermediate"
+    skills={
+      Array [
+        "skillTest3",
+        "skillTest4",
+      ]
+    }
+    title="intermediate"
+  />
+  <Skill
+    key="advanced"
+    skills={
+      Array [
+        "skillTest5",
+        "skillTest6",
+      ]
+    }
+    title="advanced"
+  />
+</Fragment>
+`;

@@ -3,7 +3,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "esnext",
-    "jsx": "preserve",
+    "jsx": "react",
     "lib": ["dom", "es2015", "es2017"],
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -16,7 +16,8 @@
     "removeComments": false,
     "preserveConstEnums": true,
     "noEmit": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./src"
   },
-  "include": ["src/**/*"]
+  "include": ["types/**/*", "src/**/*"]
 }

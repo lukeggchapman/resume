@@ -1,6 +1,9 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { css } from '@emotion/core'
+
+import { rhythm } from '../utils/typography'
 
 interface HeaderProps {
   siteTitle: string
@@ -10,27 +13,30 @@ const Header = ({ siteTitle }: HeaderProps) => (
   <header
     style={{
       background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
     }}
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      css={css`
+        margin: 0 auto;
+        max-width: 960px;
+        padding: ${rhythm(1.5)};
+      `}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+      <Link
+        to="/"
+        css={css`
+          text-shadow: none;
+        `}
+      >
+        <h1
+          css={css`
+            margin: 0;
+            color: white;
+          `}
         >
           {siteTitle}
-        </Link>
-      </h1>
+        </h1>
+      </Link>
     </div>
   </header>
 )

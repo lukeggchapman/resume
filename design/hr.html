@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HR Design</title>
+    <style>
+      .container {
+        width: 1000px;
+        height: 12px;
+      }
+
+      hr[data-divider] {
+        height: 1px;
+        margin: 10px 0;
+        position: relative;
+        overflow: visible;
+        background: #cecece;
+        text-align: center;
+        border: none;
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 1),
+          rgba(154, 154, 154, 1),
+          rgba(255, 255, 255, 1)
+        );
+      }
+
+      hr[data-divider]:after {
+        content: attr(data-divider);
+        font-family: 'Helvetica';
+        top: -9px;
+        position: relative;
+        background: white;
+        padding: 0 5px;
+        color: #9a9a9a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" width="1000px">
+      <hr class="rule" data-divider="<hr />" />
+    </div>
+  </body>
+</html>

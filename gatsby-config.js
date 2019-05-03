@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/camelcase */
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -13,8 +15,40 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `education`,
+        path: `${__dirname}/content/education`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `experience`,
+        path: `${__dirname}/content/experience`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `skills`,
+        path: `${__dirname}/content/skills`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-eslint`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -28,6 +62,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

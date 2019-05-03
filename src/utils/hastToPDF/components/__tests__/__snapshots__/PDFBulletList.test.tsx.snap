@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PDFBulletList renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "flexDirection": "column",
+      "width": 200,
+    }
+  }
+>
+  <PDFLi
+    content="ListItem1"
+    key="val-ListItem1"
+  />
+  <PDFLi
+    content="ListItem2"
+    key="val-ListItem2"
+  />
+</View>
+`;
+
+exports[`PDFLi renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "flex": 1,
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": 10,
+      }
+    }
+  >
+    <Text>
+      • 
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    ListItem1
+  </View>
+</View>
+`;
