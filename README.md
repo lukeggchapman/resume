@@ -1,35 +1,40 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+  <img alt="Gatsby" src="/src/images/chappo-icon.png" width="60" />
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Luke Chapman's Résumé
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Résumé created using [Gatsby framework](https://www.gatsbyjs.org/), [React](https://reactjs.org/), and [React-PDF](https://react-pdf.org) demonstracting my programming and codebase management.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Run development environment.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    This project uses the Yarn package manager. [Install it if you don't have it already](https://yarnpkg.com/en/docs/install).
+
+    Navigate into the resume directory.
+    Install project dependencies:
 
     ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    yarn
     ```
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+    Run gatsby development environment:
 
     ```sh
-    cd my-default-starter/
-    gatsby develop
+    yarn develop
+    ```
+
+    View rendered PDF in your browser at [http://localhost:8000/](http://localhost:8000/).
+
+1.  **Run unit tests.**
+
+    Navigate into the resume directory.
+
+    ```sh
+    yarn test
     ```
 
 1.  **Open the source code and start editing!**
