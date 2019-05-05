@@ -106,7 +106,11 @@ const ResumeDocument = ({ data }: DocumentProps) => {
           <Text>
             <FAIcon icon="react" fab />
             {` `}
-            Created with React
+            Created with React.
+            {' Sourcecode '}
+            <PDFLink src="https://bit.ly/2VgE4pH">
+              https://bit.ly/2VgE4pH
+            </PDFLink>
             {` `}
             <PDFLink src="" />
           </Text>

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "luke-chapman-resume",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Résumé created using Gatsby framework, React, and React-PDF demonstracting my programming and codebase management",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Luke Chapman <lukeggchapman@gmail.com>",
   "engines": {
     "yarn": "^1.2.1",
     "node": ">6.0.0"
@@ -61,6 +61,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
+    "gatsby-cli": "^2.5.12",
     "gatsby-plugin-eslint": "^2.0.5",
     "gatsby-transformer-json": "^2.1.11",
     "husky": "^2.2.0",
@@ -89,10 +90,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/lukeggchapman/resume"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/lukeggchapman/resume/issues"
   },
   "husky": {
     "hooks": {

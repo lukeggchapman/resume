@@ -156,7 +156,13 @@ exports[`Document renders correctly 1`] = `
           icon="react"
         />
          
-        Created with React
+        Created with React.
+         Sourcecode 
+        <Link
+          src="https://bit.ly/2VgE4pH"
+        >
+          https://bit.ly/2VgE4pH
+        </Link>
          
         <Link
           src=""
