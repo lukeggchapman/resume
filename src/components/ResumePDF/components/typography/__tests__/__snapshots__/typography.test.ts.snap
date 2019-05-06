@@ -2,6 +2,11 @@
 
 exports[`PDF typography styles are unchanged 1`] = `
 Object {
+  "body": Object {
+    "color": "#333",
+    "fontFamily": "Crimson Text",
+    "fontSize": 12,
+  },
   "h1": Object {
     "fontFamily": "Oswald",
     "fontSize": 24,
