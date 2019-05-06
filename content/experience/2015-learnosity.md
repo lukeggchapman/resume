@@ -1,5 +1,5 @@
 ---
-role: 'Software Engineer Team Lead'
+role: 'Software Engineer / Team Lead'
 company: 'Learnosity'
 logo: './learnosity.png'
 startDate: '2012-02-01'

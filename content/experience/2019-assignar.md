@@ -1,5 +1,5 @@
 ---
-role: 'Software Engineer Team Lead'
+role: 'Senior Software Engineer / Team Lead'
 company: 'Assignar'
 logo: './assignar.jpg'
 startDate: '2016-02-01'
