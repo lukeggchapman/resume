@@ -7,14 +7,18 @@ exports[`Document renders correctly 1`] = `
   <Page
     size="A4"
     style={
-      Object {
-        "backgroundColor": "white",
-        "color": "#333",
-        "flexDirection": "column",
-        "fontFamily": "Crimson Text",
-        "fontSize": 12,
-        "padding": "20 30",
-      }
+      Array [
+        Object {
+          "color": "#333",
+          "fontFamily": "Crimson Text",
+          "fontSize": 12,
+        },
+        Object {
+          "backgroundColor": "white",
+          "flexDirection": "column",
+          "padding": "20 30",
+        },
+      ]
     }
   >
     <View
@@ -140,7 +144,11 @@ exports[`Document renders correctly 1`] = `
           icon="github"
         />
          
-        lukeggchapman
+        <Link
+          src="https://github.com/lukeggchapman"
+        >
+          lukeggchapman
+        </Link>
       </Text>
       <Text>
         <Component
@@ -148,7 +156,11 @@ exports[`Document renders correctly 1`] = `
           icon="linkedin"
         />
          
-        lukeggchapman
+        <Link
+          src="https://www.linkedin.com/in/lukeggchapman"
+        >
+          lukeggchapman
+        </Link>
       </Text>
       <Text>
         <Component
@@ -157,16 +169,12 @@ exports[`Document renders correctly 1`] = `
         />
          
         Created with React.
-         Sourcecode 
+         Source code 
         <Link
           src="https://bit.ly/2VgE4pH"
         >
           https://bit.ly/2VgE4pH
         </Link>
-         
-        <Link
-          src=""
-        />
       </Text>
     </View>
   </Page>

@@ -1,3 +1,11 @@
+/**
+ * FAIcon is an implementation of Font Awesome Free for use with React-PDF.
+ *
+ * <FAIcon icon="github" fab /> for brand icons.
+ * <FAIcon icon="envelope" far /> for regular icons.
+ * <FAIcon icon="envelope" fas /> for solid icons.
+ */
+
 import React from 'react'
 import { Text, StyleSheet } from '@react-pdf/renderer'
 

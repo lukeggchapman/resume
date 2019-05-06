@@ -5,6 +5,11 @@ import './fonts/oswald'
 import './fonts/ptsans'
 
 export default StyleSheet.create({
+  body: {
+    fontFamily: 'Crimson Text',
+    fontSize: 12,
+    color: '#333',
+  },
   h1: {
     fontFamily: 'Oswald',
     fontWeight: 700,

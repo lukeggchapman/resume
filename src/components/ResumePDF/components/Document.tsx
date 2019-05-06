@@ -23,9 +23,6 @@ const stylesObj = {
   page: {
     flexDirection: 'column',
     backgroundColor: 'white',
-    fontFamily: 'Crimson Text',
-    fontSize: 12,
-    color: '#333',
     padding: '20 30',
   },
   header: {
@@ -59,7 +56,7 @@ const styles = StyleSheet.create(stylesObj)
 const ResumeDocument = ({ data }: DocumentProps) => {
   return (
     <Document title="Luke Chapman Résumé">
-      <Page size="A4" style={styles.page}>
+      <Page size="A4" style={[typography.body, styles.page]}>
         <View style={styles.header}>
           <Text style={typography.h1}>Luke Chapman</Text>
           <View style={styles.info}>
@@ -96,23 +93,25 @@ const ResumeDocument = ({ data }: DocumentProps) => {
           <Text>
             <FAIcon icon="github" fab />
             {` `}
-            lukeggchapman
+            <PDFLink src="https://github.com/lukeggchapman">
+              lukeggchapman
+            </PDFLink>
           </Text>
           <Text>
             <FAIcon icon="linkedin" fab />
             {` `}
-            lukeggchapman
+            <PDFLink src="https://www.linkedin.com/in/lukeggchapman">
+              lukeggchapman
+            </PDFLink>
           </Text>
           <Text>
             <FAIcon icon="react" fab />
             {` `}
             Created with React.
-            {' Sourcecode '}
+            {' Source code '}
             <PDFLink src="https://bit.ly/2VgE4pH">
               https://bit.ly/2VgE4pH
             </PDFLink>
-            {` `}
-            <PDFLink src="" />
           </Text>
         </View>
       </Page>
