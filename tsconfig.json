@@ -17,7 +17,8 @@
     "preserveConstEnums": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "resolveJsonModule": true
   },
   "include": ["types/**/*", "src/**/*"]
 }

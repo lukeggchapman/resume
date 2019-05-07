@@ -10,7 +10,7 @@ import React from 'react'
 import { Text, StyleSheet } from '@react-pdf/renderer'
 
 import './fonts/fontawesome'
-import fa from './fonts/fontawesome/faUnicode'
+import fa from './fonts/fontawesome/faUnicode.json'
 
 export const styles = StyleSheet.create({
   icon: {
