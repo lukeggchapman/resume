@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import Helmet, { HelmetProps } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-interface SEOProps {
+export interface SEOProps {
   title: string
   description: string
   lang: string
