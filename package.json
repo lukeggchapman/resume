@@ -6,7 +6,7 @@
   "author": "Luke Chapman <lukeggchapman@gmail.com>",
   "engines": {
     "yarn": "^1.2.1",
-    "node": ">6.0.0"
+    "node": ">11.0.0"
   },
   "dependencies": {
     "@babel/core": "^7.4.3",
@@ -48,6 +48,7 @@
     "@typescript-eslint/parser": "^1.6.0",
     "babel-jest": "^24.7.1",
     "babel-preset-gatsby": "^0.1.11",
+    "codeclimate-test-reporter": "^0.5.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5",
@@ -87,7 +88,9 @@
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "yarn lint --fix",
     "test": "jest --verbose",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "coverage": "yarn test --ci --coverage",
+    "ci": "yarn lint && yarn coverage"
   },
   "repository": {
     "type": "git",
@@ -98,7 +101,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && yarn test"
+      "pre-commit": "yarn ci"
     }
   }
 }
