@@ -5,6 +5,10 @@
   Luke Chapman's Résumé
 </h1>
 
+[![Build Status](https://travis-ci.org/lukeggchapman/resume.svg?branch=master)](https://travis-ci.org/lukeggchapman/resume)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9b5a073c72ef6a2c6b04/maintainability)](https://codeclimate.com/github/lukeggchapman/resume/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9b5a073c72ef6a2c6b04/test_coverage)](https://codeclimate.com/github/lukeggchapman/resume/test_coverage)
+
 Résumé created using [Gatsby framework](https://www.gatsbyjs.org/), [React](https://reactjs.org/), and [React-PDF](https://react-pdf.org) demonstracting my programming and codebase management abilities.
 
 ## :rocket: Quick start
