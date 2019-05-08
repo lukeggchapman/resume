@@ -1,3 +1,10 @@
+/**
+ * HAST definition is awaiting PR merge into DefinitelyTyped.
+ * https://github.com/DefinitelyTyped/DefinitelyTyped/pull/35293
+ *
+ * After they've been merged this can be removed and the types can be imported from @types/hast-format
+ */
+
 // Type definitions for non-npm package Hast 2.3.0
 // Project: https://github.com/syntax-tree/hast
 // Definitions by: lukeggchapman <https://github.com/lukeggchapman>
