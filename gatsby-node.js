@@ -22,11 +22,23 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  // enable absolute imports
+exports.onCreateWebpackConfig = ({ actions, loaders }) => {
   actions.setWebpackConfig({
+    // add typescript file loader
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          use: loaders.js(),
+        },
+      ],
+    },
+
+    // enable absolute imports
     resolve: {
       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     },
   })
 }
+
+exports.resolvableExtensions = () => [`.ts`, `.tsx`]
