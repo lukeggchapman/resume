@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-
+import '../__mocks__/typographyMock'
 import Document, { DocumentProps } from '../Document'
 
 jest.mock('../Experience', () => 'Experience')

@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "root": ["./src"]
+      }
+    ]
+  ],
+  "presets": ["babel-preset-gatsby", "@babel/preset-typescript"]
+}

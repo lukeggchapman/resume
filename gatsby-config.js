@@ -52,7 +52,6 @@ module.exports = {
         icon: `src/images/chappo-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

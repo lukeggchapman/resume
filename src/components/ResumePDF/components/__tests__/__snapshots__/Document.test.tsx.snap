@@ -8,11 +8,7 @@ exports[`Document renders correctly 1`] = `
     size="A4"
     style={
       Array [
-        Object {
-          "color": "#333",
-          "fontFamily": "Crimson Text",
-          "fontSize": 12,
-        },
+        "body",
         Object {
           "backgroundColor": "white",
           "flexDirection": "column",
@@ -32,13 +28,7 @@ exports[`Document renders correctly 1`] = `
       }
     >
       <Text
-        style={
-          Object {
-            "fontFamily": "Oswald",
-            "fontSize": 24,
-            "fontWeight": 700,
-          }
-        }
+        style="h1"
       >
         Luke Chapman
       </Text>
@@ -51,7 +41,7 @@ exports[`Document renders correctly 1`] = `
         }
       >
         <Text>
-          <Component
+          <FAIcon
             fas={true}
             icon="envelope"
           />
@@ -63,7 +53,7 @@ exports[`Document renders correctly 1`] = `
           </Link>
         </Text>
         <Text>
-          <Component
+          <FAIcon
             fas={true}
             icon="phone"
           />
@@ -126,11 +116,7 @@ exports[`Document renders correctly 1`] = `
     <View
       style={
         Array [
-          Object {
-            "color": "#555",
-            "fontFamily": "PT Sans",
-            "fontSize": 10,
-          },
+          "h4",
           Object {
             "flexDirection": "row",
             "justifyContent": "space-between",
@@ -139,7 +125,7 @@ exports[`Document renders correctly 1`] = `
       }
     >
       <Text>
-        <Component
+        <FAIcon
           fab={true}
           icon="github"
         />
@@ -151,7 +137,7 @@ exports[`Document renders correctly 1`] = `
         </Link>
       </Text>
       <Text>
-        <Component
+        <FAIcon
           fab={true}
           icon="linkedin"
         />
@@ -163,7 +149,7 @@ exports[`Document renders correctly 1`] = `
         </Link>
       </Text>
       <Text>
-        <Component
+        <FAIcon
           fab={true}
           icon="react"
         />
