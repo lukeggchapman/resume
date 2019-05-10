@@ -3,15 +3,12 @@
 exports[`PDFEmbed renders correctly 1`] = `
 <embed
   css={
-    Object {
-      "map": undefined,
-      "name": "bggj8i",
-      "next": undefined,
-      "styles": "
+    Array [
+      "
       width: 100%;
       height: 100%;
     ",
-    }
+    ]
   }
   src="pdfPublicURLTest"
 />

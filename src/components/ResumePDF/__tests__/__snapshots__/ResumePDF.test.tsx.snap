@@ -3,11 +3,8 @@
 exports[`ResumePDF renders correctly 1`] = `
 <PDFViewer
   css={
-    Object {
-      "map": undefined,
-      "name": "dts0fx",
-      "next": undefined,
-      "styles": "
+    Array [
+      "
         width: 100%;
         height: 100%;
         background-color: white;
@@ -16,7 +13,7 @@ exports[`ResumePDF renders correctly 1`] = `
         margin-bottom: 0;
         border: none;
       ",
-    }
+    ]
   }
 >
   <Document

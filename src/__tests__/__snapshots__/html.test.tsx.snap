@@ -3,15 +3,12 @@
 exports[`HTML renders correctly 1`] = `
 <html
   css={
-    Object {
-      "map": undefined,
-      "name": "1pvqfap",
-      "next": undefined,
-      "styles": "
+    Array [
+      "
         height: 100%;
         overflow: hidden;
       ",
-    }
+    ]
   }
   htmlAttributes="test"
 >
@@ -32,14 +29,11 @@ exports[`HTML renders correctly 1`] = `
   <body
     bodyAttributes="test"
     css={
-      Object {
-        "map": undefined,
-        "name": "75lrwi",
-        "next": undefined,
-        "styles": "
+      Array [
+        "
           height: 100%;
         ",
-      }
+      ]
     }
   >
     preBodyComponentsTest
@@ -51,17 +45,14 @@ exports[`HTML renders correctly 1`] = `
     </noscript>
     <div
       css={
-        Object {
-          "map": undefined,
-          "name": "1kvncwj",
-          "next": undefined,
-          "styles": "
+        Array [
+          "
             height: 100%;
             > div[role='group'][tabindex] {
               height: 100%;
             }
           ",
-        }
+        ]
       }
       dangerouslySetInnerHTML={
         Object {
