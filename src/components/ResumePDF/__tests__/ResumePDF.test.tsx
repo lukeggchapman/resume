@@ -1,20 +1,15 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import ResumePDF, { PureResumePDF, PureResumePDFProps } from '../ResumePDF'
+import ResumePDF from '../ResumePDF'
 
 jest.mock('../components/Document', () => 'Document')
-
-const baseProps: PureResumePDFProps = {
-  data: 'dataTest' as any,
-}
+jest.mock('../resumeQuery', () => ({
+  useResumeData: jest.fn(() => 'resumeDataTest'),
+}))
 
 describe('ResumePDF', () => {
-  it('renders StaticQuery correctly', () => {
-    expect(shallow(<ResumePDF />)).toMatchSnapshot()
-  })
-
   it('renders correctly', () => {
-    expect(shallow(<PureResumePDF {...baseProps} />)).toMatchSnapshot()
+    expect(shallow(<ResumePDF />)).toMatchSnapshot()
   })
 })

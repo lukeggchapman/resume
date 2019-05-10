@@ -40,6 +40,17 @@ Résumé created using [Gatsby framework](https://www.gatsbyjs.org/), [React](ht
     yarn test
     ```
 
+3.  **Compile/SSR PDF and view in browser**
+
+    Navigate into the resume directory.
+
+    ```sh
+      yarn build
+      yarn serve
+    ```
+
+    View pre-rendered PDF in your browser at [http://localhost:9000/](http://localhost:9000/).
+
 ## :microscope: What's inside?
 
 1.  **ESLint & Prettier combination**

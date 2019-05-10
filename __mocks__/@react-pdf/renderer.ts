@@ -1,3 +1,7 @@
+import React from 'react'
+
+const renderPromise = Promise.resolve()
+
 module.exports = {
   Document: 'Document',
   Font: {
@@ -12,4 +16,5 @@ module.exports = {
   },
   Text: 'Text',
   View: 'View',
+  render: jest.fn((Component: React.ComponentType, props) => renderPromise),
 }
