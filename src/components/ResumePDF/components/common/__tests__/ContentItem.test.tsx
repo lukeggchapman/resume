@@ -2,7 +2,11 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { View } from '@react-pdf/renderer'
 
-import ContentItem, { ContentItemProps, styles } from '../ContentItem'
+import ContentItem, {
+  getLogoSrc,
+  ContentItemProps,
+  styles,
+} from '../ContentItem'
 
 const baseProps: ContentItemProps = {
   title: 'titleTest',
@@ -18,6 +22,8 @@ describe('ContentItem', () => {
     shallow(<ContentItem {...{ ...baseProps, ...props }} />)
 
   it('renders correctly', () => {
+    process.env.NODE_ENV = 'development'
+
     expect(render()).toMatchSnapshot()
   })
 
@@ -42,5 +48,21 @@ describe('ContentItem', () => {
         },
       ])
     )
+  })
+})
+
+describe('getLogoSrc', () => {
+  it('adds public path in production', () => {
+    const somePath = 'some/path.png'
+    process.env.NODE_ENV = 'production'
+
+    expect(getLogoSrc(somePath)).toEqual(`./public/${somePath}`)
+  })
+
+  it('does nothing in development', () => {
+    const somePath = 'some/other/path.png'
+    process.env.NODE_ENV = 'development'
+
+    expect(getLogoSrc(somePath)).toEqual(somePath)
   })
 })

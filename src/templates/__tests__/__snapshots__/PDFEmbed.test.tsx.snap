@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PDFEmbed renders correctly 1`] = `
+<embed
+  css={
+    Object {
+      "map": undefined,
+      "name": "bggj8i",
+      "next": undefined,
+      "styles": "
+      width: 100%;
+      height: 100%;
+    ",
+    }
+  }
+  src="pdfPublicURLTest"
+/>
+`;

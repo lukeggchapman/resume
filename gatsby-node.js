@@ -6,6 +6,12 @@
 
 const path = require('path')
 
+const resolvableExtensions = ['.ts', '.tsx', '.jsx', '.js']
+
+require('@babel/register')({ extensions: resolvableExtensions })
+
+const createPages = require('./gatsby-createPages').default
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
@@ -41,4 +47,6 @@ exports.onCreateWebpackConfig = ({ actions, loaders }) => {
   })
 }
 
-exports.resolvableExtensions = () => [`.ts`, `.tsx`]
+exports.resolvableExtensions = () => resolvableExtensions
+
+exports.createPages = createPages

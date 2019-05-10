@@ -13,7 +13,7 @@ import Section from './common/Section'
 import Experience from './Experience'
 import Education from './Education'
 import Skills from './Skills'
-import ResumeData from '../ResumeData'
+import { ResumeData } from '../resumeQuery'
 
 export interface DocumentProps {
   data: ResumeData

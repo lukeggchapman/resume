@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SkillsData } from '../../ResumeData'
+import { SkillsData } from '../../resumeQuery'
 import Skill from './Skill'
 
 export interface SkillsProps {

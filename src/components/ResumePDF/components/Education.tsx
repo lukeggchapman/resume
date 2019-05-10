@@ -2,7 +2,7 @@ import React from 'react'
 
 import hastToPDF from 'utils/hastToPDF'
 import ContentItem from './common/ContentItem'
-import { EducationData } from '../ResumeData'
+import { EducationData } from '../resumeQuery'
 
 export interface EducationProps {
   data: EducationData

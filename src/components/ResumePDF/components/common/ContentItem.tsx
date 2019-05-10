@@ -54,6 +54,11 @@ export interface ContentItemProps {
   children?: React.ReactNode
 }
 
+// development/browser environment requires publicURL
+// production/node environment requires absoulte public path
+export const getLogoSrc = (logo: ContentItemProps['logo']) =>
+  process.env.NODE_ENV === 'development' ? logo : `./public/${logo}`
+
 const ContentItem = ({
   title,
   subTitle,
@@ -64,7 +69,7 @@ const ContentItem = ({
 }: ContentItemProps) => (
   <View style={styles.container}>
     <View style={styles.leftColumn}>
-      <Image style={styles.logo} src={logo} />
+      <Image style={styles.logo} src={getLogoSrc(logo)} />
     </View>
     <View
       style={[

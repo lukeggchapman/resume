@@ -1,7 +1,7 @@
 import React from 'react'
 
 import hastToPDF from 'utils/hastToPDF'
-import { ExperienceData } from '../ResumeData'
+import { ExperienceData } from '../resumeQuery'
 import ContentItem from './common/ContentItem'
 
 export interface ExperienceProps {
