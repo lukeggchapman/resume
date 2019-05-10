@@ -10,7 +10,7 @@ const resolvableExtensions = ['.ts', '.tsx', '.jsx', '.js']
 
 require('@babel/register')({ extensions: resolvableExtensions })
 
-const createPages = require('./gatsby-createPages').default
+const createPages = require('./gatsby-create-pages').default
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions

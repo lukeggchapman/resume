@@ -20,6 +20,12 @@ module.exports = function(api) {
           {
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
             root: ['./src'],
+
+            // added to mock gatsby when importing client side files in node environment.
+            // see full explanation in gatsby-createPages.ts importResumeQuery definition.
+            alias: {
+              gatsby: './gatsby-node-alias.ts',
+            },
           },
         ],
         [

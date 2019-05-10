@@ -1,3 +1,4 @@
+import { useStaticQuery, graphql } from 'gatsby'
 import { Root } from 'utils/hastToPDF/hast.d'
 
 export interface EducationData {
@@ -50,7 +51,7 @@ export interface ResumeData {
   skills: SkillsData
 }
 
-const query = `
+const resumeQuery = graphql`
   query {
     education: allMarkdownRemark(
       filter: { fields: { sourceInstanceName: { eq: "education" } } }
@@ -65,7 +66,6 @@ const query = `
             startDate
             endDate
             logo {
-              absolutePath
               publicURL
             }
           }
@@ -85,7 +85,6 @@ const query = `
             startDate
             endDate
             logo {
-              absolutePath
               publicURL
             }
           }
@@ -104,4 +103,8 @@ const query = `
   }
 `
 
-export default query
+export const useResumeData = (): ResumeData => {
+  return useStaticQuery(resumeQuery)
+}
+
+export default resumeQuery

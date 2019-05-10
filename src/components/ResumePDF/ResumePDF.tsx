@@ -2,17 +2,13 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { PDFViewer } from '@react-pdf/renderer'
 
+import { useResumeData } from './resumeQuery'
 import Document from './components/Document'
-import { ResumeData } from './resumeQuery'
-
-export interface PureResumePDFProps {
-  pageContext: {
-    resumeData: ResumeData
-  }
-}
 
 // Used in development only, client side renders PDF
-const ResumePDF = ({ pageContext: { resumeData } }: PureResumePDFProps) => {
+const ResumePDF = () => {
+  const resumeData = useResumeData()
+
   return (
     <PDFViewer
       css={css`

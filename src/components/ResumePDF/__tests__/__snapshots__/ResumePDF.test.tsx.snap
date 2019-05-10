@@ -20,7 +20,7 @@ exports[`ResumePDF renders correctly 1`] = `
   }
 >
   <Document
-    data="dataTest"
+    data="resumeDataTest"
   />
 </PDFViewer>
 `;
