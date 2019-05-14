@@ -1438,6 +1438,13 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/hast-format@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@types/hast-format/-/hast-format-2.3.0.tgz#47eec602b3ca35a47d982900154207f0b8a337bf"
+  integrity sha512-29/ywLEQMybQLgCD4UxuM33pYoMTdCbQP4QNvN5Vwhj7ik3j2WhPpw9L7+suL9xpyednCPV4PEh84sRAfNNJiw==
+  dependencies:
+    "@types/unist" "*"
+
 "@types/history@*":
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
@@ -1548,7 +1555,7 @@
   resolved "https://registry.yarnpkg.com/@types/typography/-/typography-0.16.2.tgz#dfe68caf692185e1b84d9e583b44953b03b7d135"
   integrity sha512-/lHKjwY0SekteqdOtGsYiXtT5T9RdF50kQGzp8wDRx8DtrJIXK6VVrJ+aAWYii51dZdXTGriXgCDtup6T+zz1Q==
 
-"@types/unist@^2.0.3":
+"@types/unist@*":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==

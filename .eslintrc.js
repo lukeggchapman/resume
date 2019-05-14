@@ -39,6 +39,11 @@ module.exports = {
      */
     'import/prefer-default-export': 'off', // Allow single Named-export
 
+    'import/no-unresolved': [
+      'error',
+      { commonjs: true, caseSensitive: true, ignore: ['hast-format'] },
+    ], // ignore hast-format as it's used only for type definitions
+
     /**
      * @description rules of @typescript-eslint
      */

@@ -7,7 +7,7 @@ import React from 'react'
 import { uid } from 'react-uid'
 import { View, Text } from '@react-pdf/renderer'
 
-import { Node, Root, Text as HastText, Element } from './hast.d'
+import { Node, Root, Text as HastText, Element } from 'hast-format'
 import PDFBulletList from './components/PDFBulletList'
 
 const getBulletList = (element: Element) => {

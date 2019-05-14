@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby'
-import { Root } from 'utils/hastToPDF/hast.d'
+import { Root } from 'hast-format'
 
 export interface EducationData {
   edges: {
