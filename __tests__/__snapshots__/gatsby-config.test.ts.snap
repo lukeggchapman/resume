@@ -7,28 +7,28 @@ Object {
     Object {
       "options": Object {
         "name": "images",
-        "path": "/mnt/c/workspace/resume/src/images",
+        "path": "src/images",
       },
       "resolve": "gatsby-source-filesystem",
     },
     Object {
       "options": Object {
         "name": "education",
-        "path": "/mnt/c/workspace/resume/content/education",
+        "path": "content/education",
       },
       "resolve": "gatsby-source-filesystem",
     },
     Object {
       "options": Object {
         "name": "experience",
-        "path": "/mnt/c/workspace/resume/content/experience",
+        "path": "content/experience",
       },
       "resolve": "gatsby-source-filesystem",
     },
     Object {
       "options": Object {
         "name": "skills",
-        "path": "/mnt/c/workspace/resume/content/skills",
+        "path": "content/skills",
       },
       "resolve": "gatsby-source-filesystem",
     },

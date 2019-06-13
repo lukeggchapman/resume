@@ -12,28 +12,28 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `src/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `education`,
-        path: `${__dirname}/content/education`,
+        path: `content/education`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `experience`,
-        path: `${__dirname}/content/experience`,
+        path: `content/experience`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `skills`,
-        path: `${__dirname}/content/skills`,
+        path: `content/skills`,
       },
     },
     `gatsby-transformer-remark`,
