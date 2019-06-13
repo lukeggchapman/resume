@@ -25,4 +25,9 @@ module.exports = {
       statements: 80,
     },
   },
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx,ts,tsx}',
+    '*.{js,jsx,ts,tsx}',
+    '!jest.config.js',
+  ],
 }
