@@ -30,7 +30,7 @@ Résumé created using [Gatsby framework](https://www.gatsbyjs.org/), [React](ht
     yarn develop
     ```
 
-    View rendered PDF in your browser at [http://localhost:8000/](http://localhost:8000/).
+    View client rendered PDF in your browser at [http://localhost:8000/](http://localhost:8000/).
 
 2.  **Run unit tests.**
 
@@ -49,7 +49,7 @@ Résumé created using [Gatsby framework](https://www.gatsbyjs.org/), [React](ht
       yarn serve
     ```
 
-    View pre-rendered PDF in your browser at [http://localhost:9000/](http://localhost:9000/).
+    View server rendered PDF in your browser at [http://localhost:9000/](http://localhost:9000/).
 
 ## :microscope: What's inside?
 

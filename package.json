@@ -52,6 +52,7 @@
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-preset-gatsby": "^0.1.11",
     "codeclimate-test-reporter": "^0.5.1",
+    "cypress": "^3.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5",
@@ -73,8 +74,10 @@
     "jest": "^24.7.1",
     "jest-emotion": "^10.0.10",
     "jest-enzyme": "^7.0.2",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.16.4",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "start-server-and-test": "^1.9.0"
   },
   "keywords": [
     "gatsby"
@@ -93,7 +96,11 @@
     "test:watch": "yarn test --watch",
     "coverage": "yarn test --ci --coverage",
     "type-check": "tsc --noEmit",
-    "ci": "yarn lint && yarn type-check && yarn coverage"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:e2e:ci": "start-server-and-test serve http://localhost:9000 cy:run",
+    "ci": "npm-run-all -p lint type-check coverage build"
   },
   "repository": {
     "type": "git",
