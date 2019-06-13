@@ -50,10 +50,7 @@ export interface FAIconProps {
 
 export default ({ icon, fab, far, fas }: FAIconProps & IconStyleProps) => {
   const faStyle =
-    (fab && styles.fab) ||
-    (far && styles.far) ||
-    (fas && styles.fas) ||
-    styles.far
+    (fab && styles.fab) || (far && styles.far) || (fas && styles.fas)
 
   return <Text style={[styles.icon, faStyle]}>{fa[icon]}</Text>
 }

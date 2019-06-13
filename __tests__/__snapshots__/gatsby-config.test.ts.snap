@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gatsby Config config has not changed 1`] = `
+Object {
+  "plugins": Array [
+    "gatsby-plugin-react-helmet",
+    Object {
+      "options": Object {
+        "name": "images",
+        "path": "/mnt/c/workspace/resume/src/images",
+      },
+      "resolve": "gatsby-source-filesystem",
+    },
+    Object {
+      "options": Object {
+        "name": "education",
+        "path": "/mnt/c/workspace/resume/content/education",
+      },
+      "resolve": "gatsby-source-filesystem",
+    },
+    Object {
+      "options": Object {
+        "name": "experience",
+        "path": "/mnt/c/workspace/resume/content/experience",
+      },
+      "resolve": "gatsby-source-filesystem",
+    },
+    Object {
+      "options": Object {
+        "name": "skills",
+        "path": "/mnt/c/workspace/resume/content/skills",
+      },
+      "resolve": "gatsby-source-filesystem",
+    },
+    "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-eslint",
+    Object {
+      "options": Object {
+        "display": "minimal-ui",
+        "icon": "src/images/chappo-icon.png",
+        "name": "luke-chapman-resume",
+        "short_name": "resume",
+        "start_url": "/",
+      },
+      "resolve": "gatsby-plugin-manifest",
+    },
+    Object {
+      "options": Object {
+        "pathToConfigModule": "src/utils/typography",
+      },
+      "resolve": "gatsby-plugin-typography",
+    },
+  ],
+  "siteMetadata": Object {
+    "author": "lukeggchapman",
+    "description": "Résumé PDF generated using Gatsby and React-PDF",
+    "title": "Luke Chapman Résumé",
+  },
+}
+`;

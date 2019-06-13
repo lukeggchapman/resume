@@ -51,7 +51,7 @@ function hastToPDF(node: Node): React.ReactNode {
   const type = node && node.type
 
   if (!type) {
-    throw new Error(`hastToPDF: Expected node, not ${node}`)
+    throw new Error(`hastToPDF: Called with invalid root node`)
   }
 
   switch (type) {

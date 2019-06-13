@@ -32,8 +32,8 @@ describe('SEO', () => {
     },
   })
 
-  const render = () => {
-    return shallow(<SEO {...baseProps} />)
+  const render = (props?: Partial<SEOProps>) => {
+    return shallow(<SEO {...{ ...baseProps, ...props }} />)
   }
 
   beforeEach(() => {
@@ -53,5 +53,15 @@ describe('SEO', () => {
 
     expect(useStaticQueryMock).toHaveBeenCalledTimes(1)
     expect(useStaticQueryMock.mock.calls[0][0]).toMatchSnapshot()
+  })
+
+  it('supports not passing keywords', () => {
+    const seo = render({ keywords: [] })
+
+    const keywordsMetadata = seo
+      .prop<NonNullable<SEOProps['meta']>>('meta')
+      .filter(metadata => metadata.name === 'keywords')
+
+    expect(keywordsMetadata).toEqual([])
   })
 })

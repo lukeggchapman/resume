@@ -4,7 +4,7 @@ import { View, Text } from '@react-pdf/renderer'
 import { uid } from 'react-uid'
 
 import { Root, Text as HastText } from 'hast-format'
-import hast2pdf from '../hastToPDF'
+import hastToPDF from '../hastToPDF'
 import BulletListPDF from '../components/PDFBulletList'
 
 const bullet1: HastText = {
@@ -89,9 +89,9 @@ const result = [
   <Text key={uid(hast.children[3])}>{`\n`}</Text>,
 ]
 
-describe('hast2pdf', () => {
+describe('hastToPDF', () => {
   it('transforms hast to react-pdf jsx', () => {
-    const PDF = shallow(<View>{hast2pdf(hast)}</View>)
+    const PDF = shallow(<View>{hastToPDF(hast)}</View>)
 
     expect(PDF.matchesElement(<View>{result}</View>)).toBeTruthy()
   })
@@ -105,6 +105,31 @@ describe('hast2pdf', () => {
       },
     }
 
-    expect(hast2pdf(emptyHast)).toEqual(undefined)
+    expect(hastToPDF(emptyHast)).toEqual(undefined)
+  })
+
+  it('throws error when called with invalid root object', () => {
+    expect(() => hastToPDF({} as any)).toThrowError(
+      `hastToPDF: Called with invalid root node`
+    )
+  })
+
+  it('throws error when called with unsupported node type', () => {
+    const type = 'random123'
+    expect(() => hastToPDF({ type })).toThrowError(
+      `hastToPDF: Cannot compile unknown node ${type}`
+    )
+  })
+
+  it('throws error when called with unsupported html element', () => {
+    const tagName = 'strong'
+    const element = {
+      type: 'element',
+      tagName,
+    }
+
+    expect(() => hastToPDF(element)).toThrowError(
+      `hastToPDF: No transform for html element ${tagName}`
+    )
   })
 })

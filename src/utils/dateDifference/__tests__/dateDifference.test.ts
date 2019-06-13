@@ -8,13 +8,13 @@ const testData = [
   },
   {
     startDate: '2010-01-01',
-    endDate: '2018-12-31',
-    result: '9 yrs',
+    endDate: '2010-12-31',
+    result: '1 yr',
   },
   {
     startDate: '2016-02-01',
-    endDate: '2019-01-04',
-    result: '2 yrs 11 mos',
+    endDate: '2017-01-04',
+    result: '11 mos',
   },
 ]
 

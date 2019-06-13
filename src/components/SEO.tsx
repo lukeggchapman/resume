@@ -10,12 +10,14 @@ import PropTypes from 'prop-types'
 import Helmet, { HelmetProps } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
+type MetaProps = NonNullable<HelmetProps['meta']>
+
 export interface SEOProps {
   title: string
   description: string
   lang: string
   keywords: string[]
-  meta: HelmetProps['meta']
+  meta: MetaProps
 }
 
 const SEO = ({ description, lang, meta, keywords, title }: SEOProps) => {
@@ -35,7 +37,7 @@ const SEO = ({ description, lang, meta, keywords, title }: SEOProps) => {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const test: HelmetProps['meta'] = [
+  const metaProps: MetaProps = [
     {
       name: `description`,
       content: metaDescription,
@@ -77,7 +79,7 @@ const SEO = ({ description, lang, meta, keywords, title }: SEOProps) => {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={test
+      meta={metaProps
         .concat(
           keywords.length > 0
             ? {
@@ -86,7 +88,7 @@ const SEO = ({ description, lang, meta, keywords, title }: SEOProps) => {
               }
             : []
         )
-        .concat(meta || [])}
+        .concat(meta)}
     />
   )
 }

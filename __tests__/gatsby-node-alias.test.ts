@@ -1,7 +1,11 @@
-import { graphql } from '../gatsby-node-alias'
+import { graphql, useStaticQuery } from '../gatsby-node-alias'
 
 describe('gatsby-node-alias', () => {
-  it('returns original string', () => {
+  it('mocks graphql', () => {
     expect(graphql`someQuery`).toEqual('someQuery')
+  })
+
+  it('mocks useStaticQuery', () => {
+    expect(useStaticQuery()).toEqual(undefined)
   })
 })

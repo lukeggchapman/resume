@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`resume query should match snapshot 1`] = `
+Array [
+  "
+  query {
+    education: allMarkdownRemark(
+      filter: { fields: { sourceInstanceName: { eq: \\"education\\" } } }
+      sort: { fields: [frontmatter___endDate], order: DESC }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            degree
+            school
+            startDate
+            endDate
+            logo {
+              publicURL
+            }
+          }
+        }
+      }
+    }
+    experience: allMarkdownRemark(
+      filter: { fields: { sourceInstanceName: { eq: \\"experience\\" } } }
+      sort: { fields: [frontmatter___endDate], order: DESC }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            role
+            company
+            startDate
+            endDate
+            logo {
+              publicURL
+            }
+          }
+        }
+      }
+    }
+    skills: allSkillsJson {
+      edges {
+        node {
+          advanced
+          intermediate
+          beginner
+        }
+      }
+    }
+  }
+",
+]
+`;
