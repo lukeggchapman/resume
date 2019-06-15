@@ -1,30 +1,35 @@
 import React from 'react'
 
 import hastToPDF from 'utils/hastToPDF'
-import ContentItem from '../components/ContentItem'
+import mdToHast from 'utils/mdToHast'
+import ContentItem from 'components/ContentItem'
+import macquarieData from 'content/education/2015-macquarie.md'
+import macquarieLogo from 'content/education/macquarie-uni.png'
 
-const Experience = ({ data }: any) => {
+const experienceData = [
+  {
+    frontmatter: macquarieData.data,
+    logo: macquarieLogo,
+    htmlAst: mdToHast(macquarieData.content),
+  },
+]
+
+const Experience = () => {
   return (
     <>
-      {data.edges.map(({ node }: any) => {
-        const {
-          school,
-          degree,
-          logo: { publicURL: logoURL },
-          startDate,
-          endDate,
-        } = node.frontmatter
+      {experienceData.map(({ frontmatter, logo, htmlAst }) => {
+        const { school, degree, startDate, endDate } = frontmatter
 
         return (
           <ContentItem
             key={school}
             title={school}
             subTitle={degree}
-            logo={logoURL}
+            logo={logo}
             startDate={startDate}
             endDate={endDate}
           >
-            {hastToPDF(node.htmlAst)}
+            {hastToPDF(htmlAst)}
           </ContentItem>
         )
       })}

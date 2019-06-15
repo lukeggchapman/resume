@@ -11,7 +11,7 @@ import {
 import typography, { FAIcon } from 'components/typography'
 import Section from 'components/Section'
 import Experience from 'sections/Experience'
-// import Education from './components/Education'
+import Education from 'sections/Education'
 import Skills from 'sections/Skills'
 
 const stylesObj = {
@@ -74,9 +74,9 @@ const ResumeDocument = () => {
             <Section title="Experience">
               <Experience />
             </Section>
-            {/* <Section title="Education">
-              <Education data={data.education} />
-            </Section> */}
+            <Section title="Education">
+              <Education />
+            </Section>
           </View>
           <View style={styles.sidePanel}>
             <Section title="Skills">

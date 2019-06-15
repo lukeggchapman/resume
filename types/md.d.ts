@@ -1,4 +1,11 @@
 declare module '*.md' {
-  const value: string
+  const value: {
+    content: string
+    data: {
+      [key: string]: string
+    }
+    isEmpty: boolean
+  }
+
   export = value
 }

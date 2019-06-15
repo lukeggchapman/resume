@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        use: 'remark-loader',
+        use: 'gray-matter-loader',
       },
     ],
   },
