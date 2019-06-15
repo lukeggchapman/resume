@@ -26,12 +26,7 @@ module.exports = {
     'import/parsers': {
       '@typescript-eslint/parser': tsExtensions,
     },
-    'import/resolver': {
-      node: {
-        extensions: allExtensions,
-        paths: ['./src'],
-      },
-    },
+    'import/resolver': 'webpack',
   },
   rules: {
     /**
