@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience renders correctly 1`] = `
+<Fragment>
+  <ContentItem
+    endDate="endDateTest1"
+    key="companyTest1"
+    logo="logoPublcUrlTest1"
+    startDate="startDateTest1"
+    subTitle="roleTest1"
+    title="companyTest1"
+  >
+    htmlAstTest1
+  </ContentItem>
+  <ContentItem
+    endDate="endDateTest2"
+    key="companyTest2"
+    logo="logoPublcUrlTest2"
+    startDate="startDateTest2"
+    subTitle="roleTest2"
+    title="companyTest2"
+  >
+    htmlAstTest2
+  </ContentItem>
+</Fragment>
+`;
