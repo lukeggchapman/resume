@@ -2,9 +2,8 @@
   "extends": "./tsconfig.prd.json",
   "compilerOptions": {
     "paths": {
-      "content/*": ["../content/*"],
       "luke-chapman-resume": ["."]
     }
   },
-  "include": ["types/**/*", "src/**/*", "dev/**/*"]
+  "include": ["src/**/*", "dev/**/*", "scripts/**/*", "dist/**/*"]
 }

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`experienceData should have the correct data 1`] = `
+Array [
+  Object {
+    "frontmatter": "assignarFrontmatterMock",
+    "htmlAst": "mdToHast(assignarContentMock)",
+    "logo": "learnosityLogoMock",
+  },
+  Object {
+    "frontmatter": "psyfariFrontmatterMock",
+    "htmlAst": "mdToHast(psyfariContentMock)",
+    "logo": "learnosityLogoMock",
+  },
+  Object {
+    "frontmatter": "learnosityFrontmatterMock",
+    "htmlAst": "mdToHast(learnosityContentMock)",
+    "logo": "learnosityLogoMock",
+  },
+]
+`;

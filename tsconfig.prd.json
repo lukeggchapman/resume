@@ -6,6 +6,7 @@
     "jsx": "preserve",
     "lib": ["dom", "es2015", "es2017"],
     "moduleResolution": "node",
+    "outDir": "./dist",
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -15,13 +16,11 @@
     "strict": true,
     "removeComments": false,
     "preserveConstEnums": true,
-    "noEmit": true,
+    "declaration": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
-    "resolveJsonModule": true,
-    "paths": {
-      "content/*": ["../content/*"]
-    }
+    "resolveJsonModule": true
   },
-  "include": ["types/**/*", "src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["src/**/__tests__/**/*", "src/**/__mocks__/**/*"]
 }
