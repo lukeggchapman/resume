@@ -9,7 +9,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9b5a073c72ef6a2c6b04/maintainability)](https://codeclimate.com/github/lukeggchapman/resume/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9b5a073c72ef6a2c6b04/test_coverage)](https://codeclimate.com/github/lukeggchapman/resume/test_coverage)
 
-Résumé created using [React](https://reactjs.org/), and [React-PDF](https://react-pdf.org) demonstracting my programming and codebase management abilities.
+Résumé created using [React](https://reactjs.org/), and [React-PDF](https://react-pdf.org) demonstracting my programming and codebase management abilities. The original implementation using [Gatsby Framework](https://www.gatsbyjs.org/) can be viewed on the [gatsby branch](../../tree/gatsby).
 
 ## :rocket: Quick start
 
@@ -48,6 +48,8 @@ Résumé created using [React](https://reactjs.org/), and [React-PDF](https://re
       yarn build
     ```
 
+    LukeChapman-Resume.pdf will be created in the `dist` folder.
+
 ## :microscope: What's inside?
 
 1.  **ESLint & Prettier combination**
@@ -68,7 +70,7 @@ Résumé created using [React](https://reactjs.org/), and [React-PDF](https://re
 
 4.  **Content management**
 
-    Content is seperated from the souce code in the [content directory](content), it is then loaded using webpack then transformed to a markdown abstract syntax tree (AST) then transformed into a HTML abstract syntax tree (or [HAST](https://github.com/syntax-tree/hast)) for which I've written a [basic transform](src/utils/hastToPDF/hastToPDF.tsx) to a format that can be used by React-PDF.
+    Content is seperated from the souce code in the [content directory](src/content), it is then loaded using webpack then transformed to a markdown abstract syntax tree (AST) then transformed into a HTML abstract syntax tree (or [HAST](https://github.com/syntax-tree/hast)) for which I've written a [basic transform](src/utils/hastToPDF/hastToPDF.tsx) to a format that can be used by React-PDF.
 
 5.  **React generated PDF**
 
