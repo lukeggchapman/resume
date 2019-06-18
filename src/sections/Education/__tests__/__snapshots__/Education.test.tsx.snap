@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Education renders correctly 1`] = `
-<Fragment>
+<Section
+  title="Education"
+>
   <ContentItem
     endDate="endDateTest1"
     key="schoolTest1"
@@ -12,5 +14,5 @@ exports[`Education renders correctly 1`] = `
   >
     htmlAstTest1
   </ContentItem>
-</Fragment>
+</Section>
 `;

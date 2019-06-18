@@ -2,12 +2,13 @@ import React from 'react'
 
 import hastToPDF from 'utils/hastToPDF'
 import ContentItem from 'components/ContentItem'
+import Section from 'components/Section'
 
 import educationData from './educationData'
 
 const Education = () => {
   return (
-    <>
+    <Section title="Education">
       {educationData.map(({ frontmatter, logo, htmlAst }) => {
         const { school, degree, startDate, endDate } = frontmatter
 
@@ -24,7 +25,7 @@ const Education = () => {
           </ContentItem>
         )
       })}
-    </>
+    </Section>
   )
 }
 

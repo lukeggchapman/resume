@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Section renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginBottom": 10,
+    }
+  }
+>
+  <Text
+    style="h1"
+  >
+    Luke Chapman
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "right",
+        "fontFamily": "PT Sans",
+      }
+    }
+  >
+    <Text>
+      <FAIcon
+        fas={true}
+        icon="envelope"
+      />
+       
+      <Link
+        src="mailto:lukeggchapman@gmail.com"
+      >
+        LukeGGChapman@gmail.com
+      </Link>
+    </Text>
+    <Text>
+      <FAIcon
+        fas={true}
+        icon="phone"
+      />
+       
+      <Link
+        src="tel:+61401516361"
+      >
+        0401 516 361
+      </Link>
+    </Text>
+  </View>
+</View>
+`;

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Section renders correctly 1`] = `
+<View
+  style={
+    Array [
+      "h4",
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+    ]
+  }
+>
+  <Text>
+    <FAIcon
+      fab={true}
+      icon="github"
+    />
+     
+    <Link
+      src="https://github.com/lukeggchapman"
+    >
+      lukeggchapman
+    </Link>
+  </Text>
+  <Text>
+    <FAIcon
+      fab={true}
+      icon="linkedin"
+    />
+     
+    <Link
+      src="https://www.linkedin.com/in/lukeggchapman"
+    >
+      lukeggchapman
+    </Link>
+  </Text>
+  <Text>
+    <FAIcon
+      fab={true}
+      icon="react"
+    />
+     
+    Created with React.
+     Source code 
+    <Link
+      src="https://bit.ly/2VgE4pH"
+    >
+      https://bit.ly/2VgE4pH
+    </Link>
+  </Text>
+</View>
+`;

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Skills renders correctly 1`] = `
-<Fragment>
+<Section
+  title="Skills"
+>
   <Skill
     key="beginner"
     skills={
@@ -32,5 +34,5 @@ exports[`Skills renders correctly 1`] = `
     }
     title="advanced"
   />
-</Fragment>
+</Section>
 `;

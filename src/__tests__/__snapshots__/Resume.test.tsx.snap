@@ -17,55 +17,7 @@ exports[`Document renders correctly 1`] = `
       ]
     }
   >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "marginBottom": 10,
-        }
-      }
-    >
-      <Text
-        style="h1"
-      >
-        Luke Chapman
-      </Text>
-      <View
-        style={
-          Object {
-            "alignItems": "right",
-            "fontFamily": "PT Sans",
-          }
-        }
-      >
-        <Text>
-          <FAIcon
-            fas={true}
-            icon="envelope"
-          />
-           
-          <Link
-            src="mailto:lukeggchapman@gmail.com"
-          >
-            LukeGGChapman@gmail.com
-          </Link>
-        </Text>
-        <Text>
-          <FAIcon
-            fas={true}
-            icon="phone"
-          />
-           
-          <Link
-            src="tel:+61401516361"
-          >
-            +61 401 516 361
-          </Link>
-        </Text>
-      </View>
-    </View>
+    <_default />
     <View
       style={
         Object {
@@ -81,16 +33,8 @@ exports[`Document renders correctly 1`] = `
           }
         }
       >
-        <Section
-          title="Experience"
-        >
-          <Experience />
-        </Section>
-        <Section
-          title="Education"
-        >
-          <Education />
-        </Section>
+        <Experience />
+        <Education />
       </View>
       <View
         style={
@@ -100,63 +44,10 @@ exports[`Document renders correctly 1`] = `
           }
         }
       >
-        <Section
-          title="Skills"
-        >
-          <Skills />
-        </Section>
+        <Skills />
       </View>
     </View>
-    <View
-      style={
-        Array [
-          "h4",
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          },
-        ]
-      }
-    >
-      <Text>
-        <FAIcon
-          fab={true}
-          icon="github"
-        />
-         
-        <Link
-          src="https://github.com/lukeggchapman"
-        >
-          lukeggchapman
-        </Link>
-      </Text>
-      <Text>
-        <FAIcon
-          fab={true}
-          icon="linkedin"
-        />
-         
-        <Link
-          src="https://www.linkedin.com/in/lukeggchapman"
-        >
-          lukeggchapman
-        </Link>
-      </Text>
-      <Text>
-        <FAIcon
-          fab={true}
-          icon="react"
-        />
-         
-        Created with React.
-         Source code 
-        <Link
-          src="https://bit.ly/2VgE4pH"
-        >
-          https://bit.ly/2VgE4pH
-        </Link>
-      </Text>
-    </View>
+    <_default />
   </Page>
 </Document>
 `;
