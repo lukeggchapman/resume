@@ -1,6 +1,8 @@
 import React from 'react'
-import typography, { FAIcon } from 'components/typography'
 import { StyleSheet, View, Text, Link as PDFLink } from '@react-pdf/renderer'
+import IconLink from 'components/IconLink'
+import typography from 'components/typography'
+import FAIcon from 'components/FAIcon'
 
 const stylesObj = {
   footer: {
@@ -12,18 +14,16 @@ const styles = StyleSheet.create(stylesObj)
 
 export default () => (
   <View style={[typography.h4, styles.footer]}>
-    <Text>
-      <FAIcon icon="github" fab />
-      {` `}
-      <PDFLink src="https://github.com/lukeggchapman">lukeggchapman</PDFLink>
-    </Text>
-    <Text>
-      <FAIcon icon="linkedin" fab />
-      {` `}
-      <PDFLink src="https://www.linkedin.com/in/lukeggchapman">
-        lukeggchapman
-      </PDFLink>
-    </Text>
+    <IconLink src="https://github.com/lukeggchapman" icon="github" fab>
+      lukeggchapman
+    </IconLink>
+    <IconLink
+      src="https://www.linkedin.com/in/lukeggchapman"
+      icon="linkedin"
+      fab
+    >
+      lukeggchapman
+    </IconLink>
     <Text>
       <FAIcon icon="react" fab />
       {` `}

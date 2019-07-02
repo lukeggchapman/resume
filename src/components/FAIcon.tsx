@@ -9,8 +9,8 @@
 import React from 'react'
 import { Text, StyleSheet } from '@react-pdf/renderer'
 
-import './fonts/fontawesome'
-import fa from './fonts/fontawesome/faUnicode.json'
+import './typography/fonts/fontawesome'
+import fa from './typography/fonts/fontawesome/faUnicode.json'
 
 export const styles = StyleSheet.create({
   icon: {
@@ -44,9 +44,10 @@ export type IconStyleProps =
       fas: true
     }
 
-export interface FAIconProps {
+export interface FAIconPropsCommon {
   icon: keyof typeof fa
 }
+export type FAIconProps = FAIconPropsCommon & IconStyleProps
 
 const getTrueKey = (obj: IconStyleProps) => {
   const keys = (Object.keys(obj) as unknown) as (keyof IconStyleProps)[]
@@ -54,8 +55,10 @@ const getTrueKey = (obj: IconStyleProps) => {
   return keys.find(key => !!obj[key]) as keyof IconStyleProps
 }
 
-export default ({ icon, ...iconStyleProps }: FAIconProps & IconStyleProps) => {
+const FAIcon = ({ icon, ...iconStyleProps }: FAIconProps) => {
   const faStyle = styles[getTrueKey(iconStyleProps)]
 
   return <Text style={[styles.icon, faStyle]}>{fa[icon]}</Text>
 }
+
+export default FAIcon

@@ -1,6 +1,7 @@
 import React from 'react'
-import { StyleSheet, View, Text, Link as PDFLink } from '@react-pdf/renderer'
-import typography, { FAIcon } from 'components/typography'
+import { StyleSheet, View, Text } from '@react-pdf/renderer'
+import typography from 'components/typography'
+import IconLink from 'components/IconLink'
 
 const stylesObj = {
   header: {
@@ -20,18 +21,12 @@ export default () => (
   <View style={styles.header}>
     <Text style={typography.h1}>Luke Chapman</Text>
     <View style={styles.info}>
-      <Text>
-        <FAIcon icon="envelope" fas />
-        {` `}
-        <PDFLink src="mailto:lukeggchapman@gmail.com">
-          LukeGGChapman@gmail.com
-        </PDFLink>
-      </Text>
-      <Text>
-        <FAIcon icon="phone" fas />
-        {` `}
-        <PDFLink src="tel:+61401516361">0401 516 361</PDFLink>
-      </Text>
+      <IconLink src="mailto:lukeggchapman@gmail.com" icon="envelope" fas>
+        LukeGGChapman@gmail.com
+      </IconLink>
+      <IconLink src="tel:+61401516361" icon="phone" fas>
+        0401 516 361
+      </IconLink>
     </View>
   </View>
 )

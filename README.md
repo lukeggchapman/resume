@@ -78,4 +78,4 @@ Résumé created using [React](https://reactjs.org/), and [React-PDF](https://re
 
 6.  **Customised typography**
 
-    The final resume PDF uses 4 open licensed fonts that have been configured for use in React-PDF. 3 text fonts used for the [body and headings](src/components/typography/typography.ts), and Font Awesome Free for [icons](src/components/typography/FAIcon.tsx).
+    The final resume PDF uses 4 open licensed fonts that have been configured for use in React-PDF. 3 text fonts used for the [body and headings](src/components/typography/typography.ts), and Font Awesome Free for [icons](src/components/FAIcon.tsx).

@@ -1,9 +1,9 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import FAIcon, { FAIconProps, styles } from '../FAIcon'
+import FAIcon, { FAIconPropsCommon, styles } from '../FAIcon'
 
-const baseProps: FAIconProps = {
+const baseProps: FAIconPropsCommon = {
   icon: 'envelope',
 }
 

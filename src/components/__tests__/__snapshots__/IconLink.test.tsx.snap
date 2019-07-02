@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconLink renders correctly 1`] = `
+<Text>
+  <FAIcon
+    iconProps={
+      Object {
+        "far": true,
+        "icon": "envelope",
+      }
+    }
+  />
+   
+  <Link
+    src="srcTest"
+  >
+    childrenTest
+  </Link>
+</Text>
+`;

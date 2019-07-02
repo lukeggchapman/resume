@@ -24,30 +24,20 @@ exports[`Header Section renders correctly 1`] = `
       }
     }
   >
-    <Text>
-      <FAIcon
-        fas={true}
-        icon="envelope"
-      />
-       
-      <Link
-        src="mailto:lukeggchapman@gmail.com"
-      >
-        LukeGGChapman@gmail.com
-      </Link>
-    </Text>
-    <Text>
-      <FAIcon
-        fas={true}
-        icon="phone"
-      />
-       
-      <Link
-        src="tel:+61401516361"
-      >
-        0401 516 361
-      </Link>
-    </Text>
+    <IconLink
+      fas={true}
+      icon="envelope"
+      src="mailto:lukeggchapman@gmail.com"
+    >
+      LukeGGChapman@gmail.com
+    </IconLink>
+    <IconLink
+      fas={true}
+      icon="phone"
+      src="tel:+61401516361"
+    >
+      0401 516 361
+    </IconLink>
   </View>
 </View>
 `;

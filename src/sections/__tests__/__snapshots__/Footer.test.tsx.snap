@@ -12,30 +12,20 @@ exports[`Footer Section renders correctly 1`] = `
     ]
   }
 >
-  <Text>
-    <FAIcon
-      fab={true}
-      icon="github"
-    />
-     
-    <Link
-      src="https://github.com/lukeggchapman"
-    >
-      lukeggchapman
-    </Link>
-  </Text>
-  <Text>
-    <FAIcon
-      fab={true}
-      icon="linkedin"
-    />
-     
-    <Link
-      src="https://www.linkedin.com/in/lukeggchapman"
-    >
-      lukeggchapman
-    </Link>
-  </Text>
+  <IconLink
+    fab={true}
+    icon="github"
+    src="https://github.com/lukeggchapman"
+  >
+    lukeggchapman
+  </IconLink>
+  <IconLink
+    fab={true}
+    icon="linkedin"
+    src="https://www.linkedin.com/in/lukeggchapman"
+  >
+    lukeggchapman
+  </IconLink>
   <Text>
     <FAIcon
       fab={true}
