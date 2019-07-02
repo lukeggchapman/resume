@@ -36,6 +36,8 @@ module.exports = {
     /**
      * @description rules of eslint official
      */
+    complexity: ["error", 5], // same as code climate
+
     'import/prefer-default-export': 'off', // Allow single Named-export
 
     'import/no-unresolved': [

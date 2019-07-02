@@ -14,8 +14,8 @@ const dateDifference = (startDate: string, endDate: string) => {
   const months = total % 12
 
   return [
-    (years && `${years} yr${years > 1 ? 's' : ''}`) || undefined,
-    (months && `${months} mo${months > 1 ? 's' : ''}`) || undefined,
+    years && `${years} yr${years > 1 ? 's' : ''}`,
+    months && `${months} mo${months > 1 ? 's' : ''}`,
   ]
     .filter(string => !!string)
     .join(' ')

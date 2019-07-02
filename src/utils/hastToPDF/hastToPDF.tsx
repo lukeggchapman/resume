@@ -47,6 +47,10 @@ const handlers = {
   },
 }
 
+function isHandledType(type: string): type is keyof typeof handlers {
+  return Object.keys(handlers).indexOf(type) !== -1
+}
+
 function hastToPDF(node: Node): React.ReactNode {
   const type = node && node.type
 
@@ -54,16 +58,12 @@ function hastToPDF(node: Node): React.ReactNode {
     throw new Error(`hastToPDF: Called with invalid root node`)
   }
 
-  switch (type) {
-    case 'root':
-      return handlers.root(node as Root)
-    case 'text':
-      return handlers.text(node as HastText)
-    case 'element':
-      return handlers.element(node as Element)
-    default:
-      throw new Error(`hastToPDF: Cannot compile unknown node ${type}`)
+  if (!isHandledType(type)) {
+    throw new Error(`hastToPDF: Cannot compile unknown node ${type}`)
   }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return handlers[type](node as any)
 }
 
 export default hastToPDF

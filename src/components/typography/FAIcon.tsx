@@ -48,9 +48,14 @@ export interface FAIconProps {
   icon: keyof typeof fa
 }
 
-export default ({ icon, fab, far, fas }: FAIconProps & IconStyleProps) => {
-  const faStyle =
-    (fab && styles.fab) || (far && styles.far) || (fas && styles.fas)
+const getTrueKey = (obj: IconStyleProps) => {
+  const keys = (Object.keys(obj) as unknown) as (keyof IconStyleProps)[]
+
+  return keys.find(key => !!obj[key]) as keyof IconStyleProps
+}
+
+export default ({ icon, ...iconStyleProps }: FAIconProps & IconStyleProps) => {
+  const faStyle = styles[getTrueKey(iconStyleProps)]
 
   return <Text style={[styles.icon, faStyle]}>{fa[icon]}</Text>
 }
