@@ -43,7 +43,7 @@ Resume created using [React](https://reactjs.org/), and [React-PDF](https://reac
     Navigate into the resume directory.
 
     ```sh
-      npm run build
+    npm run build
     ```
 
     LukeChapman-Resume.pdf will be created in the `dist` folder.
