@@ -8,8 +8,8 @@ import { differenceInMonths, addDays } from 'date-fns'
  * @param endDate date string
  */
 const dateDifference = (startDate: string, endDate: string) => {
-  const endDateAdd1 = addDays(endDate, 1) // Most contracts will end on the last day of the month
-  const total = differenceInMonths(endDateAdd1, startDate)
+  const endDateAdd1 = addDays(new Date(endDate), 2) // Most contracts will end on the last day of the month
+  const total = differenceInMonths(endDateAdd1, new Date(startDate))
   const years = Math.floor(total / 12)
   const months = total % 12
 
@@ -17,7 +17,7 @@ const dateDifference = (startDate: string, endDate: string) => {
     years && `${years} yr${years > 1 ? 's' : ''}`,
     months && `${months} mo${months > 1 ? 's' : ''}`,
   ]
-    .filter(string => !!string)
+    .filter((string) => !!string)
     .join(' ')
 }
 

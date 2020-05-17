@@ -8,7 +8,6 @@ jest.mock(
     virtual: true,
   }
 )
-jest.mock('content/experience/assignar.jpg', () => 'assignarLogoMock')
 jest.mock(
   'content/experience/2018-psyfari.md',
   () => ({ data: 'psyfariFrontmatterMock', content: 'psyfariContentMock' }),
@@ -16,7 +15,6 @@ jest.mock(
     virtual: true,
   }
 )
-jest.mock('content/experience/psyfari.png', () => 'psyfariLogoMock')
 jest.mock(
   'content/experience/2015-learnosity.md',
   () => ({
@@ -27,7 +25,6 @@ jest.mock(
     virtual: true,
   }
 )
-jest.mock('content/experience/learnosity.png', () => 'learnosityLogoMock')
 
 describe('experienceData', () => {
   it('should have the correct data', () => {

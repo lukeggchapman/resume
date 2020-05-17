@@ -8,7 +8,7 @@ import Education from 'sections/Education'
 import Skills from 'sections/Skills'
 import Footer from 'sections/Footer'
 
-const stylesObj = {
+const styles = StyleSheet.create({
   page: {
     flexDirection: 'column',
     backgroundColor: 'white',
@@ -25,8 +25,7 @@ const stylesObj = {
     flex: 1,
     marginLeft: 10,
   },
-}
-const styles = StyleSheet.create(stylesObj)
+})
 
 const ResumeDocument = () => {
   return (

@@ -3,12 +3,8 @@
 exports[`IconLink renders correctly 1`] = `
 <Text>
   <FAIcon
-    iconProps={
-      Object {
-        "far": true,
-        "icon": "envelope",
-      }
-    }
+    far={true}
+    icon="envelope"
   />
    
   <Link

@@ -19,7 +19,7 @@ exports[`Header Section renders correctly 1`] = `
   <View
     style={
       Object {
-        "alignItems": "right",
+        "alignItems": "flex-end",
         "fontFamily": "PT Sans",
       }
     }

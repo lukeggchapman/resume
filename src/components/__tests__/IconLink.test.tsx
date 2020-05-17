@@ -5,11 +5,9 @@ import IconLink, { IconLinkProps } from '../IconLink'
 
 const baseProps: IconLinkProps = {
   src: 'srcTest',
-  iconProps: {
-    far: true,
-    icon: 'envelope',
-  },
   children: 'childrenTest',
+  far: true,
+  icon: 'envelope',
 }
 
 describe('IconLink', () => {

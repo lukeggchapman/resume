@@ -44,7 +44,7 @@ export interface PDFBulletListProps {
 
 const PDFBulletList = ({ list }: PDFBulletListProps) => (
   <View style={styles.column}>
-    {list.map(listItem => (
+    {list.map((listItem) => (
       <PDFLi content={listItem} key={uid(listItem)} />
     ))}
   </View>

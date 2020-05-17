@@ -2,7 +2,7 @@
 
 declare module 'mdast-util-to-hast' {
   import { Root as MdastRoot } from 'mdast'
-  import { Root as HastRoot } from 'hast-format'
+  import { Root as HastRoot } from 'hast'
 
   const value: (mdAst: MdastRoot) => HastRoot
 

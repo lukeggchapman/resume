@@ -32,12 +32,7 @@ describe('ContentItem', () => {
   it('not passing children aligns content with logo', () => {
     const contentItem = render({ children: undefined })
 
-    expect(
-      contentItem
-        .find(View)
-        .at(2)
-        .prop('style')
-    ).toEqual(
+    expect(contentItem.find(View).at(2).prop('style')).toEqual(
       expect.arrayContaining([
         {
           alignSelf: 'center',

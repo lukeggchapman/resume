@@ -24,7 +24,7 @@ export interface SkillProps {
 const Skill = ({ title, skills }: SkillProps) => (
   <View style={styles.container}>
     <Text style={[typography.h3, styles.title]}>{title}</Text>
-    {skills.map(skill => (
+    {skills.map((skill) => (
       <Text key={skill} style={[typography.h4, styles.skill]}>
         {skill}
       </Text>

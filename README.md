@@ -15,19 +15,17 @@ Resume created using [React](https://reactjs.org/), and [React-PDF](https://reac
 
 1.  **Run development environment.**
 
-    This project uses the Yarn package manager. [Install it if you don't have it already](https://yarnpkg.com/en/docs/install).
-
     Navigate into the resume directory.
     Install project dependencies:
 
     ```sh
-    yarn
+    npm install
     ```
 
     Run webpack development environment:
 
     ```sh
-    yarn develop
+    npm run develop
     ```
 
     Your browser should open to [http://localhost:8080/](http://localhost:8080/).
@@ -37,7 +35,7 @@ Resume created using [React](https://reactjs.org/), and [React-PDF](https://reac
     Navigate into the resume directory.
 
     ```sh
-    yarn test
+    npm test
     ```
 
 3.  **Compile PDF**
@@ -45,7 +43,7 @@ Resume created using [React](https://reactjs.org/), and [React-PDF](https://reac
     Navigate into the resume directory.
 
     ```sh
-      yarn build
+      npm run build
     ```
 
     LukeChapman-Resume.pdf will be created in the `dist` folder.

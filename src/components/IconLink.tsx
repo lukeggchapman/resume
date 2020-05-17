@@ -2,16 +2,12 @@ import React from 'react'
 import { Text, Link as PDFLink } from '@react-pdf/renderer'
 import FAIcon, { FAIconProps } from 'components/FAIcon'
 
-export interface IconLinkProps {
+export type IconLinkProps = FAIconProps & {
   src: string
   children: React.ReactNode
 }
 
-const IconLink: React.FC<IconLinkProps & FAIconProps> = ({
-  src,
-  children,
-  ...iconProps
-}) => (
+const IconLink: React.FC<IconLinkProps> = ({ src, children, ...iconProps }) => (
   <Text>
     <FAIcon {...iconProps} />
     {` `}
