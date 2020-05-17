@@ -7,12 +7,12 @@
  */
 
 import React from 'react'
-import { Text, StyleSheet } from '@react-pdf/renderer'
+import ReactPDF, { Text, StyleSheet } from '@react-pdf/renderer'
 
 import './typography/fonts/fontawesome'
 import fa from './typography/fonts/fontawesome/faUnicode.json'
 
-export const styles = StyleSheet.create({
+export const styles: ReactPDF.Styles = StyleSheet.create({
   icon: {
     fontFamily: 'Font Awesome 5 Free',
   },
@@ -52,7 +52,7 @@ export type FAIconProps = FAIconPropsCommon & IconStyleProps
 const getTrueKey = (obj: IconStyleProps) => {
   const keys = (Object.keys(obj) as unknown) as (keyof IconStyleProps)[]
 
-  return keys.find(key => !!obj[key]) as keyof IconStyleProps
+  return keys.find((key) => !!obj[key]) as keyof IconStyleProps
 }
 
 const FAIcon = ({ icon, ...iconStyleProps }: FAIconProps) => {

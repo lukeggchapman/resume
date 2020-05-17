@@ -15,7 +15,7 @@ exports[`ContentItem renders correctly 1`] = `
       Object {
         "alignItems": "center",
         "flex": 1,
-        "justifyItems": "center",
+        "justifyContent": "center",
         "paddingRight": 5,
       }
     }
@@ -37,7 +37,7 @@ exports[`ContentItem renders correctly 1`] = `
           "flex": 7,
         },
         Object {
-          "alignSelf": "normal",
+          "alignSelf": undefined,
         },
       ]
     }

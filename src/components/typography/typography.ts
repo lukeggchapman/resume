@@ -1,4 +1,4 @@
-import { StyleSheet } from '@react-pdf/renderer'
+import ReactPDF, { StyleSheet } from '@react-pdf/renderer'
 
 import './fonts/crimsontext'
 import './fonts/oswald'
@@ -31,4 +31,4 @@ export default StyleSheet.create({
     fontSize: 10,
     color: '#555',
   },
-})
+}) as ReactPDF.Styles

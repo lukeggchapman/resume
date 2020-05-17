@@ -4,13 +4,12 @@ import IconLink from 'components/IconLink'
 import typography from 'components/typography'
 import FAIcon from 'components/FAIcon'
 
-const stylesObj = {
+const styles = StyleSheet.create({
   footer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-}
-const styles = StyleSheet.create(stylesObj)
+})
 
 export default () => (
   <View style={[typography.h4, styles.footer]}>

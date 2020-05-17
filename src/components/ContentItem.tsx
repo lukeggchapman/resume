@@ -1,12 +1,12 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image } from '@react-pdf/renderer'
+import ReactPDF, { View, Text, StyleSheet, Image } from '@react-pdf/renderer'
 import { format } from 'date-fns'
 
 import hr from 'images/hr.png'
 import dateDifference from 'utils/dateDifference'
 import typography from './typography'
 
-export const styles = StyleSheet.create({
+export const styles: ReactPDF.Styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     fontSize: 10,
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   leftColumn: {
     flex: 1,
     alignItems: 'center',
-    justifyItems: 'center',
+    justifyContent: 'center',
     paddingRight: 5,
   },
   rightColumn: {
@@ -69,7 +69,9 @@ const ContentItem = ({
     <View
       style={[
         styles.rightColumn,
-        { alignSelf: children ? 'normal' : 'center' },
+        {
+          alignSelf: children ? undefined : ('center' as 'center'),
+        },
       ]}
     >
       <Text style={typography.h3}>{title}</Text>
@@ -77,9 +79,9 @@ const ContentItem = ({
         <Text>{subTitle}</Text>
         <View>
           <Text>
-            {`${format(startDate, 'MMM, YYYY')} \u2013 ${format(
-              endDate,
-              'MMM, YYYY'
+            {`${format(new Date(startDate), 'MMM, yyyy')} \u2013 ${format(
+              new Date(endDate),
+              'MMM, yyyy'
             )}`}
             {` \u00B7 `}
             {dateDifference(startDate, endDate)}

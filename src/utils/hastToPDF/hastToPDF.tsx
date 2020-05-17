@@ -7,14 +7,14 @@ import React from 'react'
 import { uid } from 'react-uid'
 import { View, Text } from '@react-pdf/renderer'
 
-import { Node, Root, Text as HastText, Element } from 'hast-format'
+import { Node, Root, Text as HastText, Element } from 'hast'
 import PDFBulletList from './components/PDFBulletList'
 
 const getBulletList = (element: Element) => {
   return element.children
     .filter((node): node is Element => node.tagName === 'li')
-    .map(node => node.children)
-    .map(children => children.map(node => hastToPDF(node)))
+    .map((node) => node.children)
+    .map((children) => children.map((node) => hastToPDF(node)))
 }
 
 const handlers = {

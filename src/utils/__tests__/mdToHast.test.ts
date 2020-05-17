@@ -12,7 +12,8 @@ jest.mock('remark', () => {
 })
 jest.mock('mdast-util-to-hast', () => jest.fn())
 
-const parseMock = new Remark().parse
+const parseMock = new Remark().parse as jest.Mock
+const toHASTMock = toHAST as jest.Mock
 
 describe('mdToHast', () => {
   beforeEach(() => {
@@ -32,7 +33,7 @@ describe('mdToHast', () => {
     const hast = 'HastTest'
 
     parseMock.mockReturnValue(mdAst)
-    toHAST.mockReturnValue(hast)
+    toHASTMock.mockReturnValue(hast)
 
     const result = mdToHast(md)
 

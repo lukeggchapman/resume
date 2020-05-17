@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import { View, Text } from '@react-pdf/renderer'
 import { uid } from 'react-uid'
 
-import { Root, Text as HastText } from 'hast-format'
+import { Root, Text as HastText } from 'hast'
 import hastToPDF from '../hastToPDF'
 import BulletListPDF from '../components/PDFBulletList'
 

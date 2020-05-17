@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from '@react-pdf/renderer'
 import typography from 'components/typography'
 import IconLink from 'components/IconLink'
 
-const stylesObj = {
+const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -11,11 +11,10 @@ const stylesObj = {
     marginBottom: 10,
   },
   info: {
-    alignItems: 'right',
+    alignItems: 'flex-end',
     fontFamily: 'PT Sans',
   },
-}
-const styles = StyleSheet.create(stylesObj)
+})
 
 export default () => (
   <View style={styles.header}>

@@ -34,24 +34,24 @@ module.exports = {
   },
   rules: {
     /**
-     * @description rules of eslint official
+     * rules of eslint official
      */
-    complexity: ["error", 5], // same as code climate
+    complexity: ['error', 5], // same as code climate
 
     'import/prefer-default-export': 'off', // Allow single Named-export
 
     'import/no-unresolved': [
       'error',
-      { commonjs: true, caseSensitive: true, ignore: ['hast-format'] },
-    ], // ignore hast-format as it's used only for type definitions
+      { commonjs: true, caseSensitive: true, ignore: ['hast'] },
+    ], // ignore hast as it's used only for type definitions
 
     /**
-     * @description rules of @typescript-eslint
+     * rules of @typescript-eslint
      */
     '@typescript-eslint/explicit-function-return-type': 'off', // annoying to force return type
 
     /**
-     * @description rules of eslint-plugin-react
+     * rules of eslint-plugin-react
      */
     'react/jsx-filename-extension': [
       'warn',
@@ -60,9 +60,10 @@ module.exports = {
       },
     ], // also want to use with ".tsx"
     'react/prop-types': 'off', // we're relying on TS prop interfaces for this
+    'react/jsx-props-no-spreading': 'off', // Using prop spreading in tests and HOCs
 
     /**
-     * @description rules of eslint-plugin-prettier
+     * rules of eslint-plugin-prettier
      */
     'prettier/prettier': [
       'error',
@@ -71,14 +72,21 @@ module.exports = {
         semi: false,
       },
     ],
+
+    /**
+     * rules to overwrite air-bnb
+     */
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
   overrides: [
-    {
-      files: ['*.js'], // gatsby framework node files
-      rules: {
-        '@typescript-eslint/no-var-requires': 'off', // gatsby still uses nodes default var require
-      },
-    },
     {
       files: ['*.test.ts', '*.test.tsx'], // jest test files
       rules: {
