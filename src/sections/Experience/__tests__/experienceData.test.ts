@@ -2,15 +2,15 @@ import experienceData from '../experienceData'
 
 jest.mock('utils/mdToHast', () => (md: string) => `mdToHast(${md})`)
 jest.mock(
-  'content/experience/2019-assignar.md',
-  () => ({ data: 'assignarFrontmatterMock', content: 'assignarContentMock' }),
+  'content/experience/2020-compono.md',
+  () => ({ data: 'componoFrontmatterMock', content: 'componoContentMock' }),
   {
     virtual: true,
   }
 )
 jest.mock(
-  'content/experience/2018-psyfari.md',
-  () => ({ data: 'psyfariFrontmatterMock', content: 'psyfariContentMock' }),
+  'content/experience/2019-assignar.md',
+  () => ({ data: 'assignarFrontmatterMock', content: 'assignarContentMock' }),
   {
     virtual: true,
   }
