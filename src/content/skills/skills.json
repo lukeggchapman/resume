@@ -9,7 +9,6 @@
     "Serverless",
     "Node.JS",
     "Express",
-    "AWS",
     "Firebase",
     "Scrum",
     "CI/CD",
@@ -18,6 +17,7 @@
     "CSS"
   ],
   "intermediate": [
+    "AWS",
     "Analytics",
     "Angular",
     "Jira",
