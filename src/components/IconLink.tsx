@@ -7,12 +7,14 @@ export type IconLinkProps = FAIconProps & {
   children: React.ReactNode
 }
 
-const IconLink: React.FC<IconLinkProps> = ({ src, children, ...iconProps }) => (
-  <Text>
-    <FAIcon {...iconProps} />
-    {` `}
-    <PDFLink src={src}>{children}</PDFLink>
-  </Text>
-)
+function IconLink({ src, children, ...iconProps }: IconLinkProps) {
+  return (
+    <Text>
+      <FAIcon {...iconProps} />
+      {` `}
+      <PDFLink src={src}>{children}</PDFLink>
+    </Text>
+  )
+}
 
 export default IconLink

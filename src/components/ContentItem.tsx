@@ -54,46 +54,52 @@ export interface ContentItemProps {
   children?: React.ReactNode
 }
 
-const ContentItem = ({
+function ContentItem({
   title,
   subTitle,
   logo,
   startDate,
   endDate,
   children,
-}: ContentItemProps) => (
-  <View style={styles.container}>
-    <View style={styles.leftColumn}>
-      <Image style={styles.logo} src={logo} safePath="." />
-    </View>
-    <View
-      style={[
-        styles.rightColumn,
-        {
-          alignSelf: children ? undefined : ('center' as 'center'),
-        },
-      ]}
-    >
-      <Text style={typography.h3}>{title}</Text>
-      <View style={[typography.h4, styles.subTitle]}>
-        <Text>{subTitle}</Text>
-        <View>
-          <Text>
-            {`${format(new Date(startDate), 'MMM, yyyy')} \u2013 ${format(
-              new Date(endDate),
-              'MMM, yyyy'
-            )}`}
-            {` \u00B7 `}
-            {dateDifference(startDate, endDate)}
-          </Text>
+}: ContentItemProps) {
+  return (
+    <View style={styles.container}>
+      <View style={styles.leftColumn}>
+        <Image style={styles.logo} src={logo} safePath="." />
+      </View>
+      <View
+        style={[
+          styles.rightColumn,
+          {
+            alignSelf: children ? undefined : ('center' as const),
+          },
+        ]}
+      >
+        <Text style={typography.h3}>{title}</Text>
+        <View style={[typography.h4, styles.subTitle]}>
+          <Text>{subTitle}</Text>
+          <View>
+            <Text>
+              {`${format(new Date(startDate), 'MMM, yyyy')} \u2013 ${format(
+                new Date(endDate),
+                'MMM, yyyy'
+              )}`}
+              {` \u00B7 `}
+              {dateDifference(startDate, endDate)}
+            </Text>
+          </View>
+        </View>
+        <View style={styles.contentContainer}>
+          {children && <View style={styles.content}>{children}</View>}
+          <Image style={styles.hr} src={hr} safePath="." />
         </View>
       </View>
-      <View style={styles.contentContainer}>
-        {children && <View style={styles.content}>{children}</View>}
-        <Image style={styles.hr} src={hr} safePath="." />
-      </View>
     </View>
-  </View>
-)
+  )
+}
+
+ContentItem.defaultProps = {
+  children: undefined,
+}
 
 export default ContentItem

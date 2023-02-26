@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import path from 'path'
 import { Configuration } from 'webpack'
 import merge from 'webpack-merge'

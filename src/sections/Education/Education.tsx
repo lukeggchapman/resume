@@ -6,7 +6,7 @@ import Section from 'components/Section'
 
 import educationData from './educationData'
 
-const Education = () => {
+function Education() {
   return (
     <Section title="Education">
       {educationData.map(({ frontmatter, logo, htmlAst }) => {

@@ -50,12 +50,12 @@ export interface FAIconPropsCommon {
 export type FAIconProps = FAIconPropsCommon & IconStyleProps
 
 const getTrueKey = (obj: IconStyleProps) => {
-  const keys = (Object.keys(obj) as unknown) as (keyof IconStyleProps)[]
+  const keys = Object.keys(obj) as unknown as (keyof IconStyleProps)[]
 
   return keys.find((key) => !!obj[key]) as keyof IconStyleProps
 }
 
-const FAIcon = ({ icon, ...iconStyleProps }: FAIconProps) => {
+function FAIcon({ icon, ...iconStyleProps }: FAIconProps) {
   const faStyle = styles[getTrueKey(iconStyleProps)]
 
   return <Text style={[styles.icon, faStyle]}>{fa[icon]}</Text>

@@ -1,13 +1,12 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import path from 'path'
 import merge from 'webpack-merge'
 import webpack, { Configuration } from 'webpack'
+import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 import common from './webpack.common'
 
-module.exports = merge<Configuration>(common, {
+module.exports = merge<Configuration & WebpackDevServerConfiguration>(common, {
   mode: 'development',
   entry: './dev/index.tsx',
   resolve: {
@@ -17,8 +16,7 @@ module.exports = merge<Configuration>(common, {
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.resolve(__dirname, 'dev'),
-    publicPath: '/',
+    static: path.resolve(__dirname, 'dev'),
     hot: true,
   },
   plugins: [

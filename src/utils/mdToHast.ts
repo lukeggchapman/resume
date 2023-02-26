@@ -1,4 +1,4 @@
-import {fromMarkdown} from 'mdast-util-from-markdown'
+import { fromMarkdown } from 'mdast-util-from-markdown'
 import toHAST from 'mdast-util-to-hast'
 
 const mdToHast = (md: string) => {

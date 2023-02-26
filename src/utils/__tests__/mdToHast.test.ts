@@ -1,4 +1,4 @@
-import {fromMarkdown} from 'mdast-util-from-markdown'
+import { fromMarkdown } from 'mdast-util-from-markdown'
 import toHAST from 'mdast-util-to-hast'
 
 import mdToHast from '../mdToHast'
@@ -7,8 +7,8 @@ jest.mock('mdast-util-from-markdown', () => {
   return {
     __esModule: true,
     fromMarkdown: jest.fn(),
-  };
-});
+  }
+})
 jest.mock('mdast-util-to-hast', () => jest.fn())
 
 const fromMarkdownMock = fromMarkdown as jest.Mock

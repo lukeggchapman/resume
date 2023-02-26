@@ -19,7 +19,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
   ],
   settings: {
     'import/extensions': allExtensions,
@@ -44,6 +43,8 @@ module.exports = {
       'error',
       { commonjs: true, caseSensitive: true, ignore: ['hast'] },
     ], // ignore hast as it's used only for type definitions
+
+    'no-restricted-exports': 0, // allow "export {default} from ..."
 
     /**
      * rules of @typescript-eslint

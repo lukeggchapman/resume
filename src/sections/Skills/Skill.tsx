@@ -21,15 +21,17 @@ export interface SkillProps {
   skills: string[]
 }
 
-const Skill = ({ title, skills }: SkillProps) => (
-  <View style={styles.container}>
-    <Text style={[typography.h3, styles.title]}>{title}</Text>
-    {skills.map((skill) => (
-      <Text key={skill} style={[typography.h4, styles.skill]}>
-        {skill}
-      </Text>
-    ))}
-  </View>
-)
+function Skill({ title, skills }: SkillProps) {
+  return (
+    <View style={styles.container}>
+      <Text style={[typography.h3, styles.title]}>{title}</Text>
+      {skills.map((skill) => (
+        <Text key={skill} style={[typography.h4, styles.skill]}>
+          {skill}
+        </Text>
+      ))}
+    </View>
+  )
+}
 
 export default Skill

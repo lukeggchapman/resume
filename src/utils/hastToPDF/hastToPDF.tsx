@@ -12,7 +12,10 @@ import PDFBulletList from './components/PDFBulletList'
 
 const getBulletList = (element: Element) => {
   return element.children
-    .filter((node): node is Element => node.type == 'element' && node.tagName === 'li')
+    .filter(
+      (node): node is Element =>
+        node.type === 'element' && node.tagName === 'li'
+    )
     .map((node) => node.children)
     .map((children) => children.map((node) => hastToPDF(node)))
 }

@@ -29,26 +29,30 @@ export interface PDFLiProps {
   content: React.ReactNode
 }
 
-const PDFLi = ({ content }: PDFLiProps) => (
-  <View style={styles.row}>
-    <View style={styles.bullet}>
-      <Text>{'\u2022 '}</Text>
+function PDFLi({ content }: PDFLiProps) {
+  return (
+    <View style={styles.row}>
+      <View style={styles.bullet}>
+        <Text>{'\u2022 '}</Text>
+      </View>
+      <View style={styles.bulletText}>{content}</View>
     </View>
-    <View style={styles.bulletText}>{content}</View>
-  </View>
-)
+  )
+}
 
 export interface PDFBulletListProps {
   list: React.ReactNode[]
 }
 
-const PDFBulletList = ({ list }: PDFBulletListProps) => (
-  <View style={styles.column}>
-    {list.map((listItem) => (
-      <PDFLi content={listItem} key={uid(listItem)} />
-    ))}
-  </View>
-)
+function PDFBulletList({ list }: PDFBulletListProps) {
+  return (
+    <View style={styles.column}>
+      {list.map((listItem) => (
+        <PDFLi content={listItem} key={uid(listItem)} />
+      ))}
+    </View>
+  )
+}
 
 export { PDFLi }
 export default PDFBulletList

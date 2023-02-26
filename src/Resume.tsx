@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
 })
 
-const ResumeDocument = () => {
+function ResumeDocument() {
   return (
     <Document title="Luke Chapman Résumé">
       <Page size="A4" style={[typography.body, styles.page]}>

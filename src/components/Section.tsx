@@ -8,11 +8,13 @@ export interface SectionProps {
   children: React.ReactNode
 }
 
-const Section = ({ title, children }: SectionProps) => (
-  <View>
-    <Text style={typography.h2}>{title}</Text>
-    {children}
-  </View>
-)
+function Section({ title, children }: SectionProps) {
+  return (
+    <View>
+      <Text style={typography.h2}>{title}</Text>
+      {children}
+    </View>
+  )
+}
 
 export default Section

@@ -16,16 +16,18 @@ const styles = StyleSheet.create({
   },
 })
 
-export default () => (
-  <View style={styles.header}>
-    <Text style={typography.h1}>Luke Chapman</Text>
-    <View style={styles.info}>
-      <IconLink src="mailto:lukeggchapman@gmail.com" icon="envelope" fas>
-        LukeGGChapman@gmail.com
-      </IconLink>
-      <IconLink src="tel:+61401516361" icon="phone" fas>
-        0401 516 361
-      </IconLink>
+export default function Header() {
+  return (
+    <View style={styles.header}>
+      <Text style={typography.h1}>Luke Chapman</Text>
+      <View style={styles.info}>
+        <IconLink src="mailto:lukeggchapman@gmail.com" icon="envelope" fas>
+          LukeGGChapman@gmail.com
+        </IconLink>
+        <IconLink src="tel:+61401516361" icon="phone" fas>
+          0401 516 361
+        </IconLink>
+      </View>
     </View>
-  </View>
-)
+  )
+}

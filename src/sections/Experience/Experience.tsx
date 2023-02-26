@@ -6,7 +6,7 @@ import Section from 'components/Section'
 
 import experienceData from './experienceData'
 
-const Experience = () => {
+function Experience() {
   return (
     <Section title="Experience">
       {experienceData.map(({ frontmatter, logo, htmlAst }) => {

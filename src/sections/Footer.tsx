@@ -11,24 +11,26 @@ const styles = StyleSheet.create({
   },
 })
 
-export default () => (
-  <View style={[typography.h4, styles.footer]}>
-    <IconLink src="https://github.com/lukeggchapman" icon="github" fab>
-      lukeggchapman
-    </IconLink>
-    <IconLink
-      src="https://www.linkedin.com/in/lukeggchapman"
-      icon="linkedin"
-      fab
-    >
-      lukeggchapman
-    </IconLink>
-    <Text>
-      <FAIcon icon="react" fab />
-      {` `}
-      Created with React.
-      {' Source code '}
-      <PDFLink src="https://bit.ly/2VgE4pH">https://bit.ly/2VgE4pH</PDFLink>
-    </Text>
-  </View>
-)
+export default function Footer() {
+  return (
+    <View style={[typography.h4, styles.footer]}>
+      <IconLink src="https://github.com/lukeggchapman" icon="github" fab>
+        lukeggchapman
+      </IconLink>
+      <IconLink
+        src="https://www.linkedin.com/in/lukeggchapman"
+        icon="linkedin"
+        fab
+      >
+        lukeggchapman
+      </IconLink>
+      <Text>
+        <FAIcon icon="react" fab />
+        {` `}
+        Created with React.
+        {' Source code '}
+        <PDFLink src="https://bit.ly/2VgE4pH">https://bit.ly/2VgE4pH</PDFLink>
+      </Text>
+    </View>
+  )
+}

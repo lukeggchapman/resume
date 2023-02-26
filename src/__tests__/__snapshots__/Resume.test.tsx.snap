@@ -17,7 +17,7 @@ exports[`Document renders correctly 1`] = `
       ]
     }
   >
-    <_default />
+    <Header />
     <View
       style={
         Object {
@@ -47,7 +47,7 @@ exports[`Document renders correctly 1`] = `
         <Skills />
       </View>
     </View>
-    <_default />
+    <Footer />
   </Page>
 </Document>
 `;
