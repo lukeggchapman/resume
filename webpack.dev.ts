@@ -2,12 +2,12 @@
 
 import path from 'path'
 import merge from 'webpack-merge'
-import webpack from 'webpack'
+import webpack, { Configuration } from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 import common from './webpack.common'
 
-module.exports = merge(common, {
+module.exports = merge<Configuration>(common, {
   mode: 'development',
   entry: './dev/index.tsx',
   resolve: {

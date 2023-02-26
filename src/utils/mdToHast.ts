@@ -1,10 +1,8 @@
-import Remark from 'remark'
+import {fromMarkdown} from 'mdast-util-from-markdown'
 import toHAST from 'mdast-util-to-hast'
 
-const remark = new Remark()
-
 const mdToHast = (md: string) => {
-  const markdownAST = remark.parse(md)
+  const markdownAST = fromMarkdown(md)
 
   return toHAST(markdownAST)
 }

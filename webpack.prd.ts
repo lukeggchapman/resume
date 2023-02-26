@@ -1,10 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import path from 'path'
+import { Configuration } from 'webpack'
 import merge from 'webpack-merge'
 import common from './webpack.common'
 
-module.exports = merge(common, {
+module.exports = merge<Configuration>(common, {
   mode: 'production',
   entry: './src',
   devtool: 'source-map',

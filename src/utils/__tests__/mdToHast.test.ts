@@ -1,18 +1,17 @@
-import Remark from 'remark'
+import {fromMarkdown} from 'mdast-util-from-markdown'
 import toHAST from 'mdast-util-to-hast'
 
 import mdToHast from '../mdToHast'
 
-jest.mock('remark', () => {
-  const parseMock = jest.fn()
-
-  return jest.fn().mockImplementation(() => ({
-    parse: parseMock,
-  }))
-})
+jest.mock('mdast-util-from-markdown', () => {
+  return {
+    __esModule: true,
+    fromMarkdown: jest.fn(),
+  };
+});
 jest.mock('mdast-util-to-hast', () => jest.fn())
 
-const parseMock = new Remark().parse as jest.Mock
+const fromMarkdownMock = fromMarkdown as jest.Mock
 const toHASTMock = toHAST as jest.Mock
 
 describe('mdToHast', () => {
@@ -24,7 +23,7 @@ describe('mdToHast', () => {
     const md = 'mdTest'
     mdToHast(md)
 
-    expect(parseMock).toHaveBeenCalledWith(md)
+    expect(fromMarkdownMock).toHaveBeenCalledWith(md)
   })
 
   it('transforms markdown ast to html ast', () => {
@@ -32,7 +31,7 @@ describe('mdToHast', () => {
     const mdAst = 'mdAstTest'
     const hast = 'HastTest'
 
-    parseMock.mockReturnValue(mdAst)
+    fromMarkdownMock.mockReturnValue(mdAst)
     toHASTMock.mockReturnValue(hast)
 
     const result = mdToHast(md)
