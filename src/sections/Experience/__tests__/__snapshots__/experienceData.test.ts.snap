@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`experienceData should have the correct data 1`] = `
-Array [
-  Object {
+[
+  {
     "frontmatter": "componoFrontmatterMock",
     "htmlAst": "mdToHast(componoContentMock)",
     "logo": "test-file-stub",
   },
-  Object {
+  {
     "frontmatter": "assignarFrontmatterMock",
     "htmlAst": "mdToHast(assignarContentMock)",
     "logo": "test-file-stub",
   },
-  Object {
+  {
     "frontmatter": "learnosityFrontmatterMock",
     "htmlAst": "mdToHast(learnosityContentMock)",
     "logo": "test-file-stub",

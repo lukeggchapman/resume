@@ -3,9 +3,9 @@
 exports[`Footer Section renders correctly 1`] = `
 <View
   style={
-    Array [
+    [
       "h4",
-      Object {
+      {
         "flexDirection": "row",
         "justifyContent": "space-between",
       },

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`educationData should have the correct data 1`] = `
-Array [
-  Object {
+[
+  {
     "frontmatter": "macquarieFrontmatterMock",
     "htmlAst": "mdToHast(macquarieContentMock)",
     "logo": "macquarieLogoMock",

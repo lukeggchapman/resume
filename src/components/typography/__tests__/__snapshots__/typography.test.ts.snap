@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PDF typography styles are unchanged 1`] = `
-Object {
-  "body": Object {
+{
+  "body": {
     "color": "#333",
     "fontFamily": "Crimson Text",
     "fontSize": 12,
   },
-  "h1": Object {
+  "h1": {
     "fontFamily": "Oswald",
     "fontSize": 24,
     "fontWeight": 700,
   },
-  "h2": Object {
+  "h2": {
     "borderBottom": "1 solid #333",
     "fontFamily": "Oswald",
     "fontSize": 16,
     "fontWeight": 900,
     "marginBottom": 5,
   },
-  "h3": Object {
+  "h3": {
     "fontFamily": "Oswald",
     "fontSize": 14,
   },
-  "h4": Object {
+  "h4": {
     "color": "#555",
     "fontFamily": "PT Sans",
     "fontSize": 10,

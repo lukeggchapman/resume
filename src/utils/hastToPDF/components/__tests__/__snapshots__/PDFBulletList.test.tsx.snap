@@ -3,7 +3,7 @@
 exports[`PDFBulletList renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "alignItems": "flex-start",
       "flexDirection": "column",
       "width": 200,
@@ -24,7 +24,7 @@ exports[`PDFBulletList renders correctly 1`] = `
 exports[`PDFLi renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "alignItems": "flex-start",
       "flex": 1,
       "flexDirection": "row",
@@ -34,7 +34,7 @@ exports[`PDFLi renders correctly 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "width": 10,
       }
     }
@@ -45,7 +45,7 @@ exports[`PDFLi renders correctly 1`] = `
   </View>
   <View
     style={
-      Object {
+      {
         "flex": 1,
       }
     }

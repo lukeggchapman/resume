@@ -7,9 +7,9 @@ exports[`Document renders correctly 1`] = `
   <Page
     size="A4"
     style={
-      Array [
+      [
         "body",
-        Object {
+        {
           "backgroundColor": "white",
           "flexDirection": "column",
           "padding": "20 30",
@@ -20,7 +20,7 @@ exports[`Document renders correctly 1`] = `
     <Header />
     <View
       style={
-        Object {
+        {
           "flexDirection": "row",
           "flexGrow": 1,
         }
@@ -28,7 +28,7 @@ exports[`Document renders correctly 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "flex": 6,
           }
         }
@@ -38,7 +38,7 @@ exports[`Document renders correctly 1`] = `
       </View>
       <View
         style={
-          Object {
+          {
             "flex": 1,
             "marginLeft": 10,
           }

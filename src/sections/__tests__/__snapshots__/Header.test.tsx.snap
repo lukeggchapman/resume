@@ -3,7 +3,7 @@
 exports[`Header Section renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "alignItems": "center",
       "flexDirection": "row",
       "justifyContent": "space-between",
@@ -18,7 +18,7 @@ exports[`Header Section renders correctly 1`] = `
   </Text>
   <View
     style={
-      Object {
+      {
         "alignItems": "flex-end",
         "fontFamily": "PT Sans",
       }

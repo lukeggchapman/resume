@@ -3,11 +3,11 @@
 exports[`FAIcon renders correctly 1`] = `
 <Text
   style={
-    Array [
-      Object {
+    [
+      {
         "fontFamily": "Font Awesome 5 Free",
       },
-      Object {
+      {
         "fontWeight": 400,
       },
     ]
