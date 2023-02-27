@@ -1,7 +1,7 @@
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { frontmatter } from 'micromark-extension-frontmatter'
 import { frontmatterFromMarkdown } from 'mdast-util-frontmatter'
-import toHAST from 'mdast-util-to-hast'
+import { toHast } from 'mdast-util-to-hast'
 
 import parseMarkdownToHtmlAst from '../parseMarkdownToHtmlAst'
 
@@ -23,13 +23,14 @@ jest.mock('mdast-util-frontmatter', () => {
     frontmatterFromMarkdown: jest.fn(),
   }
 })
-jest.mock('mdast-util-to-hast', () => jest.fn())
+jest.mock('mdast-util-to-hast', () => {
+  return { __esModule: true, toHast: jest.fn() }
+})
 
 const fromMarkdownMock = fromMarkdown as jest.Mock
 const frontmatterMock = frontmatter as jest.Mock
 const frontmatterFromMarkdownMock = frontmatterFromMarkdown as jest.Mock
-
-const toHASTMock = toHAST as jest.Mock
+const toHastMock = toHast as jest.Mock
 
 describe('mdToHast', () => {
   beforeEach(() => {
@@ -66,7 +67,7 @@ Blah blah blah, really great work and stuff
         },
       ],
     })
-    toHASTMock.mockReturnValue({
+    toHastMock.mockReturnValue({
       type: 'root',
       children: [
         {

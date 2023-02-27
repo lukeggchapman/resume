@@ -3,7 +3,7 @@ import { frontmatter } from 'micromark-extension-frontmatter'
 import { frontmatterFromMarkdown } from 'mdast-util-frontmatter'
 import { parse } from 'yaml'
 import type { YAML } from 'mdast'
-import toHAST from 'mdast-util-to-hast'
+import { toHast } from 'mdast-util-to-hast'
 
 const parseMarkdownToHtmlAst = <Frontmatter extends object>(md: string) => {
   const markdownAST = fromMarkdown(md, {
@@ -23,7 +23,7 @@ const parseMarkdownToHtmlAst = <Frontmatter extends object>(md: string) => {
 
   return {
     frontmatter: parse(frontmatterNodes[0].value) as Frontmatter,
-    htmlAst: toHAST(markdownAST),
+    htmlAst: toHast(markdownAST),
   }
 }
 

@@ -6,8 +6,9 @@
 import React from 'react'
 import { uid } from 'react-uid'
 import { View, Text } from '@react-pdf/renderer'
+import { HastNodes } from 'mdast-util-to-hast/lib'
 
-import { Node, Root, Text as HastText, Element } from 'hast'
+import { Root, Text as HastText, Element } from 'hast'
 import PDFBulletList from './components/PDFBulletList'
 
 const getBulletList = (element: Element) => {
@@ -54,7 +55,7 @@ function isHandledType(type: string): type is keyof typeof handlers {
   return Object.keys(handlers).indexOf(type) !== -1
 }
 
-function hastToPDF(node: Node): React.ReactNode {
+function hastToPDF(node: HastNodes | null | undefined): React.ReactNode {
   const type = node && node.type
 
   if (!type) {
