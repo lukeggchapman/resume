@@ -65,7 +65,7 @@ function ContentItem({
   return (
     <View style={styles.container}>
       <View style={styles.leftColumn}>
-        <Image style={styles.logo} src={logo} safePath="." />
+        <Image style={styles.logo} src={logo} />
       </View>
       <View
         style={[
@@ -91,7 +91,7 @@ function ContentItem({
         </View>
         <View style={styles.contentContainer}>
           {children && <View style={styles.content}>{children}</View>}
-          <Image style={styles.hr} src={hr} safePath="." />
+          <Image style={styles.hr} src={hr} />
         </View>
       </View>
     </View>

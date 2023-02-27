@@ -21,7 +21,6 @@ exports[`ContentItem renders correctly 1`] = `
     }
   >
     <Image
-      safePath="."
       src="logoTest"
       style={
         {
@@ -96,7 +95,6 @@ exports[`ContentItem renders correctly 1`] = `
         ReactNodeTest
       </View>
       <Image
-        safePath="."
         src="test-file-stub"
         style={
           {
