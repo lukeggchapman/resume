@@ -18,7 +18,7 @@ export default {
       },
       {
         test: /\.md$/,
-        use: 'gray-matter-loader',
+        use: 'raw-loader',
       },
     ],
   },

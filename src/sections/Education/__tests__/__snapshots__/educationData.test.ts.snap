@@ -3,8 +3,10 @@
 exports[`educationData should have the correct data 1`] = `
 [
   {
-    "frontmatter": "macquarieFrontmatterMock",
-    "htmlAst": "mdToHast(macquarieContentMock)",
+    "frontmatter": {
+      "frontmatterFor": "macquarieContentMock",
+    },
+    "htmlAst": "htmlAst(macquarieContentMock)",
     "logo": "macquarieLogoMock",
   },
 ]

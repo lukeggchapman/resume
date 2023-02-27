@@ -1,11 +1,5 @@
 declare module '*.md' {
-  const value: {
-    content: string
-    data: {
-      [key: string]: string
-    }
-    isEmpty: boolean
-  }
+  const value: string
 
   export = value
 }

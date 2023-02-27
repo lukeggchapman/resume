@@ -3,18 +3,24 @@
 exports[`experienceData should have the correct data 1`] = `
 [
   {
-    "frontmatter": "componoFrontmatterMock",
-    "htmlAst": "mdToHast(componoContentMock)",
+    "frontmatter": {
+      "frontmatterFor": "componoContentMock",
+    },
+    "htmlAst": "htmlAst(componoContentMock)",
     "logo": "test-file-stub",
   },
   {
-    "frontmatter": "assignarFrontmatterMock",
-    "htmlAst": "mdToHast(assignarContentMock)",
+    "frontmatter": {
+      "frontmatterFor": "assignarContentMock",
+    },
+    "htmlAst": "htmlAst(assignarContentMock)",
     "logo": "test-file-stub",
   },
   {
-    "frontmatter": "learnosityFrontmatterMock",
-    "htmlAst": "mdToHast(learnosityContentMock)",
+    "frontmatter": {
+      "frontmatterFor": "learnosityContentMock",
+    },
+    "htmlAst": "htmlAst(learnosityContentMock)",
     "logo": "test-file-stub",
   },
 ]

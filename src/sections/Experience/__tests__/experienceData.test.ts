@@ -1,26 +1,18 @@
 import experienceData from '../experienceData'
 
-jest.mock('utils/mdToHast', () => (md: string) => `mdToHast(${md})`)
-jest.mock(
-  'content/experience/2020-compono.md',
-  () => ({ data: 'componoFrontmatterMock', content: 'componoContentMock' }),
-  {
-    virtual: true,
-  }
-)
-jest.mock(
-  'content/experience/2019-assignar.md',
-  () => ({ data: 'assignarFrontmatterMock', content: 'assignarContentMock' }),
-  {
-    virtual: true,
-  }
-)
+jest.mock('utils/parseMarkdownToHtmlAst', () => (md: string) => ({
+  frontmatter: { frontmatterFor: md },
+  htmlAst: `htmlAst(${md})`,
+}))
+jest.mock('content/experience/2020-compono.md', () => 'componoContentMock', {
+  virtual: true,
+})
+jest.mock('content/experience/2019-assignar.md', () => 'assignarContentMock', {
+  virtual: true,
+})
 jest.mock(
   'content/experience/2015-learnosity.md',
-  () => ({
-    data: 'learnosityFrontmatterMock',
-    content: 'learnosityContentMock',
-  }),
+  () => 'learnosityContentMock',
   {
     virtual: true,
   }
