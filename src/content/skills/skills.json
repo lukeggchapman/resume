@@ -4,41 +4,38 @@
     "TypeScript",
     "React",
     "GraphQL",
-    "Apollo Client",
     "Design Systems",
     "Serverless",
     "Node.JS",
-    "Express",
-    "Firebase",
-    "Scrum",
     "CI/CD",
     "Git",
     "HTML",
-    "CSS"
+    "CSS",
+    "SQL",
+    "AWS",
+    "Testing"
   ],
   "intermediate": [
-    "AWS",
     "Analytics",
-    "Angular",
+    "CQRS",
+    "Event Sourcing",
+    "Firebase",
+    "Go",
     "Jira",
     "OAuth2",
     "PHP",
     "React Native",
-    "Redux",
-    "SQL"
+    "SQL",
+    "Stipe",
+    "Terraform"
   ],
   "beginner": [
     "mongoDB",
     "Kubernetes",
     "GCP",
-    "Terraform",
-    "Django",
-    "Drupal",
     "C++",
     "C#",
     "Machine Learning",
-    "Python",
-    "Symfony",
-    "WordPress"
+    "Python"
   ]
 }
