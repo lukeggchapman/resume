@@ -9,7 +9,7 @@ import experienceData from './experienceData'
 function Experience() {
   return (
     <Section title="Experience">
-      {experienceData.map(({ frontmatter, logo, htmlAst }) => {
+      {experienceData.map(({ frontmatter, logo, htmlAst, style }) => {
         const { company, startDate, endDate, role } = frontmatter
 
         return (
@@ -20,6 +20,7 @@ function Experience() {
             logo={logo}
             startDate={startDate}
             endDate={endDate}
+            style={style}
           >
             {hastToPDF(htmlAst)}
           </ContentItem>

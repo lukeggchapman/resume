@@ -1,3 +1,5 @@
+import type { Style } from '@react-pdf/types'
+
 import parseMarkdownToHtmlAst from 'utils/parseMarkdownToHtmlAst'
 
 import assignarData from 'content/experience/2019-assignar.md'
@@ -23,6 +25,7 @@ interface ExperienceData {
   logo: string
   frontmatter: ExperienceFrontmatter
   htmlAst: HastNodes | null | undefined
+  style?: Style
 }
 
 const experienceData: ExperienceData[] = [
@@ -37,6 +40,9 @@ const experienceData: ExperienceData[] = [
   {
     ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(componoData),
     logo: componoLogo,
+    style: {
+      marginBottom: '100px',
+    },
   },
   {
     ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(assignarData),

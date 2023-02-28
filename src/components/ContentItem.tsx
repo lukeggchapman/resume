@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactPDF, { View, Text, StyleSheet, Image } from '@react-pdf/renderer'
+import type { Style } from '@react-pdf/types'
 import { format } from 'date-fns'
 
 import hr from 'images/hr.png'
@@ -51,6 +52,7 @@ export interface ContentItemProps {
   logo: string
   startDate: string
   endDate: string
+  style?: Style | undefined
   children?: React.ReactNode
 }
 
@@ -60,10 +62,11 @@ function ContentItem({
   logo,
   startDate,
   endDate,
+  style,
   children,
 }: ContentItemProps) {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style ?? {}]}>
       <View style={styles.leftColumn}>
         <Image style={styles.logo} src={logo} />
       </View>
@@ -100,6 +103,7 @@ function ContentItem({
 
 ContentItem.defaultProps = {
   children: undefined,
+  style: undefined,
 }
 
 export default ContentItem

@@ -22,6 +22,9 @@ exports[`experienceData should have the correct data 1`] = `
     },
     "htmlAst": "htmlAst(componoContentMock)",
     "logo": "test-file-stub",
+    "style": {
+      "marginBottom": "100px",
+    },
   },
   {
     "frontmatter": {

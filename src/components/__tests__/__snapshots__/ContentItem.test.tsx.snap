@@ -3,11 +3,14 @@
 exports[`ContentItem renders correctly 1`] = `
 <View
   style={
-    {
-      "flexDirection": "row",
-      "fontSize": 10,
-      "padding": "0 5",
-    }
+    [
+      {
+        "flexDirection": "row",
+        "fontSize": 10,
+        "padding": "0 5",
+      },
+      {},
+    ]
   }
 >
   <View

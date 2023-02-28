@@ -40,4 +40,14 @@ describe('ContentItem', () => {
       ])
     )
   })
+
+  it('allows setting container style', () => {
+    const contentItem = render({
+      children: undefined,
+      style: { padding: '10px' },
+    })
+
+    expect(contentItem.prop('style')).toHaveLength(2)
+    expect(contentItem.prop('style')[1]).toEqual({ padding: '10px' })
+  })
 })
