@@ -4,6 +4,20 @@ exports[`experienceData should have the correct data 1`] = `
 [
   {
     "frontmatter": {
+      "frontmatterFor": "indebtedContentMock",
+    },
+    "htmlAst": "htmlAst(indebtedContentMock)",
+    "logo": "test-file-stub",
+  },
+  {
+    "frontmatter": {
+      "frontmatterFor": "pathzeroContentMock",
+    },
+    "htmlAst": "htmlAst(pathzeroContentMock)",
+    "logo": "test-file-stub",
+  },
+  {
+    "frontmatter": {
       "frontmatterFor": "componoContentMock",
     },
     "htmlAst": "htmlAst(componoContentMock)",
