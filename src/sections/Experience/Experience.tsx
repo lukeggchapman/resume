@@ -3,13 +3,12 @@ import React from 'react'
 import hastToPDF from 'utils/hastToPDF'
 import ContentItem from 'components/ContentItem'
 import Section from 'components/Section'
-
-import experienceData from './experienceData'
+import experienceContent from 'content/experience'
 
 function Experience() {
   return (
     <Section title="Experience">
-      {experienceData.map(({ frontmatter, logo, htmlAst, style }) => {
+      {experienceContent.map(({ frontmatter, logo, htmlAst, style }) => {
         const { company, startDate, endDate, role } = frontmatter
 
         return (

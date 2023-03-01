@@ -18,6 +18,7 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest/setupEnzyme.ts'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   modulePaths: ['<rootDir>/src'],
+  modulePathIgnorePatterns: ['<rootDir>/.*/__mocks__'],
   coverageThreshold: {
     global: {
       branches: 80,

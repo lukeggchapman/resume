@@ -89,7 +89,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.test.ts', '*.test.tsx'], // jest test files
+      files: ['*.test.ts', '*.test.tsx', '**/__mocks__/*'], // jest test files
       rules: {
         'import/no-extraneous-dependencies': [
           'error',
