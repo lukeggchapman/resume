@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { View, Text } from '@react-pdf/renderer'
 import { uid } from 'react-uid'
+import { HastNodes } from 'mdast-util-to-hast/lib'
 
 import { Root, Text as HastText } from 'hast'
 import hastToPDF from '../hastToPDF'
@@ -100,7 +101,7 @@ describe('hastToPDF', () => {
   })
 
   it('returns nothing with empty hast', () => {
-    const emptyHast = {
+    const emptyHast: HastNodes = {
       type: 'root',
       children: [],
       data: {
@@ -119,16 +120,17 @@ describe('hastToPDF', () => {
 
   it('throws error when called with unsupported node type', () => {
     const type = 'random123'
-    expect(() => hastToPDF({ type })).toThrowError(
+    expect(() => hastToPDF({ type } as any)).toThrowError(
       `hastToPDF: Cannot compile unknown node ${type}`
     )
   })
 
   it('throws error when called with unsupported html element', () => {
     const tagName = 'strong'
-    const element = {
+    const element: HastNodes = {
       type: 'element',
       tagName,
+      children: [],
     }
 
     expect(() => hastToPDF(element)).toThrowError(

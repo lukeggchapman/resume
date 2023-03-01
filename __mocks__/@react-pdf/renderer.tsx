@@ -36,5 +36,5 @@ module.exports = {
   },
   Text: container('Text'),
   View: container('View'),
-  render: jest.fn((Component: React.ComponentType, props) => renderPromise),
+  render: jest.fn(() => renderPromise),
 }

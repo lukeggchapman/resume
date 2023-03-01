@@ -1,7 +1,14 @@
+const esmModules = [
+  'decode-named-character-reference',
+  'fault',
+  'mdast-util.*',
+  'micromark.*',
+  'trim-lines',
+  'unist-util.*',
+  'yaml',
+]
+
 module.exports = {
-  transform: {
-    '^.+\\.tsx?$': 'babel-jest',
-  },
   testRegex: '(\\.|/)(test|spec)\\.([tj]sx?)$',
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': 'identity-obj-proxy',
@@ -10,11 +17,10 @@ module.exports = {
   },
   moduleFileExtensions: ['js', 'json', 'jsx', 'node', 'ts', 'tsx'],
   testPathIgnorePatterns: ['node_modules', '.cache'],
-  transformIgnorePatterns: ['node_modules/'],
+  transformIgnorePatterns: [`/node_modules/(?!(${esmModules.join('|')})/)`],
   globals: {
     __PATH_PREFIX__: '',
   },
-  setupFiles: ['<rootDir>/jest/loaderShim.ts'],
   setupFilesAfterEnv: ['<rootDir>/jest/setupJest.ts'],
   snapshotSerializers: [require.resolve('snapshot-diff/serializer.js')],
   testEnvironment: 'jsdom',
@@ -33,4 +39,5 @@ module.exports = {
     '!src/types/**/*',
     '!src/**/index.ts',
   ],
+  preset: 'ts-jest/presets/js-with-babel',
 }
