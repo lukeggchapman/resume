@@ -61,7 +61,7 @@ Resume created using [React](https://reactjs.org/), and [React-PDF](https://reac
 
     Everything is written using [TypeScript](https://www.typescriptlang.org/) with strict typing enabled.
 
-3.  **Jest & Enzyme unit testing**
+3.  **Jest & React Testing Library unit testing**
 
     Jest unit tests are used throughout and the pattern applied is that they live in a \_\_tests\_\_ child directory to the unit being tested. The files also have the extension .test.ts or .test.tsx for clear seperation when editing files.
     Unit tests are ran each commit by a git hook thanks to husky.
