@@ -1,8 +1,7 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import { View } from '@react-pdf/renderer'
+import { render } from '@testing-library/react'
 
-import ContentItem, { ContentItemProps, styles } from '../ContentItem'
+import ContentItem, { ContentItemProps } from '../ContentItem'
 
 const baseProps: ContentItemProps = {
   title: 'titleTest',
@@ -14,19 +13,22 @@ const baseProps: ContentItemProps = {
 }
 
 describe('ContentItem', () => {
-  const render = (props?: Partial<ContentItemProps>) =>
-    shallow(<ContentItem {...{ ...baseProps, ...props }} />)
+  const renderContentItem = (props?: Partial<ContentItemProps>) =>
+    render(<ContentItem {...{ ...baseProps, ...props }} />)
 
   it('not passing children removes content', () => {
-    const contentItem = render({ children: undefined })
+    const contentItem = renderContentItem({ children: undefined })
 
-    expect(contentItem.find({ style: styles.content }).exists()).toBeFalsy()
+    expect(contentItem.queryByTestId('content')).toBeNull()
   })
 
   it('not passing children aligns content with logo', () => {
-    const contentItem = render({ children: undefined })
+    const contentItem = renderContentItem({ children: undefined })
+    const pdfStyle = JSON.parse(
+      contentItem.getByTestId('center-container').dataset.style ?? '{}'
+    )
 
-    expect(contentItem.find(View).at(2).prop('style')).toEqual(
+    expect(pdfStyle).toEqual(
       expect.arrayContaining([
         {
           alignSelf: 'center',
@@ -36,12 +38,16 @@ describe('ContentItem', () => {
   })
 
   it('allows setting container style', () => {
-    const contentItem = render({
+    const contentItem = renderContentItem({
       children: undefined,
       style: { padding: '10px' },
     })
+    const pdfStyle = JSON.parse(
+      (contentItem.container.firstChild as HTMLElement | null)?.dataset.style ??
+        '{}'
+    )
 
-    expect(contentItem.prop('style')).toHaveLength(2)
-    expect(contentItem.prop('style')[1]).toEqual({ padding: '10px' })
+    expect(pdfStyle).toHaveLength(2)
+    expect(pdfStyle[1]).toEqual({ padding: '10px' })
   })
 })

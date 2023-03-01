@@ -71,6 +71,7 @@ function ContentItem({
         <Image style={styles.logo} src={logo} />
       </View>
       <View
+        data-testid="center-container"
         style={[
           styles.rightColumn,
           {
@@ -93,7 +94,11 @@ function ContentItem({
           </View>
         </View>
         <View style={styles.contentContainer}>
-          {children && <View style={styles.content}>{children}</View>}
+          {children && (
+            <View style={styles.content} data-testid="content">
+              {children}
+            </View>
+          )}
           <Image style={styles.hr} src={hr} />
         </View>
       </View>

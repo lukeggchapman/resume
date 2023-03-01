@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 
 import FAIcon, { FAIconPropsCommon, styles } from '../FAIcon'
 
@@ -8,21 +8,27 @@ const baseProps: FAIconPropsCommon = {
 }
 
 describe('FAIcon', () => {
-  it('supports fab styles', () => {
-    const faIcon = shallow(<FAIcon {...baseProps} fab />)
+  const extractPdfStyle = (element: HTMLElement) => {
+    return JSON.parse(
+      (element.firstChild as HTMLElement | null)?.dataset.style ?? '{}'
+    )
+  }
 
-    expect(faIcon.prop('style')).toContain(styles.fab)
+  it('supports fab styles', () => {
+    const faIcon = render(<FAIcon {...baseProps} fab />)
+
+    expect(extractPdfStyle(faIcon.container)).toContainEqual(styles.fab)
   })
 
   it('supports far styles', () => {
-    const faIcon = shallow(<FAIcon {...baseProps} far />)
+    const faIcon = render(<FAIcon {...baseProps} far />)
 
-    expect(faIcon.prop('style')).toContain(styles.far)
+    expect(extractPdfStyle(faIcon.container)).toContainEqual(styles.far)
   })
 
   it('supports fas styles', () => {
-    const faIcon = shallow(<FAIcon {...baseProps} fas />)
+    const faIcon = render(<FAIcon {...baseProps} fas />)
 
-    expect(faIcon.prop('style')).toContain(styles.fas)
+    expect(extractPdfStyle(faIcon.container)).toContainEqual(styles.fas)
   })
 })
