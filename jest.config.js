@@ -9,6 +9,9 @@ const esmModules = [
 ]
 
 module.exports = {
+  transform: {
+    '^.+\\.(j|t)sx?$': 'babel-jest',
+  },
   testRegex: '(\\.|/)(test|spec)\\.([tj]sx?)$',
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': 'identity-obj-proxy',
@@ -39,5 +42,4 @@ module.exports = {
     '!src/types/**/*',
     '!src/**/index.ts',
   ],
-  preset: 'ts-jest/presets/js-with-babel',
 }

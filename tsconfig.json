@@ -1,11 +1,9 @@
 {
   "extends": "./tsconfig.prd.json",
   "compilerOptions": {
-    "jsx": "react",
     "paths": {
       "luke-chapman-resume": ["."]
     }
   },
-  "include": ["**/*"],
   "exclude": []
 }
