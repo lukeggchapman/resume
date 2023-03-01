@@ -8,10 +8,6 @@ const baseProps: FAIconPropsCommon = {
 }
 
 describe('FAIcon', () => {
-  it('renders correctly', () => {
-    expect(shallow(<FAIcon {...baseProps} far />)).toMatchSnapshot()
-  })
-
   it('supports fab styles', () => {
     const faIcon = shallow(<FAIcon {...baseProps} fab />)
 

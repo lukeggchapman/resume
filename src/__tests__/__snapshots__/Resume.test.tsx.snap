@@ -1,53 +1,635 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Document renders correctly 1`] = `
-<Document
-  title="Luke Chapman Résumé"
->
-  <Page
-    size="A4"
-    style={
-      [
-        "body",
-        {
-          "backgroundColor": "white",
-          "flexDirection": "column",
-          "padding": "20 30",
-        },
-      ]
-    }
+<div>
+  <div
+    data-pdf="Document"
   >
-    <Header />
-    <View
-      style={
-        {
-          "flexDirection": "row",
-          "flexGrow": 1,
-        }
-      }
+    <div
+      data-pdf="Page"
+      data-style="[
+  "body",
+  {
+    "flexDirection": "column",
+    "backgroundColor": "white",
+    "padding": "20 30"
+  }
+]"
     >
-      <View
-        style={
-          {
-            "flex": 6,
-          }
-        }
+      <div
+        data-pdf="View"
+        data-style="{
+  "flexDirection": "row",
+  "justifyContent": "space-between",
+  "alignItems": "center",
+  "marginBottom": 10
+}"
       >
-        <Experience />
-        <Education />
-      </View>
-      <View
-        style={
-          {
-            "flex": 1,
-            "marginLeft": 10,
-          }
-        }
+        <div
+          data-pdf="Text"
+          data-style=""h1""
+        >
+          Luke Chapman
+        </div>
+        <div
+          data-pdf="View"
+          data-style="{
+  "alignItems": "flex-end",
+  "fontFamily": "PT Sans"
+}"
+        >
+          <div
+            data-pdf="Text"
+          >
+            <div
+              data-pdf="Text"
+              data-style="[
+  {
+    "fontFamily": "Font Awesome 5 Free"
+  },
+  {
+    "fontWeight": 900
+  }
+]"
+            >
+              
+            </div>
+             
+            <div
+              data-pdf="Link"
+            >
+              LukeGGChapman@gmail.com
+            </div>
+          </div>
+          <div
+            data-pdf="Text"
+          >
+            <div
+              data-pdf="Text"
+              data-style="[
+  {
+    "fontFamily": "Font Awesome 5 Free"
+  },
+  {
+    "fontWeight": 900
+  }
+]"
+            >
+              
+            </div>
+             
+            <div
+              data-pdf="Link"
+            >
+              0401 516 361
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pdf="View"
+        data-style="{
+  "flexDirection": "row",
+  "flexGrow": 1
+}"
       >
-        <Skills />
-      </View>
-    </View>
-    <Footer />
-  </Page>
-</Document>
+        <div
+          data-pdf="View"
+          data-style="{
+  "flex": 6
+}"
+        >
+          <div
+            data-pdf="View"
+          >
+            <div
+              data-pdf="Text"
+              data-style=""h2""
+            >
+              Experience
+            </div>
+            <div
+              data-pdf="View"
+              data-style="[
+  {
+    "flexDirection": "row",
+    "fontSize": 10,
+    "padding": "0 5"
+  },
+  {}
+]"
+            >
+              <div
+                data-pdf="View"
+                data-style="{
+  "flex": 1,
+  "alignItems": "center",
+  "justifyContent": "center",
+  "paddingRight": 5
+}"
+              >
+                <div
+                  data-pdf="Image"
+                  data-style="{
+  "height": 35
+}"
+                />
+              </div>
+              <div
+                data-pdf="View"
+                data-style="[
+  {
+    "flex": 7
+  },
+  {}
+]"
+              >
+                <div
+                  data-pdf="Text"
+                  data-style=""h3""
+                >
+                  companyTest1
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="[
+  "h4",
+  {
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  }
+]"
+                >
+                  <div
+                    data-pdf="Text"
+                  >
+                    roleTest1
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      Jun, 2021 – Apr, 2020
+                       · 
+                      -2 yr -1 mo
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "column",
+  "width": "100%"
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "marginTop": 5
+}"
+                  >
+                    htmlAstTest1
+                  </div>
+                  <div
+                    data-pdf="Image"
+                    data-style="{
+  "width": 400,
+  "alignSelf": "center",
+  "margin": "10 0"
+}"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              data-pdf="View"
+              data-style="[
+  {
+    "flexDirection": "row",
+    "fontSize": 10,
+    "padding": "0 5"
+  },
+  {}
+]"
+            >
+              <div
+                data-pdf="View"
+                data-style="{
+  "flex": 1,
+  "alignItems": "center",
+  "justifyContent": "center",
+  "paddingRight": 5
+}"
+              >
+                <div
+                  data-pdf="Image"
+                  data-style="{
+  "height": 35
+}"
+                />
+              </div>
+              <div
+                data-pdf="View"
+                data-style="[
+  {
+    "flex": 7
+  },
+  {}
+]"
+              >
+                <div
+                  data-pdf="Text"
+                  data-style=""h3""
+                >
+                  companyTest2
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="[
+  "h4",
+  {
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  }
+]"
+                >
+                  <div
+                    data-pdf="Text"
+                  >
+                    roleTest2
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      Jul, 2021 – Aug, 2023
+                       · 
+                      2 yrs 1 mo
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "column",
+  "width": "100%"
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "marginTop": 5
+}"
+                  >
+                    htmlAstTest2
+                  </div>
+                  <div
+                    data-pdf="Image"
+                    data-style="{
+  "width": 400,
+  "alignSelf": "center",
+  "margin": "10 0"
+}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-pdf="View"
+          >
+            <div
+              data-pdf="Text"
+              data-style=""h2""
+            >
+              Education
+            </div>
+            <div
+              data-pdf="View"
+              data-style="[
+  {
+    "flexDirection": "row",
+    "fontSize": 10,
+    "padding": "0 5"
+  },
+  {}
+]"
+            >
+              <div
+                data-pdf="View"
+                data-style="{
+  "flex": 1,
+  "alignItems": "center",
+  "justifyContent": "center",
+  "paddingRight": 5
+}"
+              >
+                <div
+                  data-pdf="Image"
+                  data-style="{
+  "height": 35
+}"
+                />
+              </div>
+              <div
+                data-pdf="View"
+                data-style="[
+  {
+    "flex": 7
+  },
+  {}
+]"
+              >
+                <div
+                  data-pdf="Text"
+                  data-style=""h3""
+                >
+                  schoolTest1
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="[
+  "h4",
+  {
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  }
+]"
+                >
+                  <div
+                    data-pdf="Text"
+                  >
+                    degreeTest1
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      Jan, 2001 – May, 2004
+                       · 
+                      3 yrs 4 mos
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "column",
+  "width": "100%"
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "marginTop": 5
+}"
+                  >
+                    htmlAstTest1
+                  </div>
+                  <div
+                    data-pdf="Image"
+                    data-style="{
+  "width": 400,
+  "alignSelf": "center",
+  "margin": "10 0"
+}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-pdf="View"
+          data-style="{
+  "flex": 1,
+  "marginLeft": 10
+}"
+        >
+          <div
+            data-pdf="View"
+          >
+            <div
+              data-pdf="Text"
+              data-style=""h2""
+            >
+              Skills
+            </div>
+            <div
+              data-pdf="View"
+              data-style="{
+  "marginBottom": 10
+}"
+            >
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h3",
+  {
+    "textTransform": "capitalize",
+    "marginBottom": 5
+  }
+]"
+              >
+                beginner
+              </div>
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h4",
+  {
+    "color": "#333"
+  }
+]"
+              >
+                skillTest1
+              </div>
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h4",
+  {
+    "color": "#333"
+  }
+]"
+              >
+                skillTest2
+              </div>
+            </div>
+            <div
+              data-pdf="View"
+              data-style="{
+  "marginBottom": 10
+}"
+            >
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h3",
+  {
+    "textTransform": "capitalize",
+    "marginBottom": 5
+  }
+]"
+              >
+                intermediate
+              </div>
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h4",
+  {
+    "color": "#333"
+  }
+]"
+              >
+                skillTest3
+              </div>
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h4",
+  {
+    "color": "#333"
+  }
+]"
+              >
+                skillTest4
+              </div>
+            </div>
+            <div
+              data-pdf="View"
+              data-style="{
+  "marginBottom": 10
+}"
+            >
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h3",
+  {
+    "textTransform": "capitalize",
+    "marginBottom": 5
+  }
+]"
+              >
+                advanced
+              </div>
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h4",
+  {
+    "color": "#333"
+  }
+]"
+              >
+                skillTest5
+              </div>
+              <div
+                data-pdf="Text"
+                data-style="[
+  "h4",
+  {
+    "color": "#333"
+  }
+]"
+              >
+                skillTest6
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-pdf="View"
+        data-style="[
+  "h4",
+  {
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  }
+]"
+      >
+        <div
+          data-pdf="Text"
+        >
+          <div
+            data-pdf="Text"
+            data-style="[
+  {
+    "fontFamily": "Font Awesome 5 Free"
+  },
+  {
+    "fontWeight": 700
+  }
+]"
+          >
+            
+          </div>
+           
+          <div
+            data-pdf="Link"
+          >
+            lukeggchapman
+          </div>
+        </div>
+        <div
+          data-pdf="Text"
+        >
+          <div
+            data-pdf="Text"
+            data-style="[
+  {
+    "fontFamily": "Font Awesome 5 Free"
+  },
+  {
+    "fontWeight": 700
+  }
+]"
+          >
+            
+          </div>
+           
+          <div
+            data-pdf="Link"
+          >
+            lukeggchapman
+          </div>
+        </div>
+        <div
+          data-pdf="Text"
+        >
+          <div
+            data-pdf="Text"
+            data-style="[
+  {
+    "fontFamily": "Font Awesome 5 Free"
+  },
+  {
+    "fontWeight": 700
+  }
+]"
+          >
+            
+          </div>
+           
+          Created with React.
+           Source code 
+          <div
+            data-pdf="Link"
+          >
+            https://bit.ly/2VgE4pH
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;

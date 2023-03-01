@@ -1,18 +1,18 @@
 import React from 'react'
 import Section from 'components/Section'
-import skillData from 'content/skills/skills.json'
+import skillContent from 'content/skills'
 
 import Skill from './Skill'
 
 function Skills() {
   return (
     <Section title="Skills">
-      {(Object.keys(skillData) as (keyof typeof skillData)[]).map(
+      {(Object.keys(skillContent) as (keyof typeof skillContent)[]).map(
         (skillLevel) => (
           <Skill
             key={skillLevel}
             title={skillLevel}
-            skills={skillData[skillLevel]}
+            skills={skillContent[skillLevel]}
           />
         )
       )}

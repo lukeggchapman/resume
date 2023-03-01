@@ -1,16 +1,20 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render } from '@testing-library/react'
+import '@testing-library/jest-dom'
 import 'components/__mocks__/typographyMock'
 import Document from '../Resume'
 
-jest.mock('sections/Experience', () => 'Experience')
-jest.mock('sections/Education', () => 'Education')
-jest.mock('sections/Skills', () => 'Skills')
+jest.mock('utils/hastToPDF')
+jest.mock('content/education')
+jest.mock('content/experience')
+jest.mock('content/skills')
 
 describe('Document', () => {
-  const render = () => shallow(<Document />)
+  const renderResume = () => render(<Document />)
 
   it('renders correctly', () => {
-    expect(render()).toMatchSnapshot()
+    const { container } = renderResume()
+
+    expect(container.cloneNode(true)).toMatchSnapshot()
   })
 })

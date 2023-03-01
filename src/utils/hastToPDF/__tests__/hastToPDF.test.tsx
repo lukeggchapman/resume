@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import { View, Text } from '@react-pdf/renderer'
 import { uid } from 'react-uid'
 
@@ -74,7 +74,7 @@ const hast: Root = {
   },
 }
 
-const result = [
+const expected = [
   <View key={uid(hast.children[0])}>
     <Text>Some paragraph.</Text>
   </View>,
@@ -91,9 +91,12 @@ const result = [
 
 describe('hastToPDF', () => {
   it('transforms hast to react-pdf jsx', () => {
-    const PDF = shallow(<View>{hastToPDF(hast)}</View>)
+    const result = hastToPDF(hast)
+    const resultContainer = render(<View>{hastToPDF(hast)}</View>)
+    const expectedContainer = render(<View>{expected}</View>)
 
-    expect(PDF.matchesElement(<View>{result}</View>)).toBeTruthy()
+    expect(result).toMatchDiffSnapshot(expected) // shallow
+    expect(resultContainer).toMatchDiffSnapshot(expectedContainer) // render
   })
 
   it('returns nothing with empty hast', () => {

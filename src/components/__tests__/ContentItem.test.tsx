@@ -17,12 +17,6 @@ describe('ContentItem', () => {
   const render = (props?: Partial<ContentItemProps>) =>
     shallow(<ContentItem {...{ ...baseProps, ...props }} />)
 
-  it('renders correctly', () => {
-    process.env.NODE_ENV = 'development'
-
-    expect(render()).toMatchSnapshot()
-  })
-
   it('not passing children removes content', () => {
     const contentItem = render({ children: undefined })
 

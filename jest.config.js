@@ -15,8 +15,9 @@ module.exports = {
     __PATH_PREFIX__: '',
   },
   setupFiles: ['<rootDir>/jest/loaderShim.ts'],
-  setupFilesAfterEnv: ['<rootDir>/jest/setupEnzyme.ts'],
-  snapshotSerializers: ['enzyme-to-json/serializer'],
+  setupFilesAfterEnv: ['<rootDir>/jest/setupJest.ts'],
+  snapshotSerializers: [require.resolve('snapshot-diff/serializer.js')],
+  testEnvironment: 'jsdom',
   modulePaths: ['<rootDir>/src'],
   modulePathIgnorePatterns: ['<rootDir>/.*/__mocks__'],
   coverageThreshold: {
