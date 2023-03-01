@@ -4,11 +4,16 @@ import React from 'react'
 const renderPromise = Promise.resolve()
 const container = (name: string) => {
   const ReactPDFContainerMock: React.FC<{ style?: object }> = ({
-    style,
     children,
+    style,
+    ...rest
   }) => {
     return (
-      <div data-pdf={name} data-style={style && JSON.stringify(style, null, 2)}>
+      <div
+        data-pdf={name}
+        data-style={style && JSON.stringify(style, null, 2)}
+        {...rest}
+      >
         {children}
       </div>
     )

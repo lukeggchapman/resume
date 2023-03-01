@@ -4,6 +4,7 @@ exports[`Document renders correctly 1`] = `
 <div>
   <div
     data-pdf="Document"
+    title="Luke Chapman Résumé"
   >
     <div
       data-pdf="Page"
@@ -57,6 +58,7 @@ exports[`Document renders correctly 1`] = `
              
             <div
               data-pdf="Link"
+              src="mailto:lukeggchapman@gmail.com"
             >
               LukeGGChapman@gmail.com
             </div>
@@ -80,6 +82,7 @@ exports[`Document renders correctly 1`] = `
              
             <div
               data-pdf="Link"
+              src="tel:+61401516361"
             >
               0401 516 361
             </div>
@@ -133,6 +136,7 @@ exports[`Document renders correctly 1`] = `
                   data-style="{
   "height": 35
 }"
+                  src="logoPublcUrlTest1"
                 />
               </div>
               <div
@@ -143,6 +147,7 @@ exports[`Document renders correctly 1`] = `
   },
   {}
 ]"
+                data-testid="center-container"
               >
                 <div
                   data-pdf="Text"
@@ -189,6 +194,7 @@ exports[`Document renders correctly 1`] = `
                     data-style="{
   "marginTop": 5
 }"
+                    data-testid="content"
                   >
                     htmlAstTest1
                   </div>
@@ -199,6 +205,7 @@ exports[`Document renders correctly 1`] = `
   "alignSelf": "center",
   "margin": "10 0"
 }"
+                    src="test-file-stub"
                   />
                 </div>
               </div>
@@ -228,6 +235,7 @@ exports[`Document renders correctly 1`] = `
                   data-style="{
   "height": 35
 }"
+                  src="logoPublcUrlTest2"
                 />
               </div>
               <div
@@ -238,6 +246,7 @@ exports[`Document renders correctly 1`] = `
   },
   {}
 ]"
+                data-testid="center-container"
               >
                 <div
                   data-pdf="Text"
@@ -284,6 +293,7 @@ exports[`Document renders correctly 1`] = `
                     data-style="{
   "marginTop": 5
 }"
+                    data-testid="content"
                   >
                     htmlAstTest2
                   </div>
@@ -294,6 +304,7 @@ exports[`Document renders correctly 1`] = `
   "alignSelf": "center",
   "margin": "10 0"
 }"
+                    src="test-file-stub"
                   />
                 </div>
               </div>
@@ -333,6 +344,7 @@ exports[`Document renders correctly 1`] = `
                   data-style="{
   "height": 35
 }"
+                  src="logoPublcUrlTest1"
                 />
               </div>
               <div
@@ -343,6 +355,7 @@ exports[`Document renders correctly 1`] = `
   },
   {}
 ]"
+                data-testid="center-container"
               >
                 <div
                   data-pdf="Text"
@@ -389,6 +402,7 @@ exports[`Document renders correctly 1`] = `
                     data-style="{
   "marginTop": 5
 }"
+                    data-testid="content"
                   >
                     htmlAstTest1
                   </div>
@@ -399,6 +413,7 @@ exports[`Document renders correctly 1`] = `
   "alignSelf": "center",
   "margin": "10 0"
 }"
+                    src="test-file-stub"
                   />
                 </div>
               </div>
@@ -576,6 +591,7 @@ exports[`Document renders correctly 1`] = `
            
           <div
             data-pdf="Link"
+            src="https://github.com/lukeggchapman"
           >
             lukeggchapman
           </div>
@@ -599,6 +615,7 @@ exports[`Document renders correctly 1`] = `
            
           <div
             data-pdf="Link"
+            src="https://www.linkedin.com/in/lukeggchapman"
           >
             lukeggchapman
           </div>
@@ -624,6 +641,7 @@ exports[`Document renders correctly 1`] = `
            Source code 
           <div
             data-pdf="Link"
+            src="https://bit.ly/2VgE4pH"
           >
             https://bit.ly/2VgE4pH
           </div>
