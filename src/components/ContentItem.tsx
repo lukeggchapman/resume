@@ -29,6 +29,10 @@ export const styles: ReactPDF.Styles = StyleSheet.create({
   content: {
     marginTop: 5,
   },
+  logoContainer: {
+    alignItems: 'center',
+    width: 45,
+  },
   logo: {
     height: 35,
     paddingRight: 10,
@@ -65,7 +69,9 @@ function ContentItem({
   return (
     <View style={[styles.container, style ?? {}]}>
       <View style={styles.header}>
-        <Image style={styles.logo} src={logo} />
+        <View style={styles.logoContainer}>
+          <Image style={styles.logo} src={logo} />
+        </View>
         <View style={{ flexGrow: 1, justifyContent: 'center' }}>
           <Text style={typography.h3}>{title}</Text>
           <View style={[typography.h4, styles.subTitle]}>
