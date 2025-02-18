@@ -28,7 +28,7 @@ export default StyleSheet.create({
   },
   h4: {
     fontFamily: 'PT Sans',
-    fontSize: 8,
+    fontSize: 10,
     color: '#555',
   },
 }) as ReactPDF.Styles

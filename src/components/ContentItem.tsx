@@ -66,7 +66,7 @@ function ContentItem({
     <View style={[styles.container, style ?? {}]}>
       <View style={styles.header}>
         <Image style={styles.logo} src={logo} />
-        <View style={{ flexGrow: 1 }}>
+        <View style={{ flexGrow: 1, justifyContent: 'center' }}>
           <Text style={typography.h3}>{title}</Text>
           <View style={[typography.h4, styles.subTitle]}>
             <Text>{subTitle}</Text>
