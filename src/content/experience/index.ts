@@ -40,9 +40,6 @@ const experienceData: ExperienceData[] = [
   {
     ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(componoData),
     logo: componoLogo,
-    style: {
-      marginBottom: '100px',
-    },
   },
   {
     ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(assignarData),
