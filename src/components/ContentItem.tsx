@@ -10,7 +10,7 @@ import typography from './typography'
 export const styles: ReactPDF.Styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    fontSize: 10,
+    fontSize: 8,
     padding: '10 6',
   },
   header: {
@@ -24,6 +24,7 @@ export const styles: ReactPDF.Styles = StyleSheet.create({
   contentContainer: {
     flexDirection: 'column',
     width: '100%',
+    padding: 10,
   },
   content: {
     marginTop: 5,
@@ -82,14 +83,14 @@ function ContentItem({
           </View>
         </View>
       </View>
-      <View style={styles.contentContainer}>
-        {children && (
+      {children && (
+        <View style={styles.contentContainer}>
           <View style={styles.content} data-testid="content">
             {children}
           </View>
-        )}
-        <Image style={styles.hr} src={hr} />
-      </View>
+        </View>
+      )}
+      <Image style={styles.hr} src={hr} />
     </View>
   )
 }
