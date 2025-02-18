@@ -3,11 +3,10 @@ import React from 'react'
 
 const renderPromise = Promise.resolve()
 const container = (name: string) => {
-  const ReactPDFContainerMock: React.FC<{ style?: object }> = ({
-    children,
-    style,
-    ...rest
-  }) => {
+  const ReactPDFContainerMock: React.FC<{
+    style?: object
+    hyphenationCallback?: any
+  }> = ({ children, style, hyphenationCallback, ...rest }) => {
     return (
       <div
         data-pdf={name}
