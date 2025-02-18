@@ -77,17 +77,31 @@ const hast: Root = {
 
 const expected = [
   <View key={uid(hast.children[0])}>
-    <Text>Some paragraph.</Text>
+    <Text hyphenationCallback={(e) => [e]}>Some paragraph.</Text>
   </View>,
-  <Text key={uid(hast.children[1])}>{`\n`}</Text>,
+  <Text
+    hyphenationCallback={(e) => [e]}
+    key={uid(hast.children[1])}
+  >{`\n`}</Text>,
   <BulletListPDF
     key={uid(hast.children[2])}
     list={[
-      [<Text key={uid(bullet1)}>point 1.</Text>],
-      [<Text key={uid(bullet2)}>point 2.</Text>],
+      [
+        <Text hyphenationCallback={(e) => [e]} key={uid(bullet1)}>
+          point 1.
+        </Text>,
+      ],
+      [
+        <Text hyphenationCallback={(e) => [e]} key={uid(bullet2)}>
+          point 2.
+        </Text>,
+      ],
     ]}
   />,
-  <Text key={uid(hast.children[3])}>{`\n`}</Text>,
+  <Text
+    hyphenationCallback={(e) => [e]}
+    key={uid(hast.children[3])}
+  >{`\n`}</Text>,
 ]
 
 describe('hastToPDF', () => {
@@ -110,6 +124,35 @@ describe('hastToPDF', () => {
     }
 
     expect(hastToPDF(emptyHast)).toEqual(undefined)
+  })
+
+  it('adds hyphenationCallback to all Text elements', () => {
+    const textHast: HastNodes = {
+      type: 'root',
+      children: [
+        {
+          type: 'element',
+          tagName: 'p',
+          properties: {},
+          children: [
+            {
+              type: 'text',
+              value: 'Some paragraph.',
+            },
+          ],
+        },
+      ],
+      data: {
+        quirksMode: false,
+      },
+    }
+
+    const result = hastToPDF(textHast)
+    const hyphenationCallback = (result as any)?.[0]?.props?.children[0]?.props
+      ?.hyphenationCallback
+
+    expect(hyphenationCallback).toBeDefined()
+    expect(hyphenationCallback('test')).toEqual(['test'])
   })
 
   it('throws error when called with invalid root object', () => {

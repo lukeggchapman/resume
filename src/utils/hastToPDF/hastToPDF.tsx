@@ -33,7 +33,11 @@ const handlers = {
     return undefined
   },
   text: (text: HastText): React.ReactNode => {
-    return <Text key={uid(text)}>{text.value}</Text>
+    return (
+      <Text hyphenationCallback={(e) => [e]} key={uid(text)}>
+        {text.value}
+      </Text>
+    )
   },
   element: (element: Element): React.ReactNode => {
     const { tagName, children } = element
