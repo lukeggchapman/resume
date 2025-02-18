@@ -1,12 +1,12 @@
 import ReactPDF, { StyleSheet } from '@react-pdf/renderer'
 
-import './fonts/crimsontext'
 import './fonts/oswald'
+import './fonts/notosans'
 import './fonts/ptsans'
 
 export default StyleSheet.create({
   body: {
-    fontFamily: 'Crimson Text',
+    fontFamily: 'Noto Sans',
     fontSize: 12,
     color: '#333',
   },
