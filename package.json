@@ -1,7 +1,7 @@
 {
   "name": "luke-chapman-resume",
   "private": true,
-  "description": "Résumé created using React, and React-PDF demonstracting my programming and codebase management",
+  "description": "Resume created using React, and React-PDF demonstracting my programming and codebase management",
   "version": "0.1.0",
   "author": "Luke Chapman <lukeggchapman@gmail.com>",
   "engines": {
