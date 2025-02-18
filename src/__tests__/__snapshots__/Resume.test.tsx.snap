@@ -116,7 +116,7 @@ exports[`Document renders correctly 1`] = `
               data-style="[
   {
     "flexDirection": "column",
-    "fontSize": 10,
+    "fontSize": 8,
     "padding": "10 6"
   },
   {}
@@ -182,7 +182,8 @@ exports[`Document renders correctly 1`] = `
                 data-pdf="View"
                 data-style="{
   "flexDirection": "column",
-  "width": "100%"
+  "width": "100%",
+  "padding": 10
 }"
               >
                 <div
@@ -194,23 +195,23 @@ exports[`Document renders correctly 1`] = `
                 >
                   htmlAstTest1
                 </div>
-                <div
-                  data-pdf="Image"
-                  data-style="{
+              </div>
+              <div
+                data-pdf="Image"
+                data-style="{
   "width": 400,
   "alignSelf": "center",
   "marginTop": 6
 }"
-                  src="test-file-stub"
-                />
-              </div>
+                src="test-file-stub"
+              />
             </div>
             <div
               data-pdf="View"
               data-style="[
   {
     "flexDirection": "column",
-    "fontSize": 10,
+    "fontSize": 8,
     "padding": "10 6"
   },
   {}
@@ -276,7 +277,8 @@ exports[`Document renders correctly 1`] = `
                 data-pdf="View"
                 data-style="{
   "flexDirection": "column",
-  "width": "100%"
+  "width": "100%",
+  "padding": 10
 }"
               >
                 <div
@@ -288,16 +290,16 @@ exports[`Document renders correctly 1`] = `
                 >
                   htmlAstTest2
                 </div>
-                <div
-                  data-pdf="Image"
-                  data-style="{
+              </div>
+              <div
+                data-pdf="Image"
+                data-style="{
   "width": 400,
   "alignSelf": "center",
   "marginTop": 6
 }"
-                  src="test-file-stub"
-                />
-              </div>
+                src="test-file-stub"
+              />
             </div>
           </div>
           <div
@@ -314,7 +316,7 @@ exports[`Document renders correctly 1`] = `
               data-style="[
   {
     "flexDirection": "column",
-    "fontSize": 10,
+    "fontSize": 8,
     "padding": "10 6"
   },
   {}
@@ -380,7 +382,8 @@ exports[`Document renders correctly 1`] = `
                 data-pdf="View"
                 data-style="{
   "flexDirection": "column",
-  "width": "100%"
+  "width": "100%",
+  "padding": 10
 }"
               >
                 <div
@@ -392,16 +395,16 @@ exports[`Document renders correctly 1`] = `
                 >
                   htmlAstTest1
                 </div>
-                <div
-                  data-pdf="Image"
-                  data-style="{
+              </div>
+              <div
+                data-pdf="Image"
+                data-style="{
   "width": 400,
   "alignSelf": "center",
   "marginTop": 6
 }"
-                  src="test-file-stub"
-                />
-              </div>
+                src="test-file-stub"
+              />
             </div>
           </div>
         </div>
