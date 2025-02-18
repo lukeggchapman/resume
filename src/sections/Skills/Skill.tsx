@@ -13,6 +13,8 @@ const styles = StyleSheet.create({
   },
   skill: {
     color: '#333',
+    fontFamily: 'PT Sans',
+    fontSize: 8,
   },
 })
 
@@ -26,7 +28,7 @@ function Skill({ title, skills }: SkillProps) {
     <View style={styles.container}>
       <Text style={[typography.h3, styles.title]}>{title}</Text>
       {skills.map((skill) => (
-        <Text key={skill} style={[typography.h4, styles.skill]}>
+        <Text key={skill} style={styles.skill}>
           {skill}
         </Text>
       ))}

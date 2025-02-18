@@ -140,7 +140,8 @@ exports[`Document renders correctly 1`] = `
                 <div
                   data-pdf="View"
                   data-style="{
-  "flexGrow": 1
+  "flexGrow": 1,
+  "justifyContent": "center"
 }"
                 >
                   <div
@@ -235,7 +236,8 @@ exports[`Document renders correctly 1`] = `
                 <div
                   data-pdf="View"
                   data-style="{
-  "flexGrow": 1
+  "flexGrow": 1,
+  "justifyContent": "center"
 }"
                 >
                   <div
@@ -340,7 +342,8 @@ exports[`Document renders correctly 1`] = `
                 <div
                   data-pdf="View"
                   data-style="{
-  "flexGrow": 1
+  "flexGrow": 1,
+  "justifyContent": "center"
 }"
                 >
                   <div
@@ -444,23 +447,21 @@ exports[`Document renders correctly 1`] = `
               </div>
               <div
                 data-pdf="Text"
-                data-style="[
-  "h4",
-  {
-    "color": "#333"
-  }
-]"
+                data-style="{
+  "color": "#333",
+  "fontFamily": "PT Sans",
+  "fontSize": 8
+}"
               >
                 skillTest1
               </div>
               <div
                 data-pdf="Text"
-                data-style="[
-  "h4",
-  {
-    "color": "#333"
-  }
-]"
+                data-style="{
+  "color": "#333",
+  "fontFamily": "PT Sans",
+  "fontSize": 8
+}"
               >
                 skillTest2
               </div>
@@ -485,23 +486,21 @@ exports[`Document renders correctly 1`] = `
               </div>
               <div
                 data-pdf="Text"
-                data-style="[
-  "h4",
-  {
-    "color": "#333"
-  }
-]"
+                data-style="{
+  "color": "#333",
+  "fontFamily": "PT Sans",
+  "fontSize": 8
+}"
               >
                 skillTest3
               </div>
               <div
                 data-pdf="Text"
-                data-style="[
-  "h4",
-  {
-    "color": "#333"
-  }
-]"
+                data-style="{
+  "color": "#333",
+  "fontFamily": "PT Sans",
+  "fontSize": 8
+}"
               >
                 skillTest4
               </div>
@@ -526,23 +525,21 @@ exports[`Document renders correctly 1`] = `
               </div>
               <div
                 data-pdf="Text"
-                data-style="[
-  "h4",
-  {
-    "color": "#333"
-  }
-]"
+                data-style="{
+  "color": "#333",
+  "fontFamily": "PT Sans",
+  "fontSize": 8
+}"
               >
                 skillTest5
               </div>
               <div
                 data-pdf="Text"
-                data-style="[
-  "h4",
-  {
-    "color": "#333"
-  }
-]"
+                data-style="{
+  "color": "#333",
+  "fontFamily": "PT Sans",
+  "fontSize": 8
+}"
               >
                 skillTest6
               </div>
