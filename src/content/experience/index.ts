@@ -12,6 +12,8 @@ import pathzeroData from 'content/experience/2022-pathzero.md'
 import pathzeroLogo from 'content/experience/pathzero.png'
 import indebtedData from 'content/experience/2023-indebted.md'
 import indebtedLogo from 'content/experience/indebted.png'
+import fireantData from 'content/experience/2025-fireant.md'
+import fireantLogo from 'content/experience/fireant.png'
 import { HastNodes } from 'mdast-util-to-hast/lib'
 
 interface ExperienceFrontmatter {
@@ -30,12 +32,19 @@ interface ExperienceData {
 
 const experienceData: ExperienceData[] = [
   {
+    ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(fireantData),
+    logo: fireantLogo,
+  },
+  {
     ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(indebtedData),
     logo: indebtedLogo,
   },
   {
     ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(pathzeroData),
     logo: pathzeroLogo,
+    style: {
+      marginBottom: 50,
+    },
   },
   {
     ...parseMarkdownToHtmlAst<ExperienceFrontmatter>(componoData),
