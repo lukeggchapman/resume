@@ -22,21 +22,6 @@ describe('ContentItem', () => {
     expect(contentItem.queryByTestId('content')).toBeNull()
   })
 
-  it('not passing children aligns content with logo', () => {
-    const contentItem = renderContentItem({ children: undefined })
-    const pdfStyle = JSON.parse(
-      contentItem.getByTestId('center-container').dataset.style ?? '{}'
-    )
-
-    expect(pdfStyle).toEqual(
-      expect.arrayContaining([
-        {
-          alignSelf: 'center',
-        },
-      ])
-    )
-  })
-
   it('allows setting container style', () => {
     const contentItem = renderContentItem({
       children: undefined,

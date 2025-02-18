@@ -115,9 +115,9 @@ exports[`Document renders correctly 1`] = `
               data-pdf="View"
               data-style="[
   {
-    "flexDirection": "row",
+    "flexDirection": "column",
     "fontSize": 10,
-    "padding": "0 5"
+    "padding": "10 6"
   },
   {}
 ]"
@@ -125,98 +125,93 @@ exports[`Document renders correctly 1`] = `
               <div
                 data-pdf="View"
                 data-style="{
-  "flex": 1,
-  "alignItems": "center",
-  "justifyContent": "center",
-  "paddingRight": 5
+  "flexDirection": "row",
+  "marginBottom": 4
 }"
               >
                 <div
                   data-pdf="Image"
                   data-style="{
-  "height": 35
+  "height": 35,
+  "paddingRight": 10
 }"
                   src="logoPublcUrlTest1"
                 />
-              </div>
-              <div
-                data-pdf="View"
-                data-style="[
-  {
-    "flex": 7
-  },
-  {}
-]"
-                data-testid="center-container"
-              >
-                <div
-                  data-pdf="Text"
-                  data-style=""h3""
-                >
-                  companyTest1
-                </div>
                 <div
                   data-pdf="View"
-                  data-style="[
+                  data-style="{
+  "flexGrow": 1
+}"
+                >
+                  <div
+                    data-pdf="Text"
+                    data-style=""h3""
+                  >
+                    companyTest1
+                  </div>
+                  <div
+                    data-pdf="View"
+                    data-style="[
   "h4",
   {
     "flexDirection": "row",
     "justifyContent": "space-between"
   }
 ]"
-                >
-                  <div
-                    data-pdf="Text"
-                  >
-                    roleTest1
-                  </div>
-                  <div
-                    data-pdf="View"
                   >
                     <div
                       data-pdf="Text"
                     >
-                      Jun, 2021 – Apr, 2020
-                       · 
-                      -2 yr -1 mo
+                      roleTest1
+                    </div>
+                    <div
+                      data-pdf="View"
+                    >
+                      <div
+                        data-pdf="Text"
+                      >
+                        Jun, 2021 – Apr, 2020
+                         · 
+                        -2 yr -1 mo
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  data-pdf="View"
-                  data-style="{
+              </div>
+              <div
+                data-pdf="View"
+                data-style="{
   "flexDirection": "column",
   "width": "100%"
 }"
-                >
-                  <div
-                    data-pdf="View"
-                    data-style="{
+              >
+                <div
+                  data-pdf="View"
+                  data-style="{
   "marginTop": 5
 }"
-                    data-testid="content"
-                  >
-                    htmlAstTest1
-                  </div>
-                  <div
-                    data-pdf="Image"
-                    data-style="{
+                  data-testid="content"
+                >
+                  htmlAstTest1
+                </div>
+                <div
+                  data-pdf="Image"
+                  data-style="{
   "width": 400,
   "alignSelf": "center",
-  "margin": "10 0"
+  "marginTop": 6
 }"
-                    src="test-file-stub"
-                  />
-                </div>
+                  src="test-file-stub"
+                />
               </div>
             </div>
             <div
               data-pdf="View"
               data-style="[
   {
-    "flexDirection": "row",
+    "flexDirection": "column",
     "fontSize": 10,
-    "padding": "0 5"
+    "padding": "10 6"
   },
   {}
 ]"
@@ -224,89 +219,84 @@ exports[`Document renders correctly 1`] = `
               <div
                 data-pdf="View"
                 data-style="{
-  "flex": 1,
-  "alignItems": "center",
-  "justifyContent": "center",
-  "paddingRight": 5
+  "flexDirection": "row",
+  "marginBottom": 4
 }"
               >
                 <div
                   data-pdf="Image"
                   data-style="{
-  "height": 35
+  "height": 35,
+  "paddingRight": 10
 }"
                   src="logoPublcUrlTest2"
                 />
-              </div>
-              <div
-                data-pdf="View"
-                data-style="[
-  {
-    "flex": 7
-  },
-  {}
-]"
-                data-testid="center-container"
-              >
-                <div
-                  data-pdf="Text"
-                  data-style=""h3""
-                >
-                  companyTest2
-                </div>
                 <div
                   data-pdf="View"
-                  data-style="[
+                  data-style="{
+  "flexGrow": 1
+}"
+                >
+                  <div
+                    data-pdf="Text"
+                    data-style=""h3""
+                  >
+                    companyTest2
+                  </div>
+                  <div
+                    data-pdf="View"
+                    data-style="[
   "h4",
   {
     "flexDirection": "row",
     "justifyContent": "space-between"
   }
 ]"
-                >
-                  <div
-                    data-pdf="Text"
-                  >
-                    roleTest2
-                  </div>
-                  <div
-                    data-pdf="View"
                   >
                     <div
                       data-pdf="Text"
                     >
-                      Jul, 2021 – Aug, 2023
-                       · 
-                      2 yrs 1 mo
+                      roleTest2
+                    </div>
+                    <div
+                      data-pdf="View"
+                    >
+                      <div
+                        data-pdf="Text"
+                      >
+                        Jul, 2021 – Aug, 2023
+                         · 
+                        2 yrs 1 mo
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  data-pdf="View"
-                  data-style="{
+              </div>
+              <div
+                data-pdf="View"
+                data-style="{
   "flexDirection": "column",
   "width": "100%"
 }"
-                >
-                  <div
-                    data-pdf="View"
-                    data-style="{
+              >
+                <div
+                  data-pdf="View"
+                  data-style="{
   "marginTop": 5
 }"
-                    data-testid="content"
-                  >
-                    htmlAstTest2
-                  </div>
-                  <div
-                    data-pdf="Image"
-                    data-style="{
+                  data-testid="content"
+                >
+                  htmlAstTest2
+                </div>
+                <div
+                  data-pdf="Image"
+                  data-style="{
   "width": 400,
   "alignSelf": "center",
-  "margin": "10 0"
+  "marginTop": 6
 }"
-                    src="test-file-stub"
-                  />
-                </div>
+                  src="test-file-stub"
+                />
               </div>
             </div>
           </div>
@@ -323,9 +313,9 @@ exports[`Document renders correctly 1`] = `
               data-pdf="View"
               data-style="[
   {
-    "flexDirection": "row",
+    "flexDirection": "column",
     "fontSize": 10,
-    "padding": "0 5"
+    "padding": "10 6"
   },
   {}
 ]"
@@ -333,89 +323,84 @@ exports[`Document renders correctly 1`] = `
               <div
                 data-pdf="View"
                 data-style="{
-  "flex": 1,
-  "alignItems": "center",
-  "justifyContent": "center",
-  "paddingRight": 5
+  "flexDirection": "row",
+  "marginBottom": 4
 }"
               >
                 <div
                   data-pdf="Image"
                   data-style="{
-  "height": 35
+  "height": 35,
+  "paddingRight": 10
 }"
                   src="logoPublcUrlTest1"
                 />
-              </div>
-              <div
-                data-pdf="View"
-                data-style="[
-  {
-    "flex": 7
-  },
-  {}
-]"
-                data-testid="center-container"
-              >
-                <div
-                  data-pdf="Text"
-                  data-style=""h3""
-                >
-                  schoolTest1
-                </div>
                 <div
                   data-pdf="View"
-                  data-style="[
+                  data-style="{
+  "flexGrow": 1
+}"
+                >
+                  <div
+                    data-pdf="Text"
+                    data-style=""h3""
+                  >
+                    schoolTest1
+                  </div>
+                  <div
+                    data-pdf="View"
+                    data-style="[
   "h4",
   {
     "flexDirection": "row",
     "justifyContent": "space-between"
   }
 ]"
-                >
-                  <div
-                    data-pdf="Text"
-                  >
-                    degreeTest1
-                  </div>
-                  <div
-                    data-pdf="View"
                   >
                     <div
                       data-pdf="Text"
                     >
-                      Jan, 2001 – May, 2004
-                       · 
-                      3 yrs 4 mos
+                      degreeTest1
+                    </div>
+                    <div
+                      data-pdf="View"
+                    >
+                      <div
+                        data-pdf="Text"
+                      >
+                        Jan, 2001 – May, 2004
+                         · 
+                        3 yrs 4 mos
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  data-pdf="View"
-                  data-style="{
+              </div>
+              <div
+                data-pdf="View"
+                data-style="{
   "flexDirection": "column",
   "width": "100%"
 }"
-                >
-                  <div
-                    data-pdf="View"
-                    data-style="{
+              >
+                <div
+                  data-pdf="View"
+                  data-style="{
   "marginTop": 5
 }"
-                    data-testid="content"
-                  >
-                    htmlAstTest1
-                  </div>
-                  <div
-                    data-pdf="Image"
-                    data-style="{
+                  data-testid="content"
+                >
+                  htmlAstTest1
+                </div>
+                <div
+                  data-pdf="Image"
+                  data-style="{
   "width": 400,
   "alignSelf": "center",
-  "margin": "10 0"
+  "marginTop": 6
 }"
-                    src="test-file-stub"
-                  />
-                </div>
+                  src="test-file-stub"
+                />
               </div>
             </div>
           </div>
@@ -424,7 +409,7 @@ exports[`Document renders correctly 1`] = `
           data-pdf="View"
           data-style="{
   "flex": 1,
-  "marginLeft": 10
+  "marginLeft": 20
 }"
         >
           <div
