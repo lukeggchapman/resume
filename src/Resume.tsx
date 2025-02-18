@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 
 function ResumeDocument() {
   return (
-    <Document title="Luke Chapman Résumé">
+    <Document title="Luke Chapman Resume">
       <Page size="A4" style={[typography.body, styles.page]}>
         <Header />
         <View style={styles.body}>

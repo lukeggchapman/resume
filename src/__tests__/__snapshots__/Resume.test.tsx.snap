@@ -4,7 +4,7 @@ exports[`Document renders correctly 1`] = `
 <div>
   <div
     data-pdf="Document"
-    title="Luke Chapman Résumé"
+    title="Luke Chapman Resume"
   >
     <div
       data-pdf="Page"
