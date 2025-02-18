@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
   },
   info: {
     alignItems: 'flex-end',
-    fontFamily: 'PT Sans',
+    fontFamily: 'Noto Sans',
+    fontSize: 10,
   },
 })
 
@@ -22,10 +23,10 @@ export default function Header() {
       <Text style={typography.h1}>Luke Chapman</Text>
       <View style={styles.info}>
         <IconLink src="mailto:lukeggchapman@gmail.com" icon="envelope" fas>
-          LukeGGChapman@gmail.com
+          lukeggchapman@gmail.com
         </IconLink>
         <IconLink src="tel:+61401516361" icon="phone" fas>
-          0401 516 361
+          0401516361
         </IconLink>
       </View>
     </View>

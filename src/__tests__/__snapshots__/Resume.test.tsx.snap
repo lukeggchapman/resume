@@ -36,7 +36,8 @@ exports[`Document renders correctly 1`] = `
           data-pdf="View"
           data-style="{
   "alignItems": "flex-end",
-  "fontFamily": "PT Sans"
+  "fontFamily": "Noto Sans",
+  "fontSize": 10
 }"
         >
           <div
@@ -60,7 +61,7 @@ exports[`Document renders correctly 1`] = `
               data-pdf="Link"
               src="mailto:lukeggchapman@gmail.com"
             >
-              LukeGGChapman@gmail.com
+              lukeggchapman@gmail.com
             </div>
           </div>
           <div
@@ -84,7 +85,7 @@ exports[`Document renders correctly 1`] = `
               data-pdf="Link"
               src="tel:+61401516361"
             >
-              0401 516 361
+              0401516361
             </div>
           </div>
         </div>
