@@ -3,7 +3,7 @@ role: 'Lead Full Stack Engineer'
 company: 'Fireant'
 logo: './fireant.png'
 startDate: '2023-04-10'
-endDate: '2025-02-28'
+endDate: '2025-05-13'
 ---
 
 - Developed and maintained React Native mobile applications for the RFS (Rural Fire Service) and the SES (State Emergency Service), including Hazards Near Me NSW and Fires Near Me Australia, serving 700k+ monthly active users.
