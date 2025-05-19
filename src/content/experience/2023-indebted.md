@@ -1,5 +1,5 @@
 ---
-role: 'Senior Software Engineer / Team Lead'
+role: 'Engineering Team Lead'
 company: 'InDebted'
 logo: './indebted.png'
 startDate: '2022-03-29'
