@@ -12,7 +12,8 @@ export default StyleSheet.create({
   },
   h1: {
     fontFamily: 'Oswald',
-    fontWeight: 700,
+    textTransform: 'uppercase',
+    fontWeight: 500,
     fontSize: 24,
   },
   h2: {

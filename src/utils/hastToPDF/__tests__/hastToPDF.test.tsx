@@ -5,8 +5,8 @@ import { uid } from 'react-uid'
 import { HastNodes } from 'mdast-util-to-hast/lib'
 
 import { Root, Text as HastText } from 'hast'
+import BulletListPDF from 'components/PDFBulletList'
 import hastToPDF from '../hastToPDF'
-import BulletListPDF from '../components/PDFBulletList'
 
 const bullet1: HastText = {
   type: 'text',

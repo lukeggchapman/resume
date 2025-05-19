@@ -9,7 +9,7 @@ import { View, Text } from '@react-pdf/renderer'
 import { HastNodes } from 'mdast-util-to-hast/lib'
 
 import { Root, Text as HastText, Element } from 'hast'
-import PDFBulletList from './components/PDFBulletList'
+import PDFBulletList from 'components/PDFBulletList'
 
 const getBulletList = (element: Element) => {
   return element.children
