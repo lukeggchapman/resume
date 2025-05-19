@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
   },
   bullet: {
     width: 10,
+    fontSize: 8,
   },
 })
 

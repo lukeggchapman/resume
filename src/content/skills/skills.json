@@ -1,41 +1,33 @@
 {
-  "advanced": [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "React Native",
-    "GraphQL",
-    "Design Systems",
-    "Serverless",
-    "Node.JS",
-    "CI/CD",
-    "Git",
-    "HTML",
-    "CSS",
-    "SQL",
-    "AWS",
-    "Testing"
+  "Leadership": [
+    "Team Leadership & Mentoring",
+    "Cross-functional Collaboration",
+    "Technical Project Management",
+    "Stakeholder Communication",
+    "Hiring & Talent Development",
+    "Agile/Scrum Methodologies",
+    "Crisis Management",
+    "Strategic Planning"
   ],
-  "intermediate": [
-    "Analytics",
-    "CQRS",
-    "Event Sourcing",
-    "Firebase",
-    "Go",
-    "Jira",
-    "OAuth2",
-    "PHP",
-    "SQL",
-    "Stipe",
-    "Terraform"
+  "Technical": [
+    "Full Stack Development (TypeScript, React, Node.js)",
+    "Cloud Architecture (AWS, Serverless, Lambda)",
+    "API Design (REST, GraphQL)",
+    "Mobile Development (React Native)",
+    "DevOps & CI/CD",
+    "Software Quality & Testing",
+    "Microservices Architecture",
+    "Event Sourcing & CQRS"
   ],
-  "beginner": [
-    "mongoDB",
-    "Kubernetes",
-    "GCP",
-    "C++",
-    "C#",
-    "Machine Learning",
-    "Python"
+  "Strategic": [
+    "Product Development Lifecycle",
+    "Technical Advisory",
+    "Client/Government Relations",
+    "Compliance & Risk Management",
+    "Scaling Engineering Teams",
+    "Performance Optimisation",
+    "System Reliability Engineering",
+    "Infrastructure Cost Management",
+    "Technical Documentation"
   ]
 }

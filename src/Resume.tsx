@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 6,
   },
   sidePanel: {
-    flex: 1,
+    flex: 2,
     marginLeft: 20,
   },
 })

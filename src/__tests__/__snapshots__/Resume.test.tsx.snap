@@ -439,7 +439,7 @@ exports[`Document renders correctly 1`] = `
         <div
           data-pdf="View"
           data-style="{
-  "flex": 1,
+  "flex": 2,
   "marginLeft": 20
 }"
         >
@@ -471,24 +471,81 @@ exports[`Document renders correctly 1`] = `
                 beginner
               </div>
               <div
-                data-pdf="Text"
+                data-pdf="View"
                 data-style="{
+  "flexDirection": "column"
+}"
+              >
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "row",
+  "paddingBottom": 2
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "width": 10,
+  "fontSize": 8
+}"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      • 
+                    </div>
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                      data-style="{
   "color": "#333",
   "fontFamily": "PT Sans",
   "fontSize": 8
 }"
-              >
-                skillTest1
-              </div>
-              <div
-                data-pdf="Text"
-                data-style="{
+                    >
+                      skillTest1
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "row",
+  "paddingBottom": 2
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "width": 10,
+  "fontSize": 8
+}"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      • 
+                    </div>
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                      data-style="{
   "color": "#333",
   "fontFamily": "PT Sans",
   "fontSize": 8
 }"
-              >
-                skillTest2
+                    >
+                      skillTest2
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -510,24 +567,81 @@ exports[`Document renders correctly 1`] = `
                 intermediate
               </div>
               <div
-                data-pdf="Text"
+                data-pdf="View"
                 data-style="{
+  "flexDirection": "column"
+}"
+              >
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "row",
+  "paddingBottom": 2
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "width": 10,
+  "fontSize": 8
+}"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      • 
+                    </div>
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                      data-style="{
   "color": "#333",
   "fontFamily": "PT Sans",
   "fontSize": 8
 }"
-              >
-                skillTest3
-              </div>
-              <div
-                data-pdf="Text"
-                data-style="{
+                    >
+                      skillTest3
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "row",
+  "paddingBottom": 2
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "width": 10,
+  "fontSize": 8
+}"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      • 
+                    </div>
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                      data-style="{
   "color": "#333",
   "fontFamily": "PT Sans",
   "fontSize": 8
 }"
-              >
-                skillTest4
+                    >
+                      skillTest4
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -549,24 +663,81 @@ exports[`Document renders correctly 1`] = `
                 advanced
               </div>
               <div
-                data-pdf="Text"
+                data-pdf="View"
                 data-style="{
+  "flexDirection": "column"
+}"
+              >
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "row",
+  "paddingBottom": 2
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "width": 10,
+  "fontSize": 8
+}"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      • 
+                    </div>
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                      data-style="{
   "color": "#333",
   "fontFamily": "PT Sans",
   "fontSize": 8
 }"
-              >
-                skillTest5
-              </div>
-              <div
-                data-pdf="Text"
-                data-style="{
+                    >
+                      skillTest5
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-pdf="View"
+                  data-style="{
+  "flexDirection": "row",
+  "paddingBottom": 2
+}"
+                >
+                  <div
+                    data-pdf="View"
+                    data-style="{
+  "width": 10,
+  "fontSize": 8
+}"
+                  >
+                    <div
+                      data-pdf="Text"
+                    >
+                      • 
+                    </div>
+                  </div>
+                  <div
+                    data-pdf="View"
+                  >
+                    <div
+                      data-pdf="Text"
+                      data-style="{
   "color": "#333",
   "fontFamily": "PT Sans",
   "fontSize": 8
 }"
-              >
-                skillTest6
+                    >
+                      skillTest6
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
 
-import typography from '../../components/typography'
+import typography from 'components/typography'
+import PDFBulletList from 'components/PDFBulletList'
 
 const styles = StyleSheet.create({
   container: {
@@ -27,11 +28,13 @@ function Skill({ title, skills }: SkillProps) {
   return (
     <View style={styles.container}>
       <Text style={[typography.h3, styles.title]}>{title}</Text>
-      {skills.map((skill) => (
-        <Text key={skill} style={styles.skill}>
-          {skill}
-        </Text>
-      ))}
+      <PDFBulletList
+        list={skills.map((skill) => (
+          <Text key={skill} style={styles.skill}>
+            {skill}
+          </Text>
+        ))}
+      />
     </View>
   )
 }
