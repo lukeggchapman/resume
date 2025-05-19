@@ -14,9 +14,6 @@ const styles = StyleSheet.create({
 export default function Footer() {
   return (
     <View style={[typography.h4, styles.footer]}>
-      <IconLink src="https://github.com/lukeggchapman" icon="github" fab>
-        lukeggchapman
-      </IconLink>
       <IconLink
         src="https://www.linkedin.com/in/lukeggchapman"
         icon="linkedin"
