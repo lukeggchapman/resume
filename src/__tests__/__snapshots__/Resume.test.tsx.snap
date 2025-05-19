@@ -767,30 +767,6 @@ exports[`Document renders correctly 1`] = `
   }
 ]"
           >
-            
-          </div>
-           
-          <div
-            data-pdf="Link"
-            src="https://github.com/lukeggchapman"
-          >
-            lukeggchapman
-          </div>
-        </div>
-        <div
-          data-pdf="Text"
-        >
-          <div
-            data-pdf="Text"
-            data-style="[
-  {
-    "fontFamily": "Font Awesome 5 Free"
-  },
-  {
-    "fontWeight": 700
-  }
-]"
-          >
             
           </div>
            
